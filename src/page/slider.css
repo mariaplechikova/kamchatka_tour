@@ -1,0 +1,47 @@
+.slider {
+    position: relative;
+    /* left: 736px; */
+    /* margin-top: 44px; */
+}
+
+.sliderBox {
+    width: 1050px;
+    display: flex;
+    gap: 38.44px;
+    align-items: flex-end;
+}
+
+.sliderImage {
+    width: 210px;
+    height: 210px;
+    overflow: hidden;
+}
+
+.sliderImage img {
+    height: 100%;
+}
+
+.sliderBox div:first-child {
+    width: 268px;
+    height: 268px;
+}
+
+.sliderButton {
+    margin-top: 20px;
+    width: 100%;
+}
+
+.sliderButton button {
+    width: 38px;
+    height: 38px;
+    font-size: 20px;
+    color: white;
+    border: 1px solid white;
+    border-radius: 50%;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.sliderButton button:first-child {
+    margin-right: 16px;
+}
