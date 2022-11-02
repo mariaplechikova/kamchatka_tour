@@ -61,6 +61,12 @@ hr {
     margin-right: 18px;
 }
 
+.icons {
+    width: 19px;
+    height: 19px;
+    margin-right: 7px;
+}
+
 @media (min-width: 600px) {
     footer {
         margin-top: 63px; 

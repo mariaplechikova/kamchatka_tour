@@ -1,6 +1,7 @@
 import "./menu.css";
 import Logo from "./logo.js";
 import { Nav, Navbar } from "react-bootstrap";
+import CloseButton from 'react-bootstrap/CloseButton';
 
 import "bootstrap/dist/css/bootstrap.min.css";
 
@@ -22,10 +23,15 @@ import "bootstrap/dist/css/bootstrap.min.css";
 // export default Menu;
 
 export default function Menu() {
+
+  function show(event) {
+    console.log(event.target)
+  }
+
   return (
     <div className="menu">
 
-        <Navbar collapseOnSelect expand="lg" className="navbar">
+        <Navbar collapseOnSelect expand="lg" className="navbar" onClick={show}>
 
           <Navbar.Brand href="#home">
             <Logo />
@@ -35,7 +41,9 @@ export default function Menu() {
 
           <Navbar.Collapse id="responsive-navbar-nav" >
 
-            <Nav className="mr-auto">
+            <Nav className="mr-auto" >
+
+            {/* <CloseButton onClick={hideMenu}/> */}
 
               <Nav.Link href="#features" className="nav-link">
                 <span>Расписание тура</span>

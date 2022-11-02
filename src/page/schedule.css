@@ -1,0 +1,82 @@
+.schedule {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    height: 1500px;
+    
+    
+}
+
+.schedule-container {
+    width: 100%;
+    /* padding-left: 16px; */
+    /* padding-right: 16px; */
+    text-align: left;
+}
+
+.schedule-block {
+    display: flex;
+    justify-content: space-between;
+    align-content: space-between;
+    flex-wrap: wrap;
+    height: 300px;
+}
+
+.schedule-block div {
+    
+    width: 140px;
+    height: 140px;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.schedule-block div p {
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+
+.schedule-block div p:nth-child(2) {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.schedule-journey-background {
+    position: absolute;
+    top: 500px;
+    background-color: aqua;
+    height: 100%;
+    width: 100%
+    
+}
+
+.schedule-journey-background>div {
+    position: relative;
+}
+
+.mountains {
+    
+    /* z-index: 5; */
+    position: absolute;
+    /* top: 0px; */
+    height: 100%;
+    width: 100%;
+    background-color: blue;
+    background: linear-gradient(2.4deg, #000000 12.72%, rgba(0, 0, 0, 0.633721) 44.36%, rgba(248, 247, 247, 0) 70.61%, rgb(255, 253, 253) 90%);
+    /* background: linear-gradient(rgb(255, 254, 254), rgba(0, 0, 0, 0.637) 70.61%); */
+}
+
+.schedule-journey-background img {
+    /* display: block; */
+    /* position: absolute; */
+    /* top: 0px; */
+    /* z-index: 1; */
+}

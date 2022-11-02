@@ -1,8 +1,8 @@
 .first-screen {
     width: 100%;
     position: relative;
-    top: 0px;
-    left: 0px;
+    /* top: 0px;
+    left: 0px; */
     margin: 0px;
     padding: 0px;
     height: 1100px;
@@ -10,8 +10,10 @@
     display: flex;
     justify-content: center;
     overflow: hidden;
+    
     /* box-sizing: border-box; */
     /* background-color: #FB8B62; */
+    
 }
 
 .first-screen-background {
@@ -20,6 +22,7 @@
     /* left: 0px; */
     z-index: -100;
     height: 100%;
+    
 }
 
 .first-screen-container {
@@ -97,6 +100,7 @@ font-size: 18px;
 
 .social-network img {
     height: 20px;
+    color: white;
 }
 
 .desctop {
@@ -136,21 +140,24 @@ font-size: 18px;
         width: 100%;
         height: 100%;
         padding-top: 100px;
-        padding-left:  0px;
-        padding-right:  0px;
+        padding-left:  16px;
+        padding-right:  16px;
         max-width: 1248px;
         box-sizing: border-box;
+        
     }
 
     .first-screen {
         width: 100%;
-        top: 0px;
+        /* top: 0px; */
         height: 100vh;
         /* min-height: 670px; */
     }
 
     .first-screen-background {
         width: 100vw;
+        /* min-width: 977px; */
+        /* min-height: 550px; */
     }
 
     .date {

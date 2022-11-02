@@ -1,0 +1,33 @@
+#Navbar {
+    height: 110px;
+    background-color: transparent;
+    /* background-color: aqua; */
+  /* background: aqua; */
+  /* color: aqua; */
+    /* width: 100%; */
+    /* display: flex; */
+    /* align-items: center; */
+    /* justify-content: center; */
+    position: fixed;
+    z-index: 100
+  }
+
+/* .navbar-container {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
+    width: 100%;
+    max-width: 1248px;
+    background-color: blueviolet;
+} */
+
+.logo {
+    /* position: absolute; */
+    /* top: 0px; */
+    margin-top: 30px;
+    margin-left: 16px;
+    position: fixed;
+    
+}

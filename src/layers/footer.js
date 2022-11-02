@@ -41,17 +41,17 @@ function Footer() {
 
             <div className="smoll">
                 <p id="tel">+7 (760) 354-23-23</p>
-                <p className="grey">РАботаем с 9:00 до 18:00</p>
+                <p className="grey">Работаем с 9:00 до 18:00</p>
 
                 <br></br>
                 
                 <p>
-                    <img src='email.png'/>
+                    <img src='email.png' className="icons"/>
                        info@dreamkamtour.ru
                 </p>
                 
                 <p>
-                    <img src='location.png'/>
+                    <img src='location.png'className="icons"/>
                        ул. Рубинштейна, 41
                 </p>
                 

@@ -1,16 +1,16 @@
-import logo from './logo.svg';
 import './App.css';
-import Menu from './layers/menu'
-import Footer from './layers/footer'
-import FirstScreen from './page/first-screen'
-import React, { useState } from 'react';
 
+import Navbar from './layers/navbar'
+import FirstScreen from './page/first-screen'
+import Footer from './layers/footer'
+import Schedule from './page/schedule'
 
 function App() {
   return (
     <div className="App">
-        <Menu/>
+        <Navbar/>
         <FirstScreen/>
+        <Schedule/>
         <Footer/>
     </div>
   );

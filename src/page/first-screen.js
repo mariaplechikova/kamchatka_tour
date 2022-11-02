@@ -23,6 +23,8 @@ function FirstScreen() {
             <a href=""><img src='odnoklassniki.png'/></a>
             <a href=""><img src='youtube.png'/></a>
             <a href=""><img src='telegram.png'/></a>
+            <a href=""><img src='whatsapp.png'/></a>
+            <a href=""><img src='dzen.png'/></a>
           </div>
 
         </div>
@@ -33,10 +35,12 @@ function FirstScreen() {
         </div>
         
         <div className="social-network mobile">
-          <a href=""><img src='VK.png'/></a>
-          <a href=""><img src='odnoklassniki.png'/></a>
-          <a href=""><img src='youtube.png'/></a>
-          <a href=""><img src='telegram.png'/></a>
+        <a href=""><img src='VK.png'/></a>
+            <a href=""><img src='odnoklassniki.png'/></a>
+            <a href=""><img src='youtube.png'/></a>
+            <a href=""><img src='telegram.png'/></a>
+            <a href=""><img src='whatsapp.png'/></a>
+            <a href=""><img src='dzen.png'/></a>
         </div>
 
       </div>
