@@ -4,18 +4,46 @@
     padding: 0px;
     display: flex;
     justify-content: center;
-    position: relative;
-    overflow: hidden;
-    height: 1500px;
-    
-    
+    overflow: hidden; 
+    box-sizing: border-box;
 }
 
 .schedule-container {
     width: 100%;
-    /* padding-left: 16px; */
-    /* padding-right: 16px; */
+    height: 100%;
     text-align: left;
+}
+
+.schedule-journey {
+    width: 100%;
+    height: 1360px;
+    position: relative;
+}
+
+.schedule-journey-text {
+    width: 100%;
+    height: 1360px;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    justify-content: space-between;
+    padding-top: 48px;
+    padding-bottom: 37px;
+    padding-left: 16px;
+    padding-right: 16px;
+    box-sizing: border-box;
+}
+
+h2 {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 40px;
+    color: #121212;
 }
 
 .schedule-block {
@@ -23,13 +51,12 @@
     justify-content: space-between;
     align-content: space-between;
     flex-wrap: wrap;
-    height: 300px;
+    height: 250px;
 }
 
 .schedule-block div {
-    
     width: 140px;
-    height: 140px;
+    height: 130px;
     font-family: 'Lato';
     font-style: normal;
     font-weight: 700;
@@ -38,8 +65,8 @@
 }
 
 .schedule-block div p {
-    margin-top: 4px;
-    margin-bottom: 4px;
+    margin-top: 3px;
+    margin-bottom: 3px;
 }
 
 .schedule-block div p:nth-child(2) {
@@ -49,34 +76,276 @@
     font-size: 14px;
 }
 
+.plane {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    /* flex-grow: 1; */
+}
+
+.plane-img {
+    z-index: 1000;
+    position: absolute;
+    width: 357px;
+    height: 231.7px;
+    top: 250px;
+    right: -100px;
+    transform: rotate(3.3deg);
+}
+
 .schedule-journey-background {
     position: absolute;
-    top: 500px;
+    bottom: 0px;
     background-color: aqua;
-    height: 100%;
-    width: 100%
-    
+    width: 100%;
+    z-index: -10;
 }
 
 .schedule-journey-background>div {
     position: relative;
+    display: flex;
+    justify-content: center;
 }
 
-.mountains {
-    
-    /* z-index: 5; */
+.gradient {
+    z-index: 6;
     position: absolute;
-    /* top: 0px; */
     height: 100%;
     width: 100%;
     background-color: blue;
     background: linear-gradient(2.4deg, #000000 12.72%, rgba(0, 0, 0, 0.633721) 44.36%, rgba(248, 247, 247, 0) 70.61%, rgb(255, 253, 253) 90%);
-    /* background: linear-gradient(rgb(255, 254, 254), rgba(0, 0, 0, 0.637) 70.61%); */
 }
 
-.schedule-journey-background img {
-    /* display: block; */
-    /* position: absolute; */
-    /* top: 0px; */
-    /* z-index: 1; */
+.kamchatka {
+    display: none;
+}
+
+/* Тексты-------------------------- */
+.big-text {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;   
+}
+
+.black-text {
+    color: #313131;
+    opacity: 0.8;
+}
+
+.smoll-text {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.quote-text {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    color: #DEDEDE;
+}
+
+.quote-name {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.white-text {
+    color: white;
+}
+
+@media (min-width: 600px) {
+
+    .schedule-journey-text {
+        gap: 40px;
+        justify-content: flex-start;
+        padding-top: 64px;
+        padding-bottom: 66px;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    h2 {
+        font-size: 48px;
+        line-height: 56px;
+    }
+    
+    .schedule-block {
+        flex-wrap: nowrap;
+        height: 150px;
+    }
+    
+    .schedule-block div {
+        width: auto;
+    }
+    
+    .schedule-block div p {
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    
+    .plane {
+        /* flex-grow: 1; */ 
+    }
+    
+    .plane-img {
+        width: 600px;
+        height: auto;
+        top: 100px;
+        right: -5px;
+    }
+    
+    /* .schedule-journey-background {
+        position: absolute;
+        top: 500px;
+        background-color: aqua;
+        height: 100%;
+        width: 100%;
+        z-index: -10;
+    } */
+    
+    /* .schedule-journey-background>div {
+        position: relative;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .gradient {
+        z-index: 6;
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        background-color: blue;
+        background: linear-gradient(2.4deg, #000000 12.72%, rgba(0, 0, 0, 0.633721) 44.36%, rgba(248, 247, 247, 0) 70.61%, rgb(255, 253, 253) 90%);
+    } */
+    
+    .kamchatka {
+        /* display: block; */
+        position: absolute;
+        font-size: 20px;
+        left: 100px;
+        top: 0px;
+
+        background: linear-gradient(180deg, #000000 99.99%, rgba(0, 0, 0, 0) 100%);
+        /* mix-blend-mode: overlay; */
+        border-radius: 16px;
+        /* transform: rotate(90deg); */
+        /* color: red; */
+        z-index: 1000;
+    }
+    
+    /* Тексты-------------------------- */
+    .big-text {
+        width: 571px;
+        height: 64px;
+        font-size: 24px;   
+    }
+    
+    .smoll-text {
+        width: 597px;
+        height: 120px;
+    }
+    
+    .quote-text {
+        width: 305px;
+        height: 57px;
+    }
+}
+
+@media (min-width: 800px) {
+
+    .schedule-journey-text {
+        gap: 35px;
+        justify-content: flex-start;
+        padding-top: 120px;
+        padding-bottom: 147px;
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+
+    h2 {
+        width: 728px;
+        height: 112px;
+    }
+    
+    .schedule-block {
+        /* flex-wrap: nowrap; */
+        /* height: 150px; */
+        justify-content: flex-start;
+        gap: 64px;
+    }
+    
+    .schedule-block div {
+        width: auto;
+    }
+    
+    .schedule-block div p {
+        /* margin-top: 5px; */
+        /* margin-bottom: 5px; */
+    }
+    
+    .plane {
+        height: 400px;
+        /* flex-grow: 1; */ 
+    }
+    
+    .plane-img {
+        width: 802.81px;
+        top: calc(50% - 450px);
+        right: -10px;
+    }
+    
+    /* .schedule-journey-background {
+        position: absolute;
+        top: 500px;
+        background-color: aqua;
+        height: 100%;
+        width: 100%;
+        z-index: -10;
+    } */
+    
+    /* .schedule-journey-background>div {
+        position: relative;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .gradient {
+        z-index: 6;
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        background-color: blue;
+        background: linear-gradient(2.4deg, #000000 12.72%, rgba(0, 0, 0, 0.633721) 44.36%, rgba(248, 247, 247, 0) 70.61%, rgb(255, 253, 253) 90%);
+    } */
+    
+    .kamchatka {
+        /* display: block; */
+        position: absolute;
+        font-size: 20px;
+        left: 100px;
+        top: 0px;
+
+        background: linear-gradient(180deg, #000000 99.99%, rgba(0, 0, 0, 0) 100%);
+        /* mix-blend-mode: overlay; */
+        border-radius: 16px;
+        /* transform: rotate(90deg); */
+        /* color: red; */
+        z-index: 1000;
+    }
+    
+    /* Тексты-------------------------- */
+    .mountains {
+        width: 100vw;
+    }
+
 }
