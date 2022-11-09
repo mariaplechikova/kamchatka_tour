@@ -10,6 +10,9 @@
     display: flex;
     justify-content: center;
     overflow: hidden;
+    background-image: url(./image/first-screen.jpg);
+    background-repeat: no-repeat; 
+    background-size: cover;
     
     /* box-sizing: border-box; */
     /* background-color: #FB8B62; */

@@ -1,4 +1,5 @@
 import "./first-screen.css";
+import "./schedule.css";
 import Slider from './slider'
 import React, { useState } from 'react';
 
@@ -6,7 +7,7 @@ function FirstScreen() {
   return (
     <div className="first-screen">
 
-      <img src='first-screen.jpg'className="first-screen-background"/>
+      {/* <img src='first-screen.jpg'className="first-screen-background"/> */}
 
       <div className="first-screen-container">
         <div className="first-screen-text">

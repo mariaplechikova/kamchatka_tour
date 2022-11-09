@@ -1,0 +1,13 @@
+.block-day {
+    margin: 0;
+    width: 100%;
+    background-image: url(./image/fourth-day-background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 38% center;
+    box-sizing: border-box;
+}
+
+.block-day p {
+    color: #ACACAC;;
+}

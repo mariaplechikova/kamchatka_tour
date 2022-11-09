@@ -8,6 +8,14 @@
     box-sizing: border-box;
 }
 
+.container {
+    box-sizing: border-box;
+    width: 100%;
+    margin: 0px;
+    padding: 0 16px;
+    position: relative;
+}
+
 .schedule-container {
     width: 100%;
     height: 100%;
@@ -16,8 +24,13 @@
 
 .schedule-journey {
     width: 100%;
-    height: 1360px;
+    /* height: 1360px; */
     position: relative;
+    /* background-image: url(./image/shedule-background.jpg); */
+    /* background-repeat: no-repeat; */
+    /* background-size: cover; */
+    /* background-position: center center; */
+    /* background: linear-gradient(2.4deg, #000000 12.72%, rgba(0, 0, 0, 0.633721) 44.36%, rgba(0, 0, 0, 0) 70.61%); */
 }
 
 .schedule-journey-text {
@@ -30,8 +43,8 @@
     justify-content: space-between;
     padding-top: 48px;
     padding-bottom: 37px;
-    padding-left: 16px;
-    padding-right: 16px;
+    /* padding-left: 16px; */
+    /* padding-right: 16px; */
     box-sizing: border-box;
 }
 
@@ -80,7 +93,6 @@ h2 {
     position: relative;
     width: 100%;
     height: 300px;
-    /* flex-grow: 1; */
 }
 
 .plane-img {
@@ -99,6 +111,7 @@ h2 {
     background-color: aqua;
     width: 100%;
     z-index: -10;
+    left: 0px;
 }
 
 .schedule-journey-background>div {
@@ -163,15 +176,47 @@ h2 {
     color: white;
 }
 
+/* Дни-------------------------------- */
+.schedule-days {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.days-title {
+    width: 285px;
+    height: 96px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    color: #ffffff;
+    margin: 0px;
+    padding: 0px;
+}
+
+.days-title span{
+    color: #F47648;
+}
+
+
+
 @media (min-width: 600px) {
+    .container {
+        padding: 0 40px;
+    }
 
     .schedule-journey-text {
         gap: 40px;
         justify-content: flex-start;
         padding-top: 64px;
         padding-bottom: 66px;
-        padding-left: 40px;
-        padding-right: 40px;
+        /* padding-left: 40px; */
+        /* padding-right: 40px; */
     }
 
     h2 {
@@ -193,10 +238,6 @@ h2 {
         margin-bottom: 5px;
     }
     
-    .plane {
-        /* flex-grow: 1; */ 
-    }
-    
     .plane-img {
         width: 600px;
         height: auto;
@@ -204,42 +245,13 @@ h2 {
         right: -5px;
     }
     
-    /* .schedule-journey-background {
-        position: absolute;
-        top: 500px;
-        background-color: aqua;
-        height: 100%;
-        width: 100%;
-        z-index: -10;
-    } */
-    
-    /* .schedule-journey-background>div {
-        position: relative;
-        display: flex;
-        justify-content: center;
-    }
-    
-    .gradient {
-        z-index: 6;
-        position: absolute;
-        height: 100%;
-        width: 100%;
-        background-color: blue;
-        background: linear-gradient(2.4deg, #000000 12.72%, rgba(0, 0, 0, 0.633721) 44.36%, rgba(248, 247, 247, 0) 70.61%, rgb(255, 253, 253) 90%);
-    } */
-    
     .kamchatka {
-        /* display: block; */
         position: absolute;
         font-size: 20px;
         left: 100px;
         top: 0px;
-
         background: linear-gradient(180deg, #000000 99.99%, rgba(0, 0, 0, 0) 100%);
-        /* mix-blend-mode: overlay; */
         border-radius: 16px;
-        /* transform: rotate(90deg); */
-        /* color: red; */
         z-index: 1000;
     }
     
@@ -259,17 +271,29 @@ h2 {
         width: 305px;
         height: 57px;
     }
+
+    .days-title {
+        width: 685px;
+        height: 100px;
+        font-size: 40px;
+        line-height: 50px;
+        
+    }
+
 }
 
 @media (min-width: 800px) {
+    .container {
+        padding: 0 5%;
+    }
 
     .schedule-journey-text {
         gap: 35px;
         justify-content: flex-start;
         padding-top: 120px;
-        padding-bottom: 147px;
-        padding-left: 100px;
-        padding-right: 100px;
+        padding-bottom: 50px;
+        /* padding-left: 100px; */
+        /* padding-right: 100px; */
     }
 
     h2 {
@@ -278,8 +302,6 @@ h2 {
     }
     
     .schedule-block {
-        /* flex-wrap: nowrap; */
-        /* height: 150px; */
         justify-content: flex-start;
         gap: 64px;
     }
@@ -288,14 +310,8 @@ h2 {
         width: auto;
     }
     
-    .schedule-block div p {
-        /* margin-top: 5px; */
-        /* margin-bottom: 5px; */
-    }
-    
     .plane {
         height: 400px;
-        /* flex-grow: 1; */ 
     }
     
     .plane-img {
@@ -304,48 +320,23 @@ h2 {
         right: -10px;
     }
     
-    /* .schedule-journey-background {
-        position: absolute;
-        top: 500px;
-        background-color: aqua;
-        height: 100%;
-        width: 100%;
-        z-index: -10;
-    } */
-    
-    /* .schedule-journey-background>div {
-        position: relative;
-        display: flex;
-        justify-content: center;
-    }
-    
-    .gradient {
-        z-index: 6;
-        position: absolute;
-        height: 100%;
-        width: 100%;
-        background-color: blue;
-        background: linear-gradient(2.4deg, #000000 12.72%, rgba(0, 0, 0, 0.633721) 44.36%, rgba(248, 247, 247, 0) 70.61%, rgb(255, 253, 253) 90%);
-    } */
-    
     .kamchatka {
-        /* display: block; */
         position: absolute;
         font-size: 20px;
         left: 100px;
         top: 0px;
-
         background: linear-gradient(180deg, #000000 99.99%, rgba(0, 0, 0, 0) 100%);
-        /* mix-blend-mode: overlay; */
         border-radius: 16px;
-        /* transform: rotate(90deg); */
-        /* color: red; */
         z-index: 1000;
     }
     
-    /* Тексты-------------------------- */
     .mountains {
         width: 100vw;
+    }
+
+    .days-title {
+        width: auto;
+        height: auto;
     }
 
 }
