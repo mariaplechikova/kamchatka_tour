@@ -1,13 +1,103 @@
 .block-day {
     margin: 0;
     width: 100%;
-    background-image: url(./image/fourth-day-background.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: 38% center;
     box-sizing: border-box;
+    background-image: linear-gradient(to top, rgb(0, 0, 0) 10%, transparent 40%, rgb(0, 0, 0) 70%),
+    url(./image/black1.png) 35%;
 }
 
-.block-day p {
-    color: #ACACAC;;
+.global-text-smoll {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.global-text-grey {
+    color: #ACACAC;
+}
+
+.global-text-white {
+    color: white;
+}
+.global-text-black {
+    color: #313131;
+}
+
+.sixth-addition h3{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 28px;
+    color: #FFFFFF;
+}
+
+.sixth-addition p {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: #BABABA;
+    opacity: 0.7;
+}
+
+.sixth-addition div p:first-of-type {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+    opacity: 1;
+}
+
+.sixth-addition div {
+    border-bottom: 1px solid #BABABA;
+}
+
+@media (min-width: 600px) {
+    .sixth-addition div{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+
+@media (min-width: 800px) {
+ .fourth-day, .fifth-day, .sixth-day{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+ }
+
+ .fourth-day-text, .fifth-day-text, .sixth-day-text{
+    width: 45%;
+ }
+ .fourth-day-slider, .fifth-day-slider, .sixth-day-slider{
+    width: 45%;
+ }
+
+ .fifth-day-text {
+    order: 1;
+ }
+
+ .fifth-day-slider {
+    display: flex;
+    justify-content: end;
+ }
+
+ .block-day {
+    background-repeat: no-repeat;
+    background-size: 20%;
+    box-sizing: border-box;
+    background: linear-gradient(to top, rgb(0, 0, 0) 10%, transparent, rgb(0, 0, 0) 70%),
+    url(./image/black1.png) 0%;
+}
 }

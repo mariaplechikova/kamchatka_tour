@@ -3,6 +3,8 @@ import "./first-day.css";
 import "./second-day.css";
 import "./third-day.css";
 import "./fourth-day.css";
+import "./seventh-day.css";
+import "./eighth-day.css";
 import Slider from './slider'
 
 function Schedule() {
@@ -147,13 +149,13 @@ function Schedule() {
         <div className="third-day container">
           <div className="third-day-text">
             <h2 className="days-title"><span>День 3.</span> Горные цирки и водопады вулкана Вачкажец </h2>
-            <p>
+            <p className="text-smoll text-grey">
               Вачкажец–горный массив и его окрестности, одно из красивейших мест первозданной камчатской природы. Небольшой пеший переход не успеет Вас утомить. А в награду за труд в конце пути открывается великолепный вид на горное озеро в чаше кратера старого потухшего вулкана, обрамленное пиками старых, невысоких гор.
             </p>
-            <p>
+            <p className="text-smoll text-grey">
               Выезд из гостиницы и переезд около 2 часов. Пеший переход около 5 км.в одну сторону к горным циркам вулкана Вачкажец, осмотр водопада. Обед.  Отдых. По прибытию в машину чай с шоколадом! Обратный переход по тому же пути.
             </p>
-            <p>
+            <p className="text-smoll text-grey">
               Продолжительность: 8 часов. Трансфер в гостиницу.
             </p>
           </div>
@@ -170,20 +172,20 @@ function Schedule() {
 
         <div className="block-day container">
 
-          <div className="fourth-day">
+          <div className="fourth-day global-day">
 
             <div className="fourth-day-text">
               <h2 className="days-title"><span>День 4.</span> Экскурсия к подножию Авачинского вулкана</h2>
-              <p>
+              <p className="global-text-smoll global-text-grey">
                 Инструктаж по поведению группы в горах. Проверка снаряжения.Выезд на автомашине на вулканическое плато (высота 900 м) к подножию Авачинского вулкана (2 часа).
               </p>
-              <p>
+              <p className="global-text-smoll global-text-grey">
                 Пешеходная экскурсия к горе Верблюд, представляющую собой вулканическую экструзию. Находится в седловине между Корякским и Авачинским вулканами, относительная высота 100-150 м, ширина - около 100 м и по длине она протягивается на 500 м., состоит из трех сросшихся блоков.
               </p>
-              <p>
+              <p className="global-text-smoll global-text-grey">
                 Обед.  Поездка в Паратунку с купанием. 
               </p>
-              <p>
+              <p className="global-text-smoll global-text-grey">
                 Продолжительность – 8 часов. Трансфер в гостиницу. 
               </p>
               
@@ -196,20 +198,20 @@ function Schedule() {
 
           
           
-          <div className="fifth-day">
+          <div className="fifth-day global-day">
 
             <div className="fifth-day-text">
               <h2 className="days-title"><span>День 5.</span> Морская прогулка к острову Старичков </h2>
-              <p>
+              <p className="global-text-smoll global-text-white">
                 Инструктаж по поведению группы при передвижении на плавсредствах, приему таблеток от морской болезни.
               </p>
-              <p>
+              <p className="global-text-smoll global-text-white">
                 Выезд на причал.  Морская прогулка по Авачинской бухте. Осмотр панорамы города Петропавловска-Камчатского, Авачинской губы и Авачинского залива. Маршрут пролегает мимо бухты Тихая, острова Бабушкин камень, мыса Станицкого, камней «Три брата». Увлекательная возможность донной рыбалки на терпуга, ленка, камбалу у «Трех братьев», мыса Безымянный, у острова Старичков.
               </p>
-              <p>
+              <p className="global-text-smoll global-text-white">
                 Осмотр птичьих базаров - смешанных колонии кайр, моевок и бакланов. Трансфер в гостиницу.
               </p>
-              <p>
+              <p className="global-text-smoll global-text-white">
                 Продолжительность 6 часов.
               </p>
             </div>
@@ -219,16 +221,30 @@ function Schedule() {
             </div>
           </div>
 
-          <div className="sixth-day">
+          <div className="sixth-day global-day">
 
             <div className="sixth-day-text">
               <h2 className="days-title"><span>День 6.</span> Берег Тихого океана, экскурсия по городу </h2>
-              <p>
+              <p className="global-text-smoll global-text-white">
                 Поездка на берег Тихого океана, в район Халактырского пляжа. Прогулка. Обед в городе. Обзорная экскурсия по г. Петропавловску-Камчатскому с посещением смотровых площадок. Рыбный рынок. 
               </p>
-              <p>
+              <p className="global-text-smoll global-text-white">
                 Продолжительность -5 часов.  Трансфер в гостиницу.
               </p>
+
+              <div className="sixth-addition">
+                <h3>Дополнительные услуги</h3>
+                <div>
+                  <p>Серфинг</p>
+                  <p>Прыжки с высоты над водопадом.<br />Записываться заранее. </p>
+                </div>
+                <div>
+                  <p>SUP борды</p>
+                  <p>Прыжки с высоты над водопадом.<br />Записываться заранее. </p>
+                </div>
+
+              </div>
+
             </div>
 
             <div className="sixth-day-slider">
@@ -236,6 +252,74 @@ function Schedule() {
             </div>
           </div>
           
+
+        </div>
+
+        <div className="seventh-day container">
+
+          <div className="seventh-day-text">
+
+            <h2 className="seventh-text-title"><span>День 7.</span> Вертолетная экскурсия в Долину Гейзеров и кальдеру вулкана Узон / свободный день</h2>
+    
+            <div className="seventh-day-text-top">
+              <p className="global-text-smoll global-text-black">
+                Экскурсия проводится в содружестве с «ВИТЯЗЬ-ТРЕВЕЛ», крупнейшим оператором вертолётных туров на Камчатке. Выезд в аэропорт «Витязь –Аэро». К вашим услугам –современный аэропортовый комплекс, включающий в себя удобный зал ожидания, кафетерий, сувенирный магазин.
+              </p>
+
+              <p className="global-text-smoll global-text-black">
+                Перелёт до Долины гейзеров занимает 1 час 10 минут. По пути, при благоприятных условиях, вы осмотрите два действующих вулкана – Карымский и Малый Семячик из окон вертолёта.  
+              </p>
+            </div>
+
+            <div className="seventh-day-geysers">
+              <img src="./second-day-mountain.png"></img>
+            </div>
+
+            <p className="seventh-day-text-middle global-text-smoll global-text-black">
+                Перелёт и посадка в кальдере Узон. Кальдера образовалась в результате обрушения стенок древнего вулкана около 40 тысяч лет назад, на её дне очень ярко проявляется гидротермальная деятельность.Сотни столбов пара вырываются здесь из жёлтых фумарольных полей. Осмотр термальных полей.
+            </p>
+
+            <div className="seventh-day-text-bottom">
+              <p className="global-text-smoll global-text-black">
+                Перелёт и посадка в Налычевской долине. Купание в горячих источниках. Здесь же вам предложат обед - горячее, чай и камчатский морс. Трансфер в гостиницу. 
+              </p>
+
+              <div className="seventh-addition">
+
+                <h3>Дополнительные услуги</h3>
+
+                <div>
+                <p>Серфинг</p>
+                <p>Прыжки с высоты над водопадом.<br />Записываться заранее. </p>
+                </div>
+
+                <div>
+                <p>SUP борды</p>
+                <p>Прыжки с высоты над водопадом.<br />Записываться заранее. </p>
+                </div>
+
+              </div>
+
+            </div>
+
+            <div className="seventh-slider">
+              {/* <div> */}
+              {/* <Slider /> */}
+              {/* </div> */}
+              
+            </div>
+
+          </div>
+            
+        </div>
+
+        <div className="eighth-day container">
+          
+          <h2 className="days-title"><span>День 1.</span> Отъезд с Камчатки. Трансфер в аэропорт</h2>
+          
+          <p className="global-text-smoll global-text-white">
+            Заезд на рынок, прощальное посещение «медведей», фото на память. Возвращайтесь следующим летом!
+          </p>
 
         </div>
 
