@@ -1,0 +1,72 @@
+.page {
+    width: 100%;
+    margin: 0px;
+    padding: 0px; 
+    box-sizing: border-box;
+}
+
+.Container {
+    box-sizing: border-box;
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+    margin: 0px;
+    padding: 42px 16px;
+    text-align: left;
+}
+
+.Text-title {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 50px;
+    margin: 0px 0px 14px 0px;
+    padding: 0px;
+}
+
+.Text-title span{
+    color: #F47648;
+}
+
+.Text-pharagraf {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    margin: 0px;
+    padding: 10px 0px;
+}
+
+.Text-color-white {
+    color: white;
+}
+.Text-color-black {
+    color: #212121;
+}
+.Text-color-grey {
+    color: #ACACAC;
+}
+.Text-color-dark-grey {
+    color: #313131;
+}
+
+
+@media (min-width: 600px) {
+    .Container {
+        padding: 64px 40px;
+    }
+
+    .Text-title {
+        margin: 0px 0px 22px 0px;
+    }
+
+}
+
+@media (min-width: 800px) {
+    .Container {
+        padding: 80px 5%;
+    }
+
+}

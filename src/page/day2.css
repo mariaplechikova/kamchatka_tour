@@ -1,31 +1,11 @@
 .second-day {
-    width: 100%;
-    height: auto;
-    margin: 0;
-    box-sizing: border-box;
+    /* height: auto; */
 }
 
 .second-day-text {
     width: 100%;
     margin: 0;
     box-sizing: border-box;
-}
-
-.second-day-text h2 {
-    color: #000000;
-    margin: 0;
-    width: 100%;
-    height: auto;
-}
-
-.second-day-text p {
-    font-family: 'Lato';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
-    color: #313131;
-    margin: 0;
 }
 
 .second-day-mountain {
@@ -35,24 +15,18 @@
     z-index: 100;
     float: right;
     shape-outside: url(./image/second-day-mountain.png);
-    margin: 0;
-    padding: 0;
 }
 
 .second-day-cloud{
-    margin: 0px;
-    padding: 0px;
     position: absolute;
     left: -16px;
     width: 150%;
     bottom: 99%;
-    z-index: 1;
+    z-index: 10;
 }
 
 .second-day-cloud img {
     width: 100%;
-    margin: 0px;
-    padding: 0px;
 }
 
 @media (min-width: 600px) {
@@ -72,74 +46,70 @@
         width: 60%;
         right: -40px;
     }
+
 }
 
 @media (min-width: 800px) {
     .second-day {
         /* height: 100vh; */
         /* min-height: 870px; */
-        height: max(880px, 90vh);
+        height: max(900px, 90vh);
         /* box-sizing: border-box; */
         /* min-height: 850px; */
         /* height: max(800px, 100vh) */
         /* box-sizing: content-box; */
-    }
-
-    .second-day p {
-        /* margin: 0; */
+        
     }
 
     .second-day-text {
         height: 100%;
         box-sizing: border-box;
         display: grid;
-        gap: 20px;
+        /* gap: 20px; */
         /* justify-content: space-between; */
         /* align-content: space-between; */
-        grid-template-columns: 1fr 1fr 1.5fr;
-        grid-template-rows: 2fr 2fr 1fr 10fr;
-        grid-template-areas: "A A C"
-                             "B B C" 
-                             "B B C"
-                             "D D E";
+        grid-template-columns: 1.5fr 1fr;
+        grid-template-rows: auto auto auto;
     }
 
     .second-day-text h2 {
-        margin: 0px;
-        grid-area: A;
-        /* align-self: end; */
+        grid-row: 1 ;
+        grid-column: 1;
+        max-width: 750px;
     }
 
     .second-day-p-top {
-        height: 100%;
-        grid-area: B;
-        align-self: center;
+        grid-row: 2 ;
+        grid-column: 1;
+        max-width: 500px;
     }
 
     .second-day-mountain {
-        grid-area: C;
-        width: 120%;
-        align-self: end;
-        right: 5%;
-        top: auto;
-        bottom: -20%;
+        width: 100%;
+        /* max-width: 900px; */
+        /* bottom: -10%; */
+        right: 0vw;
         z-index: -1;
+        grid-row: 1 / span 2 ;
+        grid-column: 2;
     }
 
     .second-day-slider {
-        padding: 0;
-        grid-area: D;
         align-self: center;
         justify-self: end;
-        height: 100%;
-        box-sizing: border-box;
+        grid-row: 3 ;
+        grid-column: 1;
+        overflow: hidden;
+        min-height: 360px;
     }
 
     .second-day-p-bottom {
-        grid-area: E;
+        grid-row: 3 ;
+        grid-column: 2;
         align-self: start;
-        height: 320px;
         justify-content: flex-end;
+        padding-left: 35px;
+        padding-top: 40px;
     }
 
     .second-day-cloud{
@@ -152,7 +122,6 @@
         flex-direction: column;
         gap: 20px;
         box-sizing: border-box;
-        padding: 10px 0;
     }
 
 

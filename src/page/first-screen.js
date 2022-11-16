@@ -1,5 +1,5 @@
 import "./first-screen.css";
-import "./schedule.css";
+import "./page";
 import Slider from './slider'
 import React, { useState } from 'react';
 

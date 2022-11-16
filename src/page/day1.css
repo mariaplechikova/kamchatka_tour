@@ -1,11 +1,5 @@
 .first-day {
-    text-align: justify;
-    width: 100%;
-    margin: 0px;
     padding-bottom: 17vh;
-    position: relative;
-    box-sizing: border-box;
-    overflow: hidden;
     background-image: url(./image/background_first_day.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -18,8 +12,6 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-top: 51px;
-    margin-bottom: 29px;
     box-sizing: border-box;
 }
 
@@ -47,23 +39,17 @@
     .first-day {
         display: flex;
         justify-content: space-between;
-        align-items: Stretch;
         /* height: 160vh; */
         /* min-height: 900px; */
-        padding-top: 150px;
         padding-bottom: 50vh;
-        box-sizing: border-box;
         /* height: max(900px, 160vh); */
     }
 
     .first-day-text {
-        margin-top: 0px;
-        margin-bottom: 0px;
         display: flex;
         box-sizing: border-box;
         align-content: space-between;
         justify-content: space-between;
-        align-items: Stretch;
         flex-direction: column;
         width: 40%;
         min-width: 380px;
@@ -72,12 +58,11 @@
 
     .first-day-text h2 {
         min-width: 500px;
-        margin-bottom: 35px;
     }
 
     .first-day-text p {
-        padding: 0px;
-        margin: 0px;
+        /* padding: 0px;
+        margin: 0px; */
     }
 
     .first-day-slider {

@@ -1,0 +1,272 @@
+.journey-block {
+    padding-top: 48px;
+    padding-bottom: 37px;
+}
+.journey-block__text {
+    width: 100%;
+    /* height: 1360px; */
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    box-sizing: border-box;
+}
+
+.journey-block__text__title {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 40px;
+    color: #121212;
+    padding: 0px;
+    margin: 0px;
+    margin-bottom: 24px;
+}
+
+.journey-block__text__pharagraf-big {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+    color: #313131;
+    opacity: 0.8;
+    padding: 0px;
+    margin: 0px;
+}
+
+.journey-block__text__pharagraf-small {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #313131;
+    opacity: 0.8;
+    padding-top: 16px;
+    padding-bottom: 48px;
+}
+
+.journey-block__text__table {
+    display: flex;
+    justify-content: space-between;
+    align-content: space-between;
+    flex-wrap: wrap;
+    height: 250px;
+}
+
+.journey-block__text__table div {
+    width: 140px;
+    height: 130px;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.journey-block__text__table div p {
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
+
+.journey-block__text__table div p:nth-child(2) {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.journey-block__text__img-plane {
+    position: relative;
+    width: 100%;
+    height: 237px;
+}
+
+.journey-block__text__pharagraf-white {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 32px;
+    color: #FFFFFF;
+    margin: 0px;
+    padding: 0px;
+}
+
+.journey-block__background__plane {
+    z-index: 1000;
+    position: absolute;
+    width: 357px;
+    height: 231.7px;
+    top: 35%;
+    right: -100px;
+    transform: rotate(3.3deg);
+}
+
+.journey-block__text__quote-text {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    color: #DEDEDE;
+    max-width: 300px;
+    margin: 0;
+    padding-top: 19px;
+    padding-bottom: 13px;
+}
+
+.journey-block__text__quote-name {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+    margin: 0;
+    padding: 0;
+}
+
+.journey-block__background {
+    position: absolute;
+    bottom: 0px;
+    background-color: aqua;
+    width: 100%;
+    z-index: -10;
+    left: 0px;
+}
+
+.journey-block__background>div {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.journey-block__background__gradient {
+    z-index: 6;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(2.4deg, #000000 12.72%, rgba(0, 0, 0, 0.633721) 44.36%, rgba(248, 247, 247, 0) 70.61%, rgb(255, 253, 253) 90%);
+}
+
+.kamchatka {
+    display: none;
+}
+
+
+@media (min-width: 600px) {
+    .journey-block__text {
+        padding: 0px;
+        margin: 0px;
+    }
+
+    .journey-block__text__title {
+        width: 550px;
+        font-size: 48px;
+        line-height: 56px;
+        margin-bottom: 27px;
+    }
+
+    .journey-block__text__pharagraf-big {
+        font-size: 24px;
+        width: 530px;
+    }
+
+    .journey-block__text__pharagraf-small {
+        width: 540px;
+        padding-top: 35px;
+        padding-bottom: 64px;
+    }
+
+    .journey-block__text__table {
+        flex-wrap: nowrap;
+        height: 150px;
+    }
+    
+    .journey-block__text__table div {
+        width: auto;
+    }
+    
+    .journey-block__text__table div p {
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+
+    .journey-block__text__img-plane {
+        width: 344px;
+    }
+
+    .journey-block__text__pharagraf-white {
+        font-size: 24px;
+        width: 550px;
+    }
+
+    .journey-block__text__quote-text {
+        padding-top: 32px;
+        padding-bottom: 13px;
+    }
+    
+    .journey-block__background__plane {
+        width: 600px;
+        height: auto;
+        top: 27%;
+        right: -5px;
+    }
+    
+    .kamchatka {
+        position: absolute;
+        font-size: 20px;
+        left: 100px;
+        top: 0px;
+        background: linear-gradient(180deg, #000000 99.99%, rgba(0, 0, 0, 0) 100%);
+        border-radius: 16px;
+        z-index: 1000;
+    }
+}
+
+@media (min-width: 800px) {
+    .journey-block {
+        padding-top: 120px;
+        padding-bottom: 147px;
+    }
+
+    .journey-block__text__title {
+        width: 728px;
+    }
+
+    .journey-block__text__table {
+        justify-content: flex-start;
+        gap: 64px;
+    }
+    
+    .journey-block__text__table div {
+        width: auto;
+    }
+    
+    .journey-block__text__img-plane {
+        height: 382px;
+    }
+    
+    .journey-block__background__plane {
+        width: 802.81px;
+        top: calc(50% - 550px);
+        right: -10px;
+    }
+    
+    .kamchatka {
+        position: absolute;
+        font-size: 20px;
+        left: 100px;
+        top: 0px;
+        background: linear-gradient(180deg, #000000 99.99%, rgba(0, 0, 0, 0) 100%);
+        border-radius: 16px;
+        z-index: 1000;
+    }
+    
+    .journey-block__background__mountains {
+        width: 100vw;
+    }
+}
