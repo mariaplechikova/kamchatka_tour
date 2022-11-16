@@ -74,8 +74,14 @@ background: linear-gradient(91.82deg, #FB8B62 5.83%, #F47648 89.73%), #F47648;
 backdrop-filter: blur(34px);
 border-radius: 16px;
 text-align: center;
-padding-top: 16px;
 box-sizing: border-box;
+vertical-align: middle;
+padding-top: 18px;
+}
+
+.date p {
+    padding: 0px;
+    margin: 0px;
 }
 
 .description {
@@ -125,7 +131,13 @@ font-size: 18px;
         font-size: 30px;
         width: 481px;
         height: 61px;
-        padding-top: 9px;
+        padding-top: 15px;
+        position: relative;
+    }
+
+    .date p {
+        padding: 0px;
+        margin: 0px;
     }
 
     .description {
@@ -166,7 +178,7 @@ font-size: 18px;
     .date {
         width: 433px;
         height: 56px;
-        padding-top: 2px;
+        padding-top: 10px;
     }
 
     .slider-container {

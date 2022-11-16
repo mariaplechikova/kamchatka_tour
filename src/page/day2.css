@@ -1,5 +1,5 @@
 .second-day {
-    /* height: auto; */
+    z-index: 10;
 }
 
 .second-day-text {
@@ -17,30 +17,11 @@
     shape-outside: url(./image/second-day-mountain.png);
 }
 
-.second-day-cloud{
-    position: absolute;
-    left: -16px;
-    width: 150%;
-    bottom: 99%;
-    z-index: 10;
-}
-
-.second-day-cloud img {
-    width: 100%;
-}
-
 @media (min-width: 600px) {
-    /* .second-day-text p:nth-child(-n+3) {
-        width: 70%;
-    }
 
-    .second-day-text p:nth-child(5) {
-        width: 45%;
-    } */
-
-    .second-day-cloud {
+    /* .second-day-cloud {
         width: 105%;
-    }
+    } */
 
     .second-day-mountain {
         width: 60%;
@@ -51,23 +32,13 @@
 
 @media (min-width: 800px) {
     .second-day {
-        /* height: 100vh; */
-        /* min-height: 870px; */
         height: max(900px, 90vh);
-        /* box-sizing: border-box; */
-        /* min-height: 850px; */
-        /* height: max(800px, 100vh) */
-        /* box-sizing: content-box; */
-        
     }
 
     .second-day-text {
         height: 100%;
         box-sizing: border-box;
         display: grid;
-        /* gap: 20px; */
-        /* justify-content: space-between; */
-        /* align-content: space-between; */
         grid-template-columns: 1.5fr 1fr;
         grid-template-rows: auto auto auto;
     }
@@ -85,10 +56,8 @@
     }
 
     .second-day-mountain {
-        width: 100%;
-        /* max-width: 900px; */
-        /* bottom: -10%; */
-        right: 0vw;
+        width: 110%;
+        right: -5%;
         z-index: -1;
         grid-row: 1 / span 2 ;
         grid-column: 2;
@@ -112,10 +81,10 @@
         padding-top: 40px;
     }
 
-    .second-day-cloud{
+    /* .second-day-cloud{
         left: 0px;
         z-index: 1;
-    }
+    } */
 
     .second-day-p-top, .second-day-p-bottom {
         display: flex;

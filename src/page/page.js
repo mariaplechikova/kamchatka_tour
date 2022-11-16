@@ -105,6 +105,8 @@ function Page() {
             <div className="first-day-slider">
               <Slider />
             </div>
+
+            <img src="./second-day-cloud.png" className="Cloud" />
               
         </div>
 
@@ -141,11 +143,7 @@ function Page() {
               </div>
              
             </div>
-
-            <div className="second-day-cloud">
-              <img src="second-day-cloud.png"></img>
-            </div> 
-          
+ 
         </div>
 
         <div className="services-block Container">
@@ -237,8 +235,6 @@ function Page() {
               <Slider />
             </div>
           </div>
-
-          
           
           <div className="fifth-day Container">
 
@@ -293,63 +289,60 @@ function Page() {
               <Slider />
             </div>
           </div>
-          
 
+          <img src="./second-day-cloud.png" className="Cloud" />  
+        
         </div>
 
         <div className="seventh-day Container">
+            
+            <div className="seventh-day-text">
+              <h2 className="Text-title Text-color-black"><span>День 7.</span> Вертолетная экскурсия в Долину Гейзеров и кальдеру вулкана Узон / свободный день</h2>
+              
+              <div  className="seventh-day-p-top">
+                <p className="Text-pharagraf Text-color-dark-grey">
+                  Экскурсия проводится в содружестве с «ВИТЯЗЬ-ТРЕВЕЛ», крупнейшим оператором вертолётных туров на Камчатке. Выезд в аэропорт «Витязь –Аэро». К вашим услугам –современный аэропортовый комплекс, включающий в себя удобный зал ожидания, кафетерий, сувенирный магазин.
+                </p>
+                <p className="Text-pharagraf Text-color-dark-grey">
+                  Перелёт до Долины гейзеров занимает 1 час 10 минут. По пути, при благоприятных условиях, вы осмотрите два действующих вулкана – Карымский и Малый Семячик из окон вертолёта.  
+                </p>
+              </div>
+              
+              <img src="./seventh-day-geyser.png" className="seventh-day-geyser"></img>
 
-          <div className="seventh-day-text">
-
-            <h2 className="Text-title Text-color-black"><span>День 7.</span> Вертолетная экскурсия в Долину Гейзеров и кальдеру вулкана Узон / свободный день</h2>
-    
-            <div className="seventh-day-text-top">
-              <p className="Text-pharagraf Text-color-dark-grey">
-                Экскурсия проводится в содружестве с «ВИТЯЗЬ-ТРЕВЕЛ», крупнейшим оператором вертолётных туров на Камчатке. Выезд в аэропорт «Витязь –Аэро». К вашим услугам –современный аэропортовый комплекс, включающий в себя удобный зал ожидания, кафетерий, сувенирный магазин.
-              </p>
-
-              <p className="Text-pharagraf Text-color-dark-grey">
-                Перелёт до Долины гейзеров занимает 1 час 10 минут. По пути, при благоприятных условиях, вы осмотрите два действующих вулкана – Карымский и Малый Семячик из окон вертолёта.  
-              </p>
-            </div>
-
-        
-            <img src="seventh-day-geyser.png" className="seventh-day-geysers"></img>
-          
-
-            <p className="seventh-day-text-middle Text-pharagraf Text-color-dark-grey">
+              <p className="seventh-day-text-middle Text-pharagraf Text-color-dark-grey">
                 Перелёт и посадка в кальдере Узон. Кальдера образовалась в результате обрушения стенок древнего вулкана около 40 тысяч лет назад, на её дне очень ярко проявляется гидротермальная деятельность.Сотни столбов пара вырываются здесь из жёлтых фумарольных полей. Осмотр термальных полей.
-            </p>
-
-            <div className="seventh-day-text-bottom">
-              <p className="Text-pharagraf Text-color-dark-grey">
-                Перелёт и посадка в Налычевской долине. Купание в горячих источниках. Здесь же вам предложат обед - горячее, чай и камчатский морс. Трансфер в гостиницу. 
               </p>
 
-              <div className="seventh-addition">
+              <div className="seventh-day-p-bottom">
+                <p className="Text-pharagraf Text-color-dark-grey">
+                  Перелёт и посадка в Налычевской долине. Купание в горячих источниках. Здесь же вам предложат обед - горячее, чай и камчатский морс. Трансфер в гостиницу.
+                </p>
 
-                <h3>Дополнительные услуги</h3>
+                <div className="seventh-addition">
 
-                <div>
-                <p>Серфинг</p>
-                <p>Прыжки с высоты над водопадом.<br />Записываться заранее. </p>
+                  <h3>Дополнительные услуги</h3>
+
+                  <div>
+                    <p>Серфинг</p>
+                    <p>Прыжки с высоты над водопадом.<br />Записываться заранее. </p>
+                  </div>
+
+                  <div>
+                    <p>SUP борды</p>
+                    <p>Прыжки с высоты над водопадом.<br />Записываться заранее. </p>
+                  </div>
+
                 </div>
-
-                <div>
-                <p>SUP борды</p>
-                <p>Прыжки с высоты над водопадом.<br />Записываться заранее. </p>
-                </div>
-
+                
               </div>
 
+              <div className="seventh-day-slider">
+                <Slider />
+              </div>
+             
             </div>
-
-            <div className="seventh-slider">
-              {/* <Slider /> */}
-            </div>
-
-          </div>
-            
+          
         </div>
 
         <div className="eighth-day Container">

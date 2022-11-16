@@ -1,5 +1,5 @@
-.seventh-day {
-    /* background-color: blue; */
+/* .seventh-day {
+    
 }
 
 .seventh-addition h3{
@@ -118,12 +118,10 @@
         right: -15%;
         bottom: 0px;
         grid-row: 1 / span 3;
-        /* grid-row-end: 3; */
         grid-column: 2;
         justify-items: end;
         align-items: center;
         bottom: 0px;
-        /* background-color: aqua; */
     }
     .seventh-day-text-middle {
         grid-row: 3 ;
@@ -147,16 +145,154 @@
         width: 100%;
         height: 100%;
         background-color: darkgoldenrod;
-        /* text-align: left; */
         position: relative;
     }
 
     .seventh-day-slider div{
-        /* width: 100px; */
-        /* height: 100px; */
-        /* position: relative; */
-        /* right: 0px; */
         background-color: aquamarine;
     }
+
+} */
+
+.seventh-day-text {
+    width: 100%;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.seventh-day-geyser {
+    width: 100vw;
+    position: relative;
+    right: -16px;
+    z-index: 100;
+    float: right;
+}
+
+.seventh-addition h3{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 28px;
+    color: #212121;
+}
+
+.seventh-addition p {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: #5A5A5A;
+    opacity: 0.7;
+}
+
+.seventh-addition div p:first-of-type {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    color: #212121;
+    opacity: 1;
+}
+
+.seventh-addition div {
+    border-bottom: 1px solid  #5A5A5A;
+}
+
+.seven-day__cloud {
+    position: relative;
+    z-index: 10;
+    width: 110%;
+    height: auto;
+    bottom: -5px;
+    /* background-color: blueviolet; */
+    left: -10px;
+}
+
+
+@media (min-width: 600px) {
+
+
+    .seventh-day-geyser {
+        width: 60%;
+        right: -40px;
+    }
+
+    .seventh-addition div{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+}
+
+@media (min-width: 800px) {
+    .seventh-day {
+        /* height: max(900px, 90vh); */
+    }
+
+    .seventh-day-text {
+        height: 100%;
+        box-sizing: border-box;
+        display: grid;
+        grid-template-columns: 1.5fr 1fr;
+        grid-template-rows: auto auto auto auto;
+    }
+
+    .seventh-day-text h2 {
+        grid-row: 1 ;
+        grid-column: 1;
+        max-width: 750px;
+    }
+
+    .seventh-day-p-top {
+        grid-row: 2 ;
+        grid-column: 1;
+        /* max-width: 500px; */
+    }
+
+    .seventh-day-text-middle{
+        grid-row: 3 ;
+        grid-column: 1;
+    }
+
+    .seventh-day-geyser {
+        width: 110%;
+        right: -5%;
+        z-index: -1;
+        grid-row: 1 / span 3 ;
+        grid-column: 2;
+        align-self: center;
+    }
+
+    .seventh-day-slider {
+        align-self: center;
+        justify-self: end;
+        grid-row: 4 ;
+        grid-column: 1;
+        overflow: hidden;
+        min-height: 360px;
+    }
+
+    .seventh-day-p-bottom {
+        grid-row: 4 ;
+        grid-column: 2;
+        align-self: start;
+        justify-content: flex-end;
+        padding-left: 35px;
+        padding-top: 40px;
+    }
+
+    .seventh-day-p-top, .seventh-day-p-bottom {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        box-sizing: border-box;
+    }
+
+
 
 }

@@ -12,7 +12,7 @@ function FirstScreen() {
       <div className="first-screen-container">
         <div className="first-screen-text">
           <h1>Мечты о далекой Камчатке - близко</h1>
-          <div className="date">23.06-04.07 DREAM TOUR</div>
+          <div className="date"><p>23.06-04.07 DREAM TOUR</p></div>
           <div className="description">Тур перевернет ваш мир с ног на голову и оставит впечатления на всю жизнь.</div>
           
           <div className="schedule">
