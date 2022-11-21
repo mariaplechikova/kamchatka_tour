@@ -281,9 +281,12 @@
         grid-row: 4 ;
         grid-column: 2;
         align-self: start;
-        justify-content: flex-end;
+        justify-content: space-between;
         padding-left: 35px;
-        padding-top: 40px;
+        /* padding-top: 40px; */
+        height: 332px;
+        box-sizing: border-box;
+        margin-top: 32px;
     }
 
     .seventh-day-p-top, .seventh-day-p-bottom {

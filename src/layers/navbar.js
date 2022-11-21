@@ -7,11 +7,11 @@ import SideBar from "./side-bar";
 export default function Navbar() {
   return (
     <div id="Navbar">
-      <div className="navbar-container">
+      {/* <div className="navbar-container"> */}
         <Logo className="logo" />
-        <SideBar  outerContainerId={"Navbar"} />
+        <SideBar outerContainerId={"Navbar"} />
         
-      </div>
+      {/* </div> */}
 
       
       

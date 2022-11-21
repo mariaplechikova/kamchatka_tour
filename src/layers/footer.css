@@ -1,26 +1,26 @@
-.footer {
-    background-color: #212121;
+footer {
     width: 100%;
+    margin: 0;
+    padding: 16px;
+    box-sizing: border-box;
+    background-color: #212121;
     display: flex;
+    flex-direction: column;
     justify-content: center;
 }
 
-footer {
-    color: white;
+.footer-block {
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    
-    
-    width: 100%;
-    /* width: 1248px; */
+    box-sizing: border-box;
     flex-wrap: wrap;
     text-align: left;
     margin-top: 48px;
     margin-bottom: 19px;
-    margin-left: 17px;
-    margin-right: 17px;
-    box-sizing: border-box;
+    color: white;
+    gap: 15px;
 }
 
 footer div {
@@ -31,6 +31,7 @@ footer div {
     width: 100%;
     margin: 0px;
     font-size: 14px;
+    text-align: left;
 }
 
 .copyright hr {
@@ -38,7 +39,7 @@ footer div {
     height: 1px;
     background-color: #363636;
     margin-top: 55px;
-    margin-bottom: 24px;
+    margin-bottom: 18px;
 }
 
 .grey {
@@ -69,12 +70,17 @@ hr {
 
 @media (min-width: 600px) {
     footer {
-        margin-top: 63px; 
-        margin-bottom: 24px;
-        margin-left: 40px;
-        margin-right: 40px;
+        /* margin-top: 63px; 
+        margin-bottom: 24px; */
+        padding-left: 40px;
+        padding-right: 40px;
+        /* flex-direction: row;
+        gap: 40px; */
+    }
+
+    .footer-block {
         flex-direction: row;
-        gap: 40px;
+        flex-wrap: wrap;
     }
 
     hr {
@@ -96,7 +102,12 @@ hr {
 
 @media (min-width: 850px) {
     footer {
-        width: 1248px;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .footer-block {
+        flex-wrap: nowrap;
     }
 
     /* .big {

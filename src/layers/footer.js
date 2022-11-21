@@ -3,9 +3,9 @@ import Logo from "./logo.js";
 
 function Footer() {
   return (
-    <div className="footer">
+    <footer>
 
-        <footer>
+        <div className="footer-block">
 
             <div className="smoll">
                 <Logo />
@@ -57,14 +57,14 @@ function Footer() {
                 
             </div>
 
-            <div className="copyright grey">
-                <hr></hr>
-                2021 &copy; Dreamkam Tour
-            </div>
+        </div>
 
-    </footer>
+        <div className="copyright grey">
+            <hr></hr>
+            2021 &copy; Dreamkam Tour
+        </div>
     
-    </div>
+    </footer>
   );
 }
 

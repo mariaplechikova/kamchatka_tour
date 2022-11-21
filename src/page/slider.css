@@ -1,7 +1,8 @@
 .slider {
     position: relative;
     /* left: 736px; */
-    /* margin-top: 44px; */
+    margin-top: 45px;
+    transition: 0.5s
 }
 
 .sliderBox {
@@ -9,16 +10,46 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
+    
 }
 
 .sliderImage {
-    width: 320px;
-    height: 320px;
+    /* width: 320px; */
+    /* height: 320px; */
     overflow: hidden;
+    filter: drop-shadow(0px 6px 14px rgba(0, 0, 0, 0.671));
+    position: relative;
 }
 
 .sliderImage img {
     height: 100%;
+}
+
+.sliderImage__description {
+    position: absolute;
+    width: 100%;
+    bottom: 0px;
+    height: 120px;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: auto;
+    color: #BDBDBD;
+    padding: 16px;
+    text-align: justify;
+    background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.459) 20%, rgba(0, 0, 0, 0.863) 85%);
+    box-sizing: border-box;
+}
+
+.sliderImage__description p {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    color: #FFFFFF;
+    margin: 0;
+    padding: 0 0 10px 0;
 }
 
 .sliderBox div:first-child {
@@ -29,17 +60,25 @@
 .sliderButton {
     margin-top: 20px;
     width: 100%;
+    /* text-align: center; */
 }
 
 .sliderButton button {
     width: 38px;
     height: 38px;
     font-size: 20px;
-    color: white;
-    border: 1px solid white;
+    font-weight: 700;
+    /* color: white; */
+    /* border: 1px solid white; */
     border-radius: 50%;
     background-color: transparent;
     cursor: pointer;
+    opacity: 60%;
+    transition: 0.5s
+}
+
+.sliderButton button:hover {
+    opacity: 100%;
 }
 
 .sliderButton button:first-child {

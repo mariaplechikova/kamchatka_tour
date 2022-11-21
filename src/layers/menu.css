@@ -64,12 +64,13 @@ button {
 
   @media (min-width: 600px) {
     
-
+*/
 @media (min-width: 850px) {
-  .nav-links  {
-    display: block;
+  .menu {
+    padding-left: 40px;
+    padding-right: 40px;
   }
-} */
+} 
 
 
 /* .navbar {
@@ -120,6 +121,8 @@ button {
       display: flex;
     align-items: center;
     justify-content: center;
+    padding-left: 5%;
+    padding-right: 5%;
     }
 
     .navbar {

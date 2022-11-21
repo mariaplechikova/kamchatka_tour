@@ -1,6 +1,6 @@
 import "./logo.css";
 
-function Logo() {
+function Logo(props) {
   return (
       <div className="logo">
         <img src='logo.png'/>

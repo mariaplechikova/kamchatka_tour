@@ -52,16 +52,16 @@
     color: #313131;
 }
 
-.Cloud {
-    position: relative;
-    z-index: 10;
-    width: 110%;
-    height: auto;
-    bottom: -5px;
-    /* background-color: blueviolet; */
-    left: -5px;
+.Links {
+    cursor: pointer;
+    transition: 0.7s;
+    
 }
 
+.Links:hover {
+    color: #F47648;
+    
+}
 
 @media (min-width: 600px) {
     .Container {

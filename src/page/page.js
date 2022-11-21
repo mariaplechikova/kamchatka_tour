@@ -12,6 +12,133 @@ import "./application-block.css";
 import Slider from './slider'
 
 function Page() {
+  const listImg1 = [
+    {url:'slider1.jpg',
+    title: "Бурые медведи",
+    description: "Медведи Камчатки основные хозяева территории. Чаще всего встречаются на реках, озёрах и в океанских бухтах"},
+
+    {url:'slider2.jpg',
+    title: "Долина гейзеров",
+    description: "На территории в 6 квадратных километров находятся грязевые вулканы, гейзеры, озёра, термальные источники, реки, водопады."},
+
+    {url: 'slider3.jpg',
+    title: "Ключевская сопка",
+    description: "Самый высокий действующий вулкан в Евразии. Возраст приблизительно 7000 лет."},
+
+    {url: 'slider4.jpg',
+    title: "Бурые медведи",
+    description: "Есть хорошая возможность понаблюдеть бурых медведей в естественной среде обитания"}
+  ]
+  
+  const listImg2 = [
+    {url:'slider1.jpg',
+    title: "Бурые медведи",
+    description: "Медведи Камчатки основные хозяева территории. Чаще всего встречаются на реках, озёрах и в океанских бухтах"},
+
+    {url:'slider2.jpg',
+    title: "Долина гейзеров",
+    description: "На территории в 6 квадратных километров находятся грязевые вулканы, гейзеры, озёра, термальные источники, реки, водопады."},
+
+    {url: 'slider3.jpg',
+    title: "Ключевская сопка",
+    description: "Самый высокий действующий вулкан в Евразии. Возраст приблизительно 7000 лет."},
+
+    {url: 'slider4.jpg',
+    title: "Бурые медведи",
+    description: "Есть хорошая возможность понаблюдеть бурых медведей в естественной среде обитания"}
+  ]
+
+  const listImg3 = [
+    {url:'slider1.jpg',
+    title: "Бурые медведи",
+    description: "Медведи Камчатки основные хозяева территории. Чаще всего встречаются на реках, озёрах и в океанских бухтах"},
+
+    {url:'slider2.jpg',
+    title: "Долина гейзеров",
+    description: "На территории в 6 квадратных километров находятся грязевые вулканы, гейзеры, озёра, термальные источники, реки, водопады."},
+
+    {url: 'slider3.jpg',
+    title: "Ключевская сопка",
+    description: "Самый высокий действующий вулкан в Евразии. Возраст приблизительно 7000 лет."},
+
+    {url: 'slider4.jpg',
+    title: "Бурые медведи",
+    description: "Есть хорошая возможность понаблюдеть бурых медведей в естественной среде обитания"}
+  ]
+
+  const listImg4 = [
+    {url:'slider1.jpg',
+    title: "Бурые медведи",
+    description: "Медведи Камчатки основные хозяева территории. Чаще всего встречаются на реках, озёрах и в океанских бухтах"},
+
+    {url:'slider2.jpg',
+    title: "Долина гейзеров",
+    description: "На территории в 6 квадратных километров находятся грязевые вулканы, гейзеры, озёра, термальные источники, реки, водопады."},
+
+    {url: 'slider3.jpg',
+    title: "Ключевская сопка",
+    description: "Самый высокий действующий вулкан в Евразии. Возраст приблизительно 7000 лет."},
+
+    {url: 'slider4.jpg',
+    title: "Бурые медведи",
+    description: "Есть хорошая возможность понаблюдеть бурых медведей в естественной среде обитания"}
+  ]
+
+  const listImg5 = [
+    {url:'slider1.jpg',
+    title: "Бурые медведи",
+    description: "Медведи Камчатки основные хозяева территории. Чаще всего встречаются на реках, озёрах и в океанских бухтах"},
+
+    {url:'slider2.jpg',
+    title: "Долина гейзеров",
+    description: "На территории в 6 квадратных километров находятся грязевые вулканы, гейзеры, озёра, термальные источники, реки, водопады."},
+
+    {url: 'slider3.jpg',
+    title: "Ключевская сопка",
+    description: "Самый высокий действующий вулкан в Евразии. Возраст приблизительно 7000 лет."},
+
+    {url: 'slider4.jpg',
+    title: "Бурые медведи",
+    description: "Есть хорошая возможность понаблюдеть бурых медведей в естественной среде обитания"}
+  ]
+
+  const listImg6 = [
+    {url:'slider1.jpg',
+    title: "Бурые медведи",
+    description: "Медведи Камчатки основные хозяева территории. Чаще всего встречаются на реках, озёрах и в океанских бухтах"},
+
+    {url:'slider2.jpg',
+    title: "Долина гейзеров",
+    description: "На территории в 6 квадратных километров находятся грязевые вулканы, гейзеры, озёра, термальные источники, реки, водопады."},
+
+    {url: 'slider3.jpg',
+    title: "Ключевская сопка",
+    description: "Самый высокий действующий вулкан в Евразии. Возраст приблизительно 7000 лет."},
+
+    {url: 'slider4.jpg',
+    title: "Бурые медведи",
+    description: "Есть хорошая возможность понаблюдеть бурых медведей в естественной среде обитания"}
+  ]
+
+  const listImg7 = [
+    {url:'slider1.jpg',
+    title: "Бурые медведи",
+    description: "Медведи Камчатки основные хозяева территории. Чаще всего встречаются на реках, озёрах и в океанских бухтах"},
+
+    {url:'slider2.jpg',
+    title: "Долина гейзеров",
+    description: "На территории в 6 квадратных километров находятся грязевые вулканы, гейзеры, озёра, термальные источники, реки, водопады."},
+
+    {url: 'slider3.jpg',
+    title: "Ключевская сопка",
+    description: "Самый высокий действующий вулкан в Евразии. Возраст приблизительно 7000 лет."},
+
+    {url: 'slider4.jpg',
+    title: "Бурые медведи",
+    description: "Есть хорошая возможность понаблюдеть бурых медведей в естественной среде обитания"}
+  ]
+
+
   return (
     <div className="page">
             
@@ -85,28 +212,30 @@ function Page() {
 
         <div className="first-day Container">
 
-            <div className="first-day-text">
-              
-              <h2 className="Text-title Text-color-white"><span>День 1.</span> Прибытие. Встреча в аэропорту и размещение</h2>
-              <p className="Text-pharagraf Text-color-grey">
-                С высоты птичьего полета вы увидите знаменитые «домашние»  вулканы – Корякский, Авачинский и Козельский. У выхода в аэропорту <span>вас встретят с табличкой «ДРИМ ТУР».</span>
-              </p>
-              <p className="Text-pharagraf Text-color-grey">
-                <span>По пути в гостиницу сбор средств</span> с членов группы, инструктаж по программе этого дня (бассейн с термальной водой, шашлык, знакомство с группой, алкоголь, фейерверк не раньше 20:00). 
-              </p>
-              <p className="Text-pharagraf Text-color-grey">
-                После выезд (вид транспорта зависит от величины группы) на базу отдыха в курортный поселок Паратунка. 
-              </p>
-              <p className="Text-pharagraf Text-color-grey">
-                <span>Вечером</span>, после прибытия на Камчатку всех участников (если рейсы разные),  общая встреча, проверка снаряжения,  обсуждение программы завтрашнего дня.
-              </p>
+            <div className="first-day__content">
+              <div className="first-day-text">
+                
+                <h2 className="Text-title Text-color-white"><span>День 1.</span> Прибытие. Встреча в аэропорту и размещение</h2>
+                <p className="Text-pharagraf Text-color-grey">
+                  С высоты птичьего полета вы увидите знаменитые «домашние»  вулканы – Корякский, Авачинский и Козельский. У выхода в аэропорту <span>вас встретят с табличкой «ДРИМ ТУР».</span>
+                </p>
+                <p className="Text-pharagraf Text-color-grey">
+                  <span>По пути в гостиницу сбор средств</span> с членов группы, инструктаж по программе этого дня (бассейн с термальной водой, шашлык, знакомство с группой, алкоголь, фейерверк не раньше 20:00). 
+                </p>
+                <p className="Text-pharagraf Text-color-grey">
+                  После выезд (вид транспорта зависит от величины группы) на базу отдыха в курортный поселок Паратунка. 
+                </p>
+                <p className="Text-pharagraf Text-color-grey">
+                  <span>Вечером</span>, после прибытия на Камчатку всех участников (если рейсы разные),  общая встреча, проверка снаряжения,  обсуждение программы завтрашнего дня.
+                </p>
+              </div>
+
+              <div className="first-day-slider">
+                <Slider size="320px" color='white' alignMobil="left" alignDesktop="left" arr={listImg1}/>
+              </div>
             </div>
 
-            <div className="first-day-slider">
-              <Slider />
-            </div>
-
-            <img src="./second-day-cloud.png" className="Cloud" />
+            <img src="./second-day-cloud.png" className="first-day__cloud" />
               
         </div>
 
@@ -139,7 +268,7 @@ function Page() {
               </div>
 
               <div className="second-day-slider">
-                <Slider />
+                <Slider size="320px" color="black" alignMobil="left" alignDesktop="right" arr={listImg2}/>
               </div>
              
             </div>
@@ -201,7 +330,7 @@ function Page() {
           </div>
 
           <div className="third-day-slider">
-            <Slider />
+            <Slider size="320px" color="black" alignMobil="left" alignDesktop="right" arr={listImg3}/>
           </div>
 
           {/* <div className="third-day-background"> */}
@@ -232,7 +361,7 @@ function Page() {
             </div>
 
             <div className="fourth-day-slider">
-              <Slider />
+              <Slider size="320px" color="white" alignMobil="left" alignDesktop="left" arr={listImg4}/>
             </div>
           </div>
           
@@ -255,7 +384,7 @@ function Page() {
             </div>
             
             <div className="fifth-day-slider">
-              <Slider />
+              <Slider size="320px" color="white" alignMobil="left" alignDesktop="right" arr={listImg5}/>
             </div>
           </div>
 
@@ -286,11 +415,11 @@ function Page() {
             </div>
 
             <div className="sixth-day-slider">
-              <Slider />
+              <Slider size="320px" color="white" alignMobil="left" alignDesktop="left" arr={listImg6}/>
             </div>
           </div>
 
-          <img src="./second-day-cloud.png" className="Cloud" />  
+          <img src="./second-day-cloud.png" className="block-day__cloud" />  
         
         </div>
 
@@ -338,7 +467,7 @@ function Page() {
               </div>
 
               <div className="seventh-day-slider">
-                <Slider />
+                <Slider size="320px" color="black" alignMobil="left" alignDesktop="right" arr={listImg7}/>
               </div>
              
             </div>
@@ -374,7 +503,7 @@ function Page() {
             </div>
           </div>
 
-            <div className="prise-block__send-request"><a>Отправить заявку</a></div>
+            <div className="prise-block__send-request Links"><a>Отправить заявку</a></div>
             <div className="prise-block__description">
               <p>В стоимость входит</p>
               <ul className="Text-pharagraf Text-color-dark-grey">
@@ -396,9 +525,9 @@ function Page() {
               </ul>
             </div>
             <div className="prise-block__useful-links">
-              <a>Информация о бронях</a>
-              <a>Важная информация</a>
-              <a>Условия договора и возврата</a>
+              <a className="Links">Информация о бронях</a>
+              <a  className="Links">Важная информация</a>
+              <a  className="Links">Условия договора и возврата</a>
             </div>
           
         </div>
@@ -466,7 +595,7 @@ function Page() {
               <input type='textarea' value="Напишите Ваш комментарий" className="application-block__form-input"></input>
             </label>
 
-            <button className="application-block__form__button">Отправить заявку</button>
+            <button className="application-block__form__button Links">Отправить заявку</button>
 
           </form>
 

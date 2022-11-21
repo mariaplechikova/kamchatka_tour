@@ -15,8 +15,10 @@ function FirstScreen() {
           <div className="date"><p>23.06-04.07 DREAM TOUR</p></div>
           <div className="description">Тур перевернет ваш мир с ног на голову и оставит впечатления на всю жизнь.</div>
           
-          <div className="schedule">
-            <a href="">Расписание тура</a>
+          <div className="first-screen__link Links">
+            <a href="" className="Links">Расписание тура</a>
+            <img src="./icons8-стрелка-вправо-вниз-в-круге-2-100.png" className="Links" />
+            {/* <div className="first-screen__arrow Links"><p>&larr;</p></div> */}
           </div>
 
           <div className="social-network desctop">
@@ -32,7 +34,7 @@ function FirstScreen() {
         
 
         <div className="slider-container">
-          <Slider />
+          {/* <Slider size="320px" color="white" align="left" arr={listImg}/> */}
         </div>
         
         <div className="social-network mobile">
