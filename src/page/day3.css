@@ -30,7 +30,7 @@
 
 @media (min-width: 800px) {
     .third-day {
-        height: max(700px, 100vh);
+        /* height: max(700px, 100vh); */
         display: flex;
         justify-content: space-between;
     }

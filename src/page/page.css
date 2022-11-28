@@ -16,7 +16,8 @@
 }
 
 .Text-title {
-    font-family: 'Montserrat';
+    /* font-family: 'Montserrat'; */
+    font-family: "Gotham Pro", Helvetica,verdana,arial,tahoma,sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 40px;
@@ -30,13 +31,15 @@
 }
 
 .Text-pharagraf {
-    font-family: 'Lato';
+    /* font-family: 'Lato'; */
+    font-family: "Gotham Pro", Helvetica,verdana,arial,tahoma,sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
     margin: 0px;
     padding: 10px 0px;
+    text-align: justify;
 }
 
 .Text-color-white {
@@ -61,6 +64,10 @@
 .Links:hover {
     color: #F47648;
     
+}
+
+.Cursor-Pointer {
+    cursor: pointer;
 }
 
 @media (min-width: 600px) {

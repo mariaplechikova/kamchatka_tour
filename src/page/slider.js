@@ -1,5 +1,6 @@
 import "./slider.css";
 import React, { useState } from 'react';
+import {  CSSTransition } from "react-transition-group";
 
 function Slider(props) {
   // const listImg = [
@@ -51,21 +52,23 @@ function Slider(props) {
   return (
     <div className="slider">
 
-      <div className="sliderBox">
-      
-        {arr.map((index) => {
-          return (
-            <div className='sliderImage' style={imgStyle}>
-              <img src={index.url} />
-              <div className="sliderImage__description">
-                <p>{index.title}</p>
-                {index.description}
-              </div>
-            </div>
-          )
-        })}
-    
-      </div>
+        <CSSTransition classNames='render' timeout={300}>
+          <div className="sliderBox">
+          
+            {arr.map((index) => {
+              return (
+                <div className='sliderImage' style={imgStyle}>
+                  <img src={index.url} />
+                  <div className="sliderImage__description">
+                    <p>{index.title}</p>
+                    {index.description}
+                  </div>
+                </div>
+              )
+            })}
+        
+          </div>
+        </CSSTransition>
 
       <div className="sliderButton" style={buttonAlign}>
         <button onClick={sliderLeft} style={buttonColor}>&larr;</button>

@@ -1,5 +1,6 @@
 import "./footer.css";
 import Logo from "./logo.js";
+import { Link, animateScroll as scroll } from "react-scroll";
 
 function Footer() {
   return (
@@ -8,11 +9,42 @@ function Footer() {
         <div className="footer-block">
 
             <div className="smoll">
-                <Logo />
-                <p className="grey">Расписание тура</p>
-                <p className="grey">Стоимость</p>
-                <p className="grey">Как записаться</p>
-                <p className="grey">Команда</p>
+                <Link 
+                to="section1"
+                spy={true}
+                // smooth={true}
+                offset={-110}
+                duration={500}
+                className="grey Cursor-Pointer">
+                    Расписание тура
+                </Link>
+                <Link 
+                to="section2"
+                spy={true}
+                // smooth={true}
+                offset={-110}
+                duration={500}
+                className="grey Cursor-Pointer">
+                    Стоимость
+                </Link>
+                <Link 
+                to="section3"
+                spy={true}
+                // smooth={true}
+                offset={-110}
+                duration={500}
+                className="grey Cursor-Pointer">
+                    Как записаться
+                </Link>
+                <Link 
+                to="section4"
+                spy={true}
+                // smooth={true}
+                offset={-110}
+                duration={500}
+                className=" grey Cursor-Pointer">
+                    Команда
+                </Link>
             </div>
 
             <hr></hr>

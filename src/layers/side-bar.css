@@ -1,18 +1,13 @@
-
 .bm-item {
-  display: inline-block;
-
-  /* Our sidebar item styling */
+  display: block;
   text-decoration: none;
   margin-bottom: 10px;
-  color: #d1d1d1;
+  color: #757575;
   transition: color 0.2s;
-  
-  
 }
 
 .bm-item:hover {
-  color: white;
+  color: rgb(0, 0, 0);
   
 }
 
@@ -22,66 +17,53 @@
   height: 30px;
   right: 36px;
   top: 36px;
-  /* margin-right: 16px; */
   padding: 0px;
- 
 }
 
-/* Color/shape of burger icon bars */
 .bm-burger-bars {
   background: #275553;
   padding: 0;
   margin: 0;
 }
 
-/* Position and sizing of clickable cross button */
-.bm-cross-button {
+/* //Кнопка закрытия */
+.bm-cross-button { 
   height: 24px;
   width: 24px;
-  background-color: blueviolet;
-  
+  background-color: red;
 }
 
-/* Color/shape of close button cross */
 .bm-cross {
-  background: #bdc3c7;
+  background: black;
   
 }
 
-/* General sidebar styles */
 .bm-menu {
-  background: #000;
+  background: rgb(255, 254, 254);
   padding: 2.5em 1.5em 0;
   font-size: 1.15em;
-  
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
 }
 
-/* Morph shape necessary with bubble or elastic */
 .bm-morph-shape {
   fill: #373a47;
   
 }
 
-/* Wrapper for item list */
 .bm-item-list {
   color: #b8b7ad;
   
 }
 
-/* Styling of overlay */
 .bm-overlay {
   background: rgba(0, 0, 0, 0.3);
   
-}
-
-@media (min-width: 600px) {
-  .bm-burger-button {
-    margin-right: 40px;
-  }
-}
-
-@media (min-width: 800px) {
-  .bm-burger-button {
-    margin-right: 5%;
-  }
 }

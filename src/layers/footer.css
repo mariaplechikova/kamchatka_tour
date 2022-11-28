@@ -43,6 +43,7 @@ footer div {
 }
 
 .grey {
+    display: block;
  color: #BABABA;
 }
 

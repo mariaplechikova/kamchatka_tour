@@ -1,5 +1,10 @@
-.prise-block {
-    border-bottom: 4px solid #212121;;
+.prise-block__line {
+    position: absolute;
+    width: calc(100% - 32px);
+    size: 10;
+    color: #212121;
+    left: 16px;
+    bottom: 0px;
 }
 
 .prise-block__title {
@@ -37,14 +42,22 @@
 }
 
 .prise-block__send-request {
+    height: 70px;
+    width: 230px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin: 60px 0;
+}
+
+.prise-block__send-request a {
     font-family: 'Lato';
     font-style: normal;
-    font-weight: 400;
+    font-weight: 900;
     font-size: 18px;
     line-height: 24px;
     text-decoration-line: underline;
     color: #212121;
-    margin: 60px 0;
 }
 
 .prise-block__description p {
@@ -82,6 +95,38 @@
     text-decoration-line: underline;
     color: #f47648;
     margin: 24px 0;
+}
+
+.first-screen__link {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    height: 150px;
+    width: 250px;
+    position: relative;
+}
+
+.black-arrow {
+    opacity: 1;
+}
+
+.prise-block__send-request:hover .black-arrow {
+    opacity: 0;
+}
+
+.orange-arrow {
+    opacity: 0;
+}
+
+.prise-block__send-request:hover .orange-arrow {
+    opacity: 1;
+}
+
+.orange-arrow, .black-arrow {
+    position: absolute;
+    right: 0px;
+    width: 70px;
+    height: auto;
 }
 
 @media (min-width: 600px) {
@@ -146,6 +191,11 @@
     .prise-block__useful-links a {
         margin-top: 0;
     }
+
+    .prise-block__line {
+        width: calc(100% - 80px);
+        left: 40px;
+    }
 }
 
 @media (min-width: 800px) {
@@ -190,5 +240,10 @@
         margin-top: 40px;
         grid-row: 2;
         grid-column: 3;
+    }
+
+    .prise-block__line {
+        width: 90%;
+        left: 5%;
     }
 }

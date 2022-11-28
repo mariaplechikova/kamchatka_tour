@@ -1,73 +1,52 @@
 import "./menu.css";
-import Logo from "./logo.js";
-import { Nav, Navbar } from "react-bootstrap";
-import CloseButton from 'react-bootstrap/CloseButton';
+import { Link, animateScroll as scroll } from "react-scroll";
 
-import "bootstrap/dist/css/bootstrap.min.css";
-
-// function Menu() {
-//   return (
-//     <div className="menu">
-// <nav>
-//       <Logo />
-//       <div className="nav-links">Расписание тура</div>
-//       <div className="nav-links">Как записаться</div>
-//       <div className="nav-links">Команда</div>
-//       <button>Забронировать</button>
-//     </nav>
-//     </div>
-    
-//   );
-// }
-
-// export default Menu;
-
-export default function Menu() {
-
-  function show(event) {
-    console.log(event.target)
-  }
+function Menu() {
+//   const state = {
+//     show: false
+//   };
+  
+//  function showModal(e) {
+//     this.setState({
+//       show: true
+//     });
+//   };
 
   return (
-    <div className="menu">
-
-        <Navbar collapseOnSelect expand="lg" className="navbar" onClick={show}>
-
-          <Navbar.Brand href="#home">
-            <Logo />
-          </Navbar.Brand>
-
-          <Navbar.Toggle aria-controls="responsive-navbar-nav"  />
-
-          <Navbar.Collapse id="responsive-navbar-nav" >
-
-            <Nav className="mr-auto" >
-
-            {/* <CloseButton onClick={hideMenu}/> */}
-
-              <Nav.Link href="#features" className="nav-link">
-                <span>Расписание тура</span>
-              </Nav.Link>
-
-              <Nav.Link href="#pricing">
-                <span>Как записаться</span>
-              </Nav.Link>
-
-              <Nav.Link href="#pricing">
-                <span>Команда</span>
-              </Nav.Link>
-
-              <Nav.Link href="#pricing">
-                <button className="button">Забронировать</button>
-              </Nav.Link>
-              
-            </Nav>
-            
-          </Navbar.Collapse>
-
-          </Navbar>
-
-    </div>
-    
+    <nav>
+      <Link 
+      activeClass="active"
+      to="section1"
+      spy={true}
+      // smooth={true}
+      offset={-110}
+      duration={500}
+      className="nav-links Cursor-Pointer">
+        Расписание тура
+      </Link>
+      <Link 
+      activeClass="active"
+      to="section2"
+      spy={true}
+      // smooth={true}
+      offset={-110}
+      duration={500}
+      className="nav-links  Cursor-Pointer">
+        Как записаться
+      </Link>
+      <Link 
+      activeClass="active"
+      to="section4"
+      spy={true}
+      // smooth={true}
+      offset={-110}
+      duration={500}
+      className="nav-links Cursor-Pointer">
+        Команда
+      </Link>
+      <button className="nav-button" onClick={e => this.showModal}>Забронировать</button>
+    </nav>
   );
 }
+
+export default Menu;

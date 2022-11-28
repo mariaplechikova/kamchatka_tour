@@ -1,4 +1,5 @@
 .second-day {
+    padding-top: 0px;
     z-index: 10;
     box-shadow: 0px 5px 5px -5px rgba(34, 60, 80, 0.6);
 }
@@ -33,7 +34,7 @@
 
 @media (min-width: 800px) {
     .second-day {
-        height: max(900px, 90vh);
+        /* height: max(900px, 90vh); */
     }
 
     .second-day-text {

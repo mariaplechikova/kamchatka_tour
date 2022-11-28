@@ -9,7 +9,9 @@ import "./day7.css";
 import "./day8.css";
 import "./prise-block.css";
 import "./application-block.css";
+import { Link, animateScroll as scroll } from "react-scroll";
 import Slider from './slider'
+import OnlineApplication from './online-application'
 
 function Page() {
   const listImg1 = [
@@ -142,7 +144,7 @@ function Page() {
   return (
     <div className="page">
             
-        <div className="journey-block Container">
+      <div className="journey-block Container">
 
           <div className="journey-block__text">
 
@@ -207,9 +209,9 @@ function Page() {
             
           </div>
                 
-        </div>
+      </div>
 
-
+      <div id="section1">
         <div className="first-day Container">
 
             <div className="first-day__content">
@@ -484,7 +486,9 @@ function Page() {
 
         </div>
 
-        <div className="prise-block Container">
+      </div>
+
+      <div className="prise-block Container" id="section2">
 
           <h3 className="prise-block__title">Стоимость участия</h3>
 
@@ -503,8 +507,18 @@ function Page() {
             </div>
           </div>
 
-            <div className="prise-block__send-request Links"><a>Отправить заявку</a></div>
-            <div className="prise-block__description">
+          <Link 
+            className="prise-block__send-request Links"
+            to="section3"
+            spy={true}
+            offset={-110}
+            duration={500}>
+            <a href="#section3" className="Links">Отправить заявку</a>
+            <img src="./black-arrow.png" className="black-arrow Links" />
+            <img src="./orange-arrow.png" className="orange-arrow Links" />
+          </Link>
+
+          <div className="prise-block__description">
               <p>В стоимость входит</p>
               <ul className="Text-pharagraf Text-color-dark-grey">
                 <li>встреча и проводы в аэропорту   </li>
@@ -529,10 +543,10 @@ function Page() {
               <a  className="Links">Важная информация</a>
               <a  className="Links">Условия договора и возврата</a>
             </div>
-          
-        </div>
+        <hr className="prise-block__line"></hr> 
+      </div>
 
-        <div className="application-block Container">
+      <div className="application-block Container" id="section3">
 
           <div className="application-block__title">
             <p>Онлайн-заявка</p>
@@ -544,60 +558,7 @@ function Page() {
             </div>
           </div>
 
-          <form className="application-block__form">
-
-            <div className="application-block__form__input">
-              <label>
-                <p className="application-block__form-title">Имя участника</p>
-                <input type='text' value='Имя' className="application-block__form-input"></input>
-              </label>
-              <label>
-                <p className="application-block__form-title">Количество человек</p>
-                <input type='number' value='1' className="application-block__form-input"></input>
-              </label>
-            </div>
-
-            <div className="application-block__form__radio">
-              <p className="application-block__form-title">Тариф</p>
-
-              <label>
-                <input type='radio' name="radio"></input>
-                <div>
-                  <p>Базовый (для камчадал)</p>
-                  <p>79 000 руб</p>
-                </div>
-              </label>
-
-              <label>
-                <input type='radio' name="radio"></input>
-                <div>
-                  <p>Базовый + проживание</p>
-                  <p>99 000 руб</p>
-                </div>
-              </label>
-
-              <label>
-                <input type='radio' name="radio"></input>
-                <div>
-                  <p>Базовый + проживание + долина гейзеров</p>
-                  <p>179 000 руб</p>
-                </div>
-              </label>
-            </div>
-
-            <label className="application-block__form__date">
-              <p className="application-block__form-title">Даты тура</p>
-              <input type='date' value="23.06 - 04.07" className="application-block__form-input"></input>
-            </label>
-
-            <label className="application-block__form__comment">
-              <p className="application-block__form-title">Напишите Ваш комментарий сдесь</p>
-              <input type='textarea' value="Напишите Ваш комментарий" className="application-block__form-input"></input>
-            </label>
-
-            <button className="application-block__form__button Links">Отправить заявку</button>
-
-          </form>
+          <OnlineApplication />
 
           <form className="application-block__form-email">
 
@@ -610,7 +571,9 @@ function Page() {
             </div>
             
           </form>
-        </div>
+      </div>
+
+      <div className="comand-block" id="section4"></div>
 
     </div>
   );
