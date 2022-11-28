@@ -140,4 +140,9 @@
     .application-block__form {
         width: 45%;
     }
+
+    .application-block__form__radio label p:last-of-type {
+        flex-basis: 30%;
+        text-align: end;
+    }
 }
