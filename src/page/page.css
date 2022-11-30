@@ -70,6 +70,17 @@
     cursor: pointer;
 }
 
+.Title-Big {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 72px;
+    max-width: 960px;
+    padding: 0px;
+    margin: 0 0 59px 0;
+}
+
 @media (min-width: 600px) {
     .Container {
         padding: 64px 40px;
@@ -84,6 +95,11 @@
 @media (min-width: 800px) {
     .Container {
         padding: 80px 5%;
+    }
+
+    .Text-pharagraf {
+        font-size: 20px;
+        line-height: 32px;
     }
 
 }

@@ -9,6 +9,7 @@ import "./day7.css";
 import "./day8.css";
 import "./prise-block.css";
 import "./application-block.css";
+import "./comand.css";
 import { Link, animateScroll as scroll } from "react-scroll";
 import Slider from './slider'
 import OnlineApplication from './online-application'
@@ -490,7 +491,7 @@ function Page() {
 
       <div className="prise-block Container" id="section2">
 
-          <h3 className="prise-block__title">Стоимость участия</h3>
+          <h3 className="prise-block__title Title-Big Text-color-black">Стоимость участия</h3>
 
           <div className="prise-block__rite">
             <div className="prise-block__rite__point Text-pharagraf Text-color-black">
@@ -528,6 +529,7 @@ function Page() {
                 <li>все указанные в программе экскурсии</li>
               </ul>
             </div>
+
             <div className="prise-block__addition">
               <p>За дополнительную плату</p>
               <ul className="Text-pharagraf Text-color-dark-grey">
@@ -538,6 +540,7 @@ function Page() {
                 <li>личные расходы</li>
               </ul>
             </div>
+
             <div className="prise-block__useful-links">
               <a className="Links">Информация о бронях</a>
               <a  className="Links">Важная информация</a>
@@ -573,7 +576,29 @@ function Page() {
           </form>
       </div>
 
-      <div className="comand-block" id="section4"></div>
+      <div className="comand Container" id="section4">
+        <h3 className="Title-Big Text-color-black">
+          Про нашу супер крутую команду Dreamkam Tour
+        </h3>
+
+        <p className="comand-pharagraf Text-pharagraf Text-color-dark-grey">
+          Наша команда - это люди влюбленные в свою работу. Каждый из них обладает проффесиональными знаниями, хорошей физической подготовкой. Следят за вашей безпасностью в туре, и тем чтобы каждый из вас получил максимальное колличество эмоций.
+        </p>
+        <div className="comand-block">
+          <div className="comand-block__image">
+            <img src="Alina.jpg" />
+            <p>Алина Гончарова, <span>@alin_och</span></p>
+          </div>
+          <div className="comand-block__image">
+            <img src="Evgenij.jpg" />
+            <p>Евгений Барсуков, <span>@eugen_eugen</span></p>
+          </div>
+          <div className="comand-block__image">
+            <img src="Dmitrij.jpg" />
+            <p>Дмитрий Осипов, <span>@dim_os</span></p>
+          </div>
+        </div>
+      </div>
 
     </div>
   );

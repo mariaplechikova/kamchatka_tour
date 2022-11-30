@@ -142,7 +142,7 @@
     }
 
     .application-block__form__radio label p:last-of-type {
-        flex-basis: 30%;
+        flex-basis: 150px;
         text-align: end;
     }
 }

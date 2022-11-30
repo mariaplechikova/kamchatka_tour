@@ -1,0 +1,54 @@
+.comand-block {
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.comand-pharagraf {
+    max-width: 520px;
+}
+
+.comand-block__image {
+    width: 100%;
+    max-width: 352px;
+    box-sizing: border-box;
+}
+
+.comand-block__image img{
+    width: 100%;
+    height: auto;
+}
+
+.comand-block__image p {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+    color: #000000;
+    text-align: center;
+    margin-top: 24px;
+}
+
+.comand-block__image span {
+    font-weight: 400;
+    text-decoration-line: underline;
+    color: #F47648;
+}
+
+@media (min-width: 800px) {
+    .comand-block {
+        justify-content: space-between;
+        margin-top: 79px;
+        flex-direction: row;
+        gap: 96px;
+    }
+
+    .comand-block__img {
+        /* max-width: none; */
+        /* width: 10%; */
+    }
+}
