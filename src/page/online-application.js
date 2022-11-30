@@ -2,14 +2,13 @@ import "./online-application.css";
 import { useState } from 'react'
 
 function OnlineApplication() {
-    const [sendName, getSendName] = useState('Имя')
     const [sendQuantity, getSendQuantity] = useState(1)
     const [sendTariff, getSendTariff] = useState('')
     const [sendDate, getSendDate] = useState("2023-05-01")
     const [sendComment, getSendComment] = useState("Напишите Ваш комментарий")
 
-    const [sendList, getSendList] = useState({
-            name: sendName,
+    const [sendList, setSendList] = useState({
+            name: 'Имя',
             quantity: sendQuantity,
             tariff: sendTariff,
             date: sendDate,
@@ -18,8 +17,17 @@ function OnlineApplication() {
     
 
     function handleName(event) {
-        getSendName(event.target.value)
-        console.log(sendName)
+        setSendList({
+            ...sendList,
+            name: event.target.value
+        })
+    }
+
+    function handleField(event, field) {
+        setSendList({
+            ...sendList,
+            [field]: event.target.value
+        })
     }
 
     function handleQuantity(event) {
@@ -43,15 +51,9 @@ function OnlineApplication() {
         console.log(sendComment)
     }
 
-    function addSendlist() {
-        // event.defaultPrevented()
-        getSendList({
-            name: sendName,
-            quantity: sendQuantity,
-            tariff: sendTariff,
-            date: sendDate,
-            comment: sendComment,
-        })
+    function addSendlist(event) {
+        event.preventDefault()
+ 
         console.log(sendList)
     }
 
@@ -63,9 +65,9 @@ function OnlineApplication() {
                     <p className="application-block__form-title">Имя участника</p>
                     <input 
                         type='text' 
-                        value={sendName} 
+                        value={sendList.name} 
                         className="application-block__form-input" 
-                        onChange={handleName} 
+                        onChange={(event) => handleField(event, 'name')} 
                     />
                 </label>
                 <label>
@@ -122,8 +124,7 @@ function OnlineApplication() {
 
             <div onClick={addSendlist}>Отправить</div>
 
-            <button className="" >Отправить заявку</button>
-            {/* <button className="application-block__form__button" onClick={addSendlist}>Отправить заявку</button> */}
+            <button className="application-block__form__button" onClick={addSendlist}>Отправить заявку</button>
 
         </form>
     )
