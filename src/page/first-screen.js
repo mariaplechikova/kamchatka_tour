@@ -1,6 +1,6 @@
 import "./first-screen.css";
 import "./page";
-import Slider from './slider'
+import Slider from '../elements/slider'
 import React, { useState } from 'react';
 import { Link, animateScroll as scroll } from "react-scroll";
 
@@ -12,7 +12,7 @@ function FirstScreen() {
 
     {url:'slider2.jpg',
     title: "Долина гейзеров",
-    description: "На территории в 6 квадратных километров находятся грязевые вулканы, гейзеры, озёра, термальные источники, реки, водопады."},
+    description: "На территории находятся грязевые вулканы, гейзеры, озёра, термальные источники, реки, водопады."},
 
     {url: 'slider3.jpg',
     title: "Ключевская сопка",
@@ -25,13 +25,11 @@ function FirstScreen() {
   return (
     <div className="first-screen">
 
-      {/* <img src='first-screen.jpg'className="first-screen-background"/> */}
-
-      <div className="first-screen-container">
-        <div className="first-screen-text">
-          <h1>Мечты о далекой Камчатке - близко</h1>
-          <div className="date"><p>23.06-04.07 DREAM TOUR</p></div>
-          <div className="description">Тур перевернет ваш мир с ног на голову и оставит впечатления на всю жизнь.</div>
+      <div className="first-screen__container">
+        <div className="first-screen__text">
+          <h1 className="first-screen__title">Мечты о далекой Камчатке - близко</h1>
+          <div className="first-screen__date"><p>23.06-04.07 DREAM TOUR</p></div>
+          <div className="first-screen__description">Тур перевернет ваш мир с ног на голову и оставит впечатления на всю жизнь.</div>
           
           <Link 
           className="first-screen__link Links"
@@ -44,29 +42,29 @@ function FirstScreen() {
             <img src="./orange-arrow.png" className="orange-arrow Links" />
           </Link>
 
-          <div className="social-network desctop">
+          <div className="first-screen__social-desktop">
             <a href=""><img src='VK.png'/></a>
-            <a href=""><img src='odnoklassniki.png'/></a>
-            <a href=""><img src='youtube.png'/></a>
-            <a href=""><img src='telegram.png'/></a>
-            <a href=""><img src='whatsapp.png'/></a>
-            <a href=""><img src='dzen.png'/></a>
+            {/* <a href=""><img src='odnoklassniki.png'/></a> */}
+            {/* <a href=""><img src='youtube.png'/></a> */}
+            {/* <a href=""><img src='telegram.png'/></a> */}
+            {/* <a href=""><img src='whatsapp.png'/></a> */}
+            {/* <a href=""><img src='dzen.png'/></a> */}
           </div>
 
         </div>
         
 
         <div className="slider-container">
-          <Slider size="320px" color="white" align="left" arr={listImg1}/>
+          <Slider size="390px" color="white" align="left" arr={listImg1}/>
         </div>
         
-        <div className="social-network mobile">
-        <a href=""><img src='VK.png'/></a>
-            <a href=""><img src='odnoklassniki.png'/></a>
-            <a href=""><img src='youtube.png'/></a>
-            <a href=""><img src='telegram.png'/></a>
-            <a href=""><img src='whatsapp.png'/></a>
-            <a href=""><img src='dzen.png'/></a>
+        <div className="first-screen__social-mobil">
+        <a href=""><img src='VK.png'/></a> 
+            {/* <a href=""><img src='odnoklassniki.png'/></a> */}
+            {/* <a href=""><img src='youtube.png'/></a> */}
+            {/* <a href=""><img src='telegram.png'/></a> */}
+            {/* <a href=""><img src='whatsapp.png'/></a> */}
+            {/* <a href=""><img src='dzen.png'/></a> */}
         </div>
 
       </div>

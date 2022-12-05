@@ -1,21 +1,21 @@
 import "./footer.css";
-import Logo from "./logo.js";
+import Logo from "../elements/logo";
 import { Link, animateScroll as scroll } from "react-scroll";
 
 function Footer() {
   return (
     <footer>
 
-        <div className="footer-block">
+        <div className="footer">
 
-            <div className="smoll">
+            <div className="footer__smoll-block">
                 <Link 
                 to="section1"
                 spy={true}
                 // smooth={true}
                 offset={-110}
                 duration={500}
-                className="grey Cursor-Pointer">
+                className="grey-text Cursor-Pointer">
                     Расписание тура
                 </Link>
                 <Link 
@@ -24,7 +24,7 @@ function Footer() {
                 // smooth={true}
                 offset={-110}
                 duration={500}
-                className="grey Cursor-Pointer">
+                className="grey-text Cursor-Pointer">
                     Стоимость
                 </Link>
                 <Link 
@@ -33,7 +33,7 @@ function Footer() {
                 // smooth={true}
                 offset={-110}
                 duration={500}
-                className="grey Cursor-Pointer">
+                className="grey-text Cursor-Pointer">
                     Как записаться
                 </Link>
                 <Link 
@@ -42,24 +42,24 @@ function Footer() {
                 // smooth={true}
                 offset={-110}
                 duration={500}
-                className=" grey Cursor-Pointer">
+                className="grey-text Cursor-Pointer">
                     Команда
                 </Link>
             </div>
 
-            <hr></hr>
+            <hr className="footer__line"></hr>
 
-            <div className="big"> 
+            <div className="footer__big-block"> 
                 Виджет социальной сети
             </div>
 
-            <hr></hr>
+            <hr className="footer__line"></hr>
 
-            <div className="big">
+            <div className="footer__big-block">
                 <div>
                     <img src='video-review.png' className="video-review"/>
                     <p>Смотрите видео отзывы наших клиентов</p>
-                    <a href="" className="grey">Перейти</a>
+                    <a href="" className="grey-text">Перейти</a>
                 </div>
                 <br></br>
                 <br></br>
@@ -69,21 +69,21 @@ function Footer() {
                 </div>
             </div>
 
-            <hr></hr>
+            <hr className="footer__line"></hr>
 
-            <div className="smoll">
+            <div className="footer__smoll-block">
                 <p id="tel">+7 (760) 354-23-23</p>
-                <p className="grey">Работаем с 9:00 до 18:00</p>
+                <p className="grey-text">Работаем с 9:00 до 18:00</p>
 
                 <br></br>
                 
                 <p>
-                    <img src='email.png' className="icons"/>
+                    <img src='email.png' className="footer__icons"/>
                        info@dreamkamtour.ru
                 </p>
                 
                 <p>
-                    <img src='location.png'className="icons"/>
+                    <img src='location.png'className="footer__icons"/>
                        ул. Рубинштейна, 41
                 </p>
                 
@@ -91,8 +91,8 @@ function Footer() {
 
         </div>
 
-        <div className="copyright grey">
-            <hr></hr>
+        <div className="copyright grey-text">
+            <hr className="copyright__line"></hr>
             2021 &copy; Dreamkam Tour
         </div>
     

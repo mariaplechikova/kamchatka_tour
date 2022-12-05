@@ -9,7 +9,6 @@
 }
 
 .application-block__title p {
-    font-family: 'Montserrat';
     font-style: normal;
     font-weight: 700;
     font-size: 32px;
@@ -30,7 +29,6 @@
 }
 
 .application-block__form-email__title {
-    font-family: 'Montserrat';
     font-style: normal;
     font-weight: 700;
     font-size: 32px;
@@ -41,7 +39,6 @@
 }
 
 .application-block__form-email__paragraf {
-    font-family: 'Lato';
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -54,7 +51,6 @@
     padding: 8px 0;
     border: none;
     border-bottom: 1px solid #FFFFFF;
-    font-family: 'Lato';
     font-style: normal;
     font-weight: 400;
     font-size: 20px;

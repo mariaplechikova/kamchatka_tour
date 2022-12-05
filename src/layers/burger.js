@@ -7,9 +7,10 @@ import {
   MDBIcon,
   MDBBtn,
 } from 'mdb-react-ui-kit';
-import "./sidebar1.css";
+import "./burger.css";
+import { Link, animateScroll as scroll } from "react-scroll";
 
-export default function SideBar1() {
+export default function Burger() {
   const [showAnimated2, setShowAnimated2] = useState(false);
 
   return (
@@ -39,16 +40,44 @@ export default function SideBar1() {
         <MDBCollapse show={showAnimated2} className="burger__collapse">
           <div className='bg-light shadow-3 p-4 burger__collapse__content'>
             <MDBBtn block className='burger-links border-bottom m-0' color='link'>
-              Расписание тура
+            <Link 
+              to="section1"
+              spy={true}
+              offset={-70}
+              duration={500}
+              className="Cursor-Pointer">
+                Расписание тура
+              </Link>
             </MDBBtn>
             <MDBBtn block className='burger-links border-bottom m-0' color='link'>
-             Как записаться
+             <Link 
+              to="section3"
+              spy={true}
+              offset={-70}
+              duration={500}
+              className="Cursor-Pointer">
+                Как записаться
+              </Link>
             </MDBBtn>
             <MDBBtn block className='burger-links border-bottom m-0' color='link'>
-              Команда
+            <Link 
+              to="section2"
+              spy={true}
+              offset={-70}
+              duration={500}
+              className="Cursor-Pointer">
+                Стоимость
+              </Link>
             </MDBBtn>
             <MDBBtn block className='burger-links border-bottom m-0' color='link'>
-              Стоимость
+            <Link 
+              to="section4"
+              spy={true}
+              offset={-70}
+              duration={500}
+              className="Cursor-Pointer">
+                Команда
+              </Link>
             </MDBBtn>
           </div>
         </MDBCollapse>

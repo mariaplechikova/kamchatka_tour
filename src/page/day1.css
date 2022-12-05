@@ -18,22 +18,13 @@
     box-sizing: border-box;
 }
 
-.first-day-text p {  
-    font-family: 'Lato';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
-    color: #ACACAC;
-}
-
 .first-day-text p span {
     color: #ffffff;
 }
 
 .first-day__cloud {
     position: relative;
-    z-index: 10;
+    /* z-index: 10; */
     width: calc(100% + 32px);
     height: auto;
     bottom: -47px;

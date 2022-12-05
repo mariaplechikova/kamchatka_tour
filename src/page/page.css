@@ -3,6 +3,7 @@
     margin: 0px;
     padding: 0px; 
     box-sizing: border-box;
+    z-index: 0;
 }
 
 .Container {
@@ -16,8 +17,6 @@
 }
 
 .Text-title {
-    /* font-family: 'Montserrat'; */
-    font-family: "Gotham Pro", Helvetica,verdana,arial,tahoma,sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 40px;
@@ -31,8 +30,6 @@
 }
 
 .Text-pharagraf {
-    /* font-family: 'Lato'; */
-    font-family: "Gotham Pro", Helvetica,verdana,arial,tahoma,sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -71,7 +68,6 @@
 }
 
 .Title-Big {
-    font-family: 'Inter';
     font-style: normal;
     font-weight: 700;
     font-size: 64px;

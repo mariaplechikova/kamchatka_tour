@@ -11,8 +11,9 @@ import "./prise-block.css";
 import "./application-block.css";
 import "./comand.css";
 import { Link, animateScroll as scroll } from "react-scroll";
-import Slider from './slider'
-import OnlineApplication from './online-application'
+import Slider from '../elements/slider'
+import FormM from '../elements/form'
+import OnlineApplication from '../elements/online-application'
 
 function Page() {
   const listImg1 = [
@@ -22,7 +23,7 @@ function Page() {
 
     {url:'slider2.jpg',
     title: "Долина гейзеров",
-    description: "На территории в 6 квадратных километров находятся грязевые вулканы, гейзеры, озёра, термальные источники, реки, водопады."},
+    description: "На территории находятся грязевые вулканы, гейзеры, озёра, термальные источники, реки, водопады."},
 
     {url: 'slider3.jpg',
     title: "Ключевская сопка",
@@ -234,7 +235,7 @@ function Page() {
               </div>
 
               <div className="first-day-slider">
-                <Slider size="320px" color='white' alignMobil="left" alignDesktop="left" arr={listImg1}/>
+                <Slider size="390px" color='white' alignMobil="left" alignDesktop="left" arr={listImg1}/>
               </div>
             </div>
 
@@ -271,7 +272,7 @@ function Page() {
               </div>
 
               <div className="second-day-slider">
-                <Slider size="320px" color="black" alignMobil="left" alignDesktop="right" arr={listImg2}/>
+                <Slider size="390px" color="black" alignMobil="left" alignDesktop="right" arr={listImg2}/>
               </div>
              
             </div>
@@ -333,7 +334,7 @@ function Page() {
           </div>
 
           <div className="third-day-slider">
-            <Slider size="320px" color="black" alignMobil="left" alignDesktop="right" arr={listImg3}/>
+            <Slider size="390px" color="black" alignMobil="left" alignDesktop="right" arr={listImg3}/>
           </div>
 
           {/* <div className="third-day-background"> */}
@@ -364,7 +365,7 @@ function Page() {
             </div>
 
             <div className="fourth-day-slider">
-              <Slider size="320px" color="white" alignMobil="left" alignDesktop="left" arr={listImg4}/>
+              <Slider size="390px" color="white" alignMobil="left" alignDesktop="left" arr={listImg4}/>
             </div>
           </div>
           
@@ -387,7 +388,7 @@ function Page() {
             </div>
             
             <div className="fifth-day-slider">
-              <Slider size="320px" color="white" alignMobil="left" alignDesktop="right" arr={listImg5}/>
+              <Slider size="390px" color="white" alignMobil="left" alignDesktop="right" arr={listImg5}/>
             </div>
           </div>
 
@@ -418,7 +419,7 @@ function Page() {
             </div>
 
             <div className="sixth-day-slider">
-              <Slider size="320px" color="white" alignMobil="left" alignDesktop="left" arr={listImg6}/>
+              <Slider size="390px" color="white" alignMobil="left" alignDesktop="left" arr={listImg6}/>
             </div>
           </div>
 
@@ -470,7 +471,7 @@ function Page() {
               </div>
 
               <div className="seventh-day-slider">
-                <Slider size="320px" color="black" alignMobil="left" alignDesktop="right" arr={listImg7}/>
+                <Slider size="390px" color="black" alignMobil="left" alignDesktop="right" arr={listImg7}/>
               </div>
              
             </div>
@@ -562,6 +563,7 @@ function Page() {
           </div>
 
           <OnlineApplication />
+          {/* <FormM /> */}
 
           <form className="application-block__form-email">
 

@@ -7,7 +7,6 @@
 }
 
 .sixth-addition h3{
-    font-family: 'Montserrat';
     font-style: normal;
     font-weight: 700;
     font-size: 20px;
@@ -16,7 +15,6 @@
 }
 
 .sixth-addition p {
-    font-family: 'Lato';
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -26,7 +24,6 @@
 }
 
 .sixth-addition div p:first-of-type {
-    font-family: 'Lato';
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
@@ -41,7 +38,7 @@
 
 .block-day__cloud {
     position: relative;
-    z-index: 10;
+    /* z-index: 10; */
     width: calc(100%);
     height: auto;
     bottom: -5px;

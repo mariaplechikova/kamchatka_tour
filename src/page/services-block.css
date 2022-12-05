@@ -4,7 +4,6 @@
 }
 
 .services-block__title {
-    font-family: 'Montserrat';
     font-style: normal;
     font-weight: 700;
     font-size: 32px;
@@ -39,7 +38,6 @@
 }
 
 .services-block__conteiner__title {
-    font-family: 'Montserrat';
     font-style: normal;
     font-weight: 700;
     font-size: 18px;
@@ -48,7 +46,6 @@
 }
 
 .services-block__conteiner__paragraf {
-    font-family: 'Lato';
     font-style: normal;
     font-weight: 400;
     font-size: 14px;

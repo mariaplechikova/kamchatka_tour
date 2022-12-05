@@ -26,6 +26,10 @@ function Slider(props) {
     let buttonAlign
     let imgStyle
 
+    if (document.documentElement.clientWidth < 600) {
+      imgStyle = {width: `320px`, height: `320px`}
+    }
+
     if (document.documentElement.clientWidth < 800) {
       buttonAlign = {textAlign: props.alignMobil}
       imgStyle = {width: `calc(${props.size} - 32px)`, height: `calc(${props.size} - 32px)`}
