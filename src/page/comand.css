@@ -9,6 +9,7 @@
 
 .comand-pharagraf {
     max-width: 520px;
+    display: none;
 }
 
 .comand-block__image {
@@ -49,5 +50,9 @@
     .comand-block__img {
         /* max-width: none; */
         /* width: 10%; */
+    }
+
+    .comand-pharagraf {
+        display: block;
     }
 }

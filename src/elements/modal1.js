@@ -6,11 +6,10 @@ export default function Modal1(props) {
   const [showModal, setShowModal] = useState(props.ModalVisibility)
 
    return (
-    // <div className={showModal ? "modal1 show" : "hide"}>
       <div className={"modal1 show"}> 
       <div className="modal__block">
           <div className="modal__title">Онлайн заявка</div>
-          <OnlineApplication className="modal___form"/>
+          <OnlineApplication className="modal___form" sendRequest={props.closeModal}/>
           <img src="close.png" className="close" onClick={props.closeModal}/>
         </div>
     </div>

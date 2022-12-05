@@ -32,7 +32,7 @@
 
 .modal1 button {
     width: 100%;
-    right: auto;
+    left: 0px;
 }
 
 .close {

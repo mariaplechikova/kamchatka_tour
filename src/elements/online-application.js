@@ -3,7 +3,7 @@ import { useState } from 'react'
 import InputMask from 'react-input-mask';
 import PhoneInput from './input-phone';
 
-function OnlineApplication() {
+function OnlineApplication(props) {
     const [sendQuantity, getSendQuantity] = useState(1)
     const [sendPhone, getSendPhone] = useState('');
     const [sendTariff, getSendTariff] = useState('')
@@ -37,6 +37,7 @@ function OnlineApplication() {
 
     function addSendlist(event) {
         event.preventDefault()
+        props.sendRequest()
  
         console.log(sendList)
     }
