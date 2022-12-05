@@ -37,7 +37,7 @@ function OnlineApplication(props) {
 
     function addSendlist(event) {
         event.preventDefault()
-        props.sendRequest()
+        props.sendRequest(sendList)
  
         console.log(sendList)
     }

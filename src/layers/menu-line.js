@@ -2,6 +2,7 @@ import "./menu-line.css";
 import { Link, animateScroll as scroll } from "react-scroll";
 import Modal1 from "../elements/modal1";
 import { useState } from "react";
+import { api } from '../api'
 
 function MenuLine() {
 
@@ -10,9 +11,12 @@ function MenuLine() {
   function ChangeShowForm() {
     // event.preventDefault()
     setShowForm(!showForm)
-    console.log('Ghbdtn')
-    console.log(showForm)
-    
+  }
+
+  function SendRequest(tourData) {
+    ChangeShowForm()
+
+    api.bookTour(tourData)
   }
 
   return (
@@ -49,7 +53,7 @@ function MenuLine() {
       </Link>
       <button className="menu-line__button" onClick={ChangeShowForm}>Забронировать</button>
       {/* <button className="menu-line__button" >Забронировать</button> */}
-      {showForm ? (< Modal1 closeModal={ChangeShowForm}/>) : null}
+      {showForm ? (< Modal1 closeModal={ChangeShowForm} sendRequest={SendRequest}/>) : null}
     </nav>
   );
 }

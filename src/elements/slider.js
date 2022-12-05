@@ -26,17 +26,16 @@ function Slider(props) {
     let buttonAlign
     let imgStyle
 
-    if (document.documentElement.clientWidth < 600) {
-      imgStyle = {width: `320px`, height: `320px`}
-    }
-
     if (document.documentElement.clientWidth < 800) {
       buttonAlign = {textAlign: props.alignMobil}
-      imgStyle = {width: `calc(${props.size} - 32px)`, height: `calc(${props.size} - 32px)`}
+      imgStyle = {width: `calc(${props.size} - 80px)`, height: `calc(${props.size} - 80px)`}
     } else {
       imgStyle = {width: props.size, height: props.size}
       buttonAlign = {textAlign: props.alignDesktop}
-      
+    }
+
+    if (document.documentElement.clientWidth < 600) {
+      imgStyle = {width: `287px`, height: `287px`}
     }
        
     function sliderRight() {

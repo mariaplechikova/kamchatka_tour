@@ -9,10 +9,8 @@ import "./day7.css";
 import "./day8.css";
 import "./prise-block.css";
 import "./application-block.css";
-import "./comand.css";
 import { Link, animateScroll as scroll } from "react-scroll";
 import Slider from '../elements/slider'
-import FormM from '../elements/form'
 import OnlineApplication from '../elements/online-application'
 
 function Page() {
@@ -23,7 +21,7 @@ function Page() {
 
     {url:'slider2.jpg',
     title: "Долина гейзеров",
-    description: "На территории находятся грязевые вулканы, гейзеры, озёра, термальные источники, реки, водопады."},
+    description: "На территории в 6 квадратных километров находятся грязевые вулканы, гейзеры, озёра, термальные источники, реки, водопады."},
 
     {url: 'slider3.jpg',
     title: "Ключевская сопка",
@@ -235,7 +233,7 @@ function Page() {
               </div>
 
               <div className="first-day-slider">
-                <Slider size="390px" color='white' alignMobil="left" alignDesktop="left" arr={listImg1}/>
+                <Slider size="400px" color='white' alignMobil="left" alignDesktop="left" arr={listImg1}/>
               </div>
             </div>
 
@@ -272,7 +270,7 @@ function Page() {
               </div>
 
               <div className="second-day-slider">
-                <Slider size="390px" color="black" alignMobil="left" alignDesktop="right" arr={listImg2}/>
+                <Slider size="400px" color="black" alignMobil="left" alignDesktop="right" arr={listImg2}/>
               </div>
              
             </div>
@@ -284,36 +282,40 @@ function Page() {
           
           <div className="services-block___conteiner">
 
-            <div className="services-block___conteiner__div">
-              <img src="services-img1.jpg" className="services-block___conteiner__img"></img>
-              <p className="services-block__conteiner__paragraf">
-                <p className="services-block__conteiner__title">Аудиосопровождение</p>
-                Новый способ увидеть и услышать, то место, где вы находитесь. С помощью аудиогида вы сможете совершить увлекательную экскурсию по городу.
-              </p>
+            <div className="services-block___conteiner-top">
+              <div className="services-block___conteiner__div">
+                <img src="services-img1.jpg" className="services-block___conteiner__img"></img>
+                <p className="services-block__conteiner__paragraf">
+                  <p className="services-block__conteiner__title">Аудиосопровождение</p>
+                  Новый способ увидеть и услышать, то место, где вы находитесь. С помощью аудиогида вы сможете совершить увлекательную экскурсию по городу.
+                </p>
+              </div>
+
+              <div className="services-block___conteiner__div">
+                <img src="services-img2.png" className="services-block___conteiner__img"></img>
+                <p className="services-block__conteiner__paragraf">
+                  <p className="services-block__conteiner__title">Разнообразное питание</p>
+                  Каждый обед мы готовим с большой любовью. Кормим вас традиционными камчатскими блюдами. Еда - залог хорошего отдыха!
+                </p>
+              </div>
             </div>
 
-            <div className="services-block___conteiner__div">
-              <img src="services-img2.png" className="services-block___conteiner__img"></img>
-              <p className="services-block__conteiner__paragraf">
-                <p className="services-block__conteiner__title">Разнообразное питание</p>
-                Каждый обед мы готовим с большой любовью. Кормим вас традиционными камчатскими блюдами. Еда - залог хорошего отдыха!
-              </p>
-            </div>
+            <div className="services-block___conteiner-bottom">
+              <div className="services-block___conteiner__div">
+                <img src="services-img3.png" className="services-block___conteiner__img"></img>
+                <p className="services-block__conteiner__paragraf">
+                  <p className="services-block__conteiner__title">Безопасность на маршруте</p>
+                  Наша команда проводит инструктаж, рассказывает как правильно себя вести, как избежать опасных ситуаций.
+                </p>
+              </div>
 
-            <div className="services-block___conteiner__div">
-              <img src="services-img3.png" className="services-block___conteiner__img"></img>
-              <p className="services-block__conteiner__paragraf">
-                <p className="services-block__conteiner__title">Безопасность на маршруте</p>
-                Наша команда проводит инструктаж, рассказывает как правильно себя вести, как избежать опасных ситуаций.
-              </p>
-            </div>
-
-            <div className="services-block___conteiner__div">
-              <img src="services-img4.png" className="services-block___conteiner__img"></img>
-              <p className="services-block__conteiner__paragraf">
-                <p className="services-block__conteiner__title">Потрясающие фото</p>
-                Можете не переживать, что не успели сделать фото. Наш фотограф успевает везде и за всеми. У вас будут самые лучшие фото!
-              </p>
+              <div className="services-block___conteiner__div">
+                <img src="services-img4.png" className="services-block___conteiner__img"></img>
+                <p className="services-block__conteiner__paragraf">
+                  <p className="services-block__conteiner__title">Потрясающие фото</p>
+                  Можете не переживать, что не успели сделать фото. Наш фотограф успевает везде и за всеми. У вас будут самые лучшие фото!
+                </p>
+              </div>
             </div>
 
           </div>
@@ -334,7 +336,7 @@ function Page() {
           </div>
 
           <div className="third-day-slider">
-            <Slider size="390px" color="black" alignMobil="left" alignDesktop="right" arr={listImg3}/>
+            <Slider size="400px" color="black" alignMobil="left" alignDesktop="right" arr={listImg3}/>
           </div>
 
           {/* <div className="third-day-background"> */}
@@ -365,7 +367,7 @@ function Page() {
             </div>
 
             <div className="fourth-day-slider">
-              <Slider size="390px" color="white" alignMobil="left" alignDesktop="left" arr={listImg4}/>
+              <Slider size="400px" color="white" alignMobil="left" alignDesktop="left" arr={listImg4}/>
             </div>
           </div>
           
@@ -388,7 +390,7 @@ function Page() {
             </div>
             
             <div className="fifth-day-slider">
-              <Slider size="390px" color="white" alignMobil="left" alignDesktop="right" arr={listImg5}/>
+              <Slider size="400px" color="white" alignMobil="left" alignDesktop="right" arr={listImg5}/>
             </div>
           </div>
 
@@ -419,7 +421,7 @@ function Page() {
             </div>
 
             <div className="sixth-day-slider">
-              <Slider size="390px" color="white" alignMobil="left" alignDesktop="left" arr={listImg6}/>
+              <Slider size="400px" color="white" alignMobil="left" alignDesktop="left" arr={listImg6}/>
             </div>
           </div>
 
@@ -471,7 +473,7 @@ function Page() {
               </div>
 
               <div className="seventh-day-slider">
-                <Slider size="390px" color="black" alignMobil="left" alignDesktop="right" arr={listImg7}/>
+                <Slider size="400px" color="black" alignMobil="left" alignDesktop="right" arr={listImg7}/>
               </div>
              
             </div>
@@ -492,7 +494,7 @@ function Page() {
 
       <div className="prise-block Container" id="section2">
 
-          <h3 className="prise-block__title Title-Big Text-color-black">Стоимость участия</h3>
+          <h3 className="prise-block__title">Стоимость участия</h3>
 
           <div className="prise-block__rite">
             <div className="prise-block__rite__point Text-pharagraf Text-color-black">
@@ -530,7 +532,7 @@ function Page() {
                 <li>все указанные в программе экскурсии</li>
               </ul>
             </div>
-
+            
             <div className="prise-block__addition">
               <p>За дополнительную плату</p>
               <ul className="Text-pharagraf Text-color-dark-grey">
@@ -541,7 +543,6 @@ function Page() {
                 <li>личные расходы</li>
               </ul>
             </div>
-
             <div className="prise-block__useful-links">
               <a className="Links">Информация о бронях</a>
               <a  className="Links">Важная информация</a>
@@ -563,7 +564,6 @@ function Page() {
           </div>
 
           <OnlineApplication />
-          {/* <FormM /> */}
 
           <form className="application-block__form-email">
 
@@ -578,29 +578,7 @@ function Page() {
           </form>
       </div>
 
-      <div className="comand Container" id="section4">
-        <h3 className="Title-Big Text-color-black">
-          Про нашу супер крутую команду Dreamkam Tour
-        </h3>
-
-        <p className="comand-pharagraf Text-pharagraf Text-color-dark-grey">
-          Наша команда - это люди влюбленные в свою работу. Каждый из них обладает проффесиональными знаниями, хорошей физической подготовкой. Следят за вашей безпасностью в туре, и тем чтобы каждый из вас получил максимальное колличество эмоций.
-        </p>
-        <div className="comand-block">
-          <div className="comand-block__image">
-            <img src="Alina.jpg" />
-            <p>Алина Гончарова, <span>@alin_och</span></p>
-          </div>
-          <div className="comand-block__image">
-            <img src="Evgenij.jpg" />
-            <p>Евгений Барсуков, <span>@eugen_eugen</span></p>
-          </div>
-          <div className="comand-block__image">
-            <img src="Dmitrij.jpg" />
-            <p>Дмитрий Осипов, <span>@dim_os</span></p>
-          </div>
-        </div>
-      </div>
+      <div className="comand-block" id="section4"></div>
 
     </div>
   );

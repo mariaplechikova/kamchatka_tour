@@ -9,7 +9,7 @@ export default function Modal1(props) {
       <div className={"modal1 show"}> 
       <div className="modal__block">
           <div className="modal__title">Онлайн заявка</div>
-          <OnlineApplication className="modal___form" sendRequest={props.closeModal}/>
+          <OnlineApplication className="modal___form" sendRequest={props.sendRequest}/>
           <img src="close.png" className="close" onClick={props.closeModal}/>
         </div>
     </div>
