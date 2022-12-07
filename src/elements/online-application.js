@@ -20,6 +20,7 @@ function OnlineApplication(props) {
         comment: '',     
     })
     
+    console.log(props.sendRequest)
 
     function handlePhone (event) {
         getSendPhone(event.target.value);
