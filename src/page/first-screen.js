@@ -55,7 +55,7 @@ function FirstScreen() {
         
 
         <div className="slider-container">
-          <Slider size="390px" color="white" align="left" arr={listImg1}/>
+          <Slider size="390px" color="white" align="left" arr={listImg1} arrow='arrow-horizontally.png'/>
         </div>
         
         <div className="first-screen__social-mobil">

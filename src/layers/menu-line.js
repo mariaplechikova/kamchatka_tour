@@ -2,22 +2,23 @@ import "./menu-line.css";
 import { Link, animateScroll as scroll } from "react-scroll";
 import Modal1 from "../elements/modal1";
 import { useState } from "react";
-import { api } from '../api'
+// import { api } from '../api'
 
 function MenuLine() {
 
-  const [ showForm, setShowForm ] = useState(false)
+  const [ showModal, setshowModal ] = useState(false)
 
-  function ChangeShowForm() {
-    // event.preventDefault()
-    setShowForm(!showForm)
+  function ChangeShowModal(num) {
+    // setShowForm(!showForm)
+    setshowModal(num)
+    console.log(`показывать форму ${showModal}`)
   }
 
-  function SendRequest(tourData) {
-    ChangeShowForm()
+  // function SendRequest(tourData) {
+  //   ChangeShowForm()
 
-    api.bookTour(tourData)
-  }
+  //   api.bookTour(tourData)
+  // }
 
   return (
     <nav>
@@ -51,9 +52,15 @@ function MenuLine() {
       className="menu-line__link Cursor-Pointer">
         Команда
       </Link>
-      <button className="menu-line__button" onClick={ChangeShowForm}>Забронировать</button>
-      {/* <button className="menu-line__button" >Забронировать</button> */}
-      {showForm ? (< Modal1 closeModal={ChangeShowForm} sendRequest={SendRequest}/>) : null}
+      <button className="menu-line__button" onClick={() => ChangeShowModal(true)}>Забронировать</button>
+      {/* {showForm ? (< Modal1 closeModal={ChangeShowForm} sendRequest={SendRequest}/>) : null} */}
+      <a title="Whatsapp" href="whatsapp://send?phone=79209696101" className="messenger">
+        <img src="whatsapp-icon.png" alt="Написать в Whatsapp" />
+      </a>
+      <a title="Telegram" href="https://telegram.me/mariya_plechikova" target="_blank" className="messenger">
+        <img src="telegram-icon.png" />
+      </a>
+      {showModal ? (< Modal1 closeModal1={ChangeShowModal} />) : null}
     </nav>
   );
 }

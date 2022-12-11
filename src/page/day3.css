@@ -30,6 +30,7 @@
         /* height: max(700px, 100vh); */
         display: flex;
         justify-content: space-between;
+        min-height: 900px;
     }
 
     .third-day-text {

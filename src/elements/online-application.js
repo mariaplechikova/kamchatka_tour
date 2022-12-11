@@ -2,15 +2,22 @@ import "./online-application.css";
 import { useState } from 'react'
 import InputMask from 'react-input-mask';
 import PhoneInput from './input-phone';
+import Thanks from './thanks';
+import { api } from '../api'
 
 function OnlineApplication(props) {
     const [sendQuantity, getSendQuantity] = useState(1)
     const [sendPhone, getSendPhone] = useState('');
-    const [sendTariff, getSendTariff] = useState('')
-    const [sendDate, getSendDate] = useState("2023-05-01")
-    const [sendComment, getSendComment] = useState("Напишите Ваш комментарий")
-    
+    // const [sendTariff, getSendTariff] = useState('')
+    // const [sendDate, getSendDate] = useState("2023-05-01")
+    // const [sendComment, getSendComment] = useState("Напишите Ваш комментарий")
+    const [showThanks, setshowThanks] = useState(false)
 
+    function handleThanks(num) {
+        setshowThanks(num)
+        console.log(showThanks)
+    }
+    
     const [sendList, setSendList] = useState({
         name: '',
         quantity: '',
@@ -19,15 +26,12 @@ function OnlineApplication(props) {
         date: '',
         comment: '',     
     })
-    
-    console.log(props.sendRequest)
 
     function handlePhone (event) {
         getSendPhone(event.target.value);
         handleField(event, 'phone')
         return sendPhone
     }
-
 
     function handleField(event, field) {
         setSendList({
@@ -38,10 +42,15 @@ function OnlineApplication(props) {
 
     function addSendlist(event) {
         event.preventDefault()
-        props.sendRequest(sendList)
- 
+        sendRequest(sendList)
+        handleThanks(true)
+        props.closeForm1()
         console.log(sendList)
     }
+
+    function sendRequest(tourData) {
+        api.bookTour(tourData)
+      }
 
     return (
         <form className="form">
@@ -129,8 +138,8 @@ function OnlineApplication(props) {
                     className="form__comment-input"
                 />
             </label>
-
             <button className="form__button" onClick={addSendlist}>Отправить заявку</button>
+            {showThanks ? <Thanks closeModal4={props.closeModal3} closeThanks={handleThanks} /> : null}
         </form>
     )
 }

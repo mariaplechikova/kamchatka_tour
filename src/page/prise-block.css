@@ -41,11 +41,12 @@
 
 .prise-block__send-request {
     height: 70px;
-    width: 230px;
+width: 200px;
     display: flex;
     align-items: center;
     position: relative;
     margin: 60px 0;
+    gap: 10px;
 }
 
 .prise-block__send-request a {
@@ -119,7 +120,7 @@
 .orange-arrow, .black-arrow {
     position: absolute;
     right: 0px;
-    width: 70px;
+    width: 48px;
     height: auto;
 }
 
@@ -161,6 +162,7 @@
         align-self: end;
         justify-self: end;
         margin-bottom: 7px;
+        width: 230px;
     }
 
     .prise-block__description {
@@ -191,6 +193,11 @@
     .prise-block__line {
         width: calc(100% - 80px);
         left: 40px;
+    }
+
+    .orange-arrow, .black-arrow {
+        width: 64px;
+        height: 64px;
     }
 }
 

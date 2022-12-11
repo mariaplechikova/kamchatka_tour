@@ -73,10 +73,9 @@
 
 .first-screen .first-screen__link {
     display: flex;
-    justify-content: start;
     align-items: center;
     height: 80px;
-    width: 220px;
+    width: 200px;
     position: relative;
 }
 
@@ -107,8 +106,8 @@
 .orange-arrow, .white-arrow {
     position: absolute;
     right: 0px;
-    width: 70px;
-    height: 70px;
+    width: 48px;
+    height: 48px;
 }
 
 .first-screen__social-mobil {
@@ -148,6 +147,15 @@
         font-weight: 400;
         font-size: 20px;
         padding-top: 0px;
+    }
+
+    .orange-arrow, .white-arrow {
+        height: 64px;
+        width: 64px;
+    }
+
+    .first-screen .first-screen__link {
+        width: 220px;
     }
 }
 

@@ -159,7 +159,7 @@ function Page() {
               будете выезжать на радиальные маршруты, а проживать в комфортабельных 
               двухместных номерах. </div>
                 
-            <div className="journey-block__text__table">
+            <div className="journey-block__text__table Text-color-black">
                     <div>
                         <img src='level 1.svg'/>
                         <p>Сложность</p>
@@ -233,7 +233,14 @@ function Page() {
               </div>
 
               <div className="first-day-slider">
-                <Slider size="400px" color='white' alignMobil="left" alignDesktop="left" arr={listImg1}/>
+                <Slider 
+                  size="400px" 
+                  color='white' 
+                  alignMobil="left" 
+                  alignDesktop="left" 
+                  arr={listImg1} 
+                  arrow='arrow-horizontally.png'
+                />
               </div>
             </div>
 
@@ -270,7 +277,14 @@ function Page() {
               </div>
 
               <div className="second-day-slider">
-                <Slider size="400px" color="black" alignMobil="left" alignDesktop="right" arr={listImg2}/>
+                <Slider 
+                  size="400px" 
+                  color="black" 
+                  alignMobil="left" 
+                  alignDesktop="right" 
+                  arr={listImg2}
+                  arrow='arrow-horizontally-black.png'
+                />
               </div>
              
             </div>
@@ -336,7 +350,14 @@ function Page() {
           </div>
 
           <div className="third-day-slider">
-            <Slider size="400px" color="black" alignMobil="left" alignDesktop="right" arr={listImg3}/>
+            <Slider 
+              size="400px" 
+              color="black" 
+              alignMobil="left" 
+              alignDesktop="right" 
+              arr={listImg3}
+              arrow='arrow-horizontally-black.png'
+            />
           </div>
 
           {/* <div className="third-day-background"> */}
@@ -367,7 +388,14 @@ function Page() {
             </div>
 
             <div className="fourth-day-slider">
-              <Slider size="400px" color="white" alignMobil="left" alignDesktop="left" arr={listImg4}/>
+              <Slider 
+                size="400px" 
+                color="white" 
+                alignMobil="left" 
+                alignDesktop="left" 
+                arr={listImg4}
+                arrow='arrow-horizontally.png'
+              />
             </div>
           </div>
           
@@ -390,7 +418,7 @@ function Page() {
             </div>
             
             <div className="fifth-day-slider">
-              <Slider size="400px" color="white" alignMobil="left" alignDesktop="right" arr={listImg5}/>
+              <Slider size="400px" color="white" alignMobil="left" alignDesktop="right" arr={listImg5} arrow='arrow-horizontally.png'/>
             </div>
           </div>
 
@@ -421,7 +449,7 @@ function Page() {
             </div>
 
             <div className="sixth-day-slider">
-              <Slider size="400px" color="white" alignMobil="left" alignDesktop="left" arr={listImg6}/>
+              <Slider size="400px" color="white" alignMobil="left" alignDesktop="left" arr={listImg6} arrow='arrow-horizontally.png'/>
             </div>
           </div>
 
@@ -473,7 +501,7 @@ function Page() {
               </div>
 
               <div className="seventh-day-slider">
-                <Slider size="400px" color="black" alignMobil="left" alignDesktop="right" arr={listImg7}/>
+                <Slider size="400px" color="black" alignMobil="left" alignDesktop="right" arr={listImg7} arrow='arrow-horizontally-black.png'/>
               </div>
              
             </div>

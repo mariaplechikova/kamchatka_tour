@@ -74,8 +74,10 @@ function Slider(props) {
         </CSSTransition>
 
       <div className="sliderButton" style={buttonAlign}>
-        <button onClick={sliderLeft} style={buttonColor}>&larr;</button>
-        <button onClick={sliderRight} style={buttonColor}>&rarr;</button>
+        <img src={props.arrow} className="slider__arrow" onClick={sliderLeft}/>
+        <img src={props.arrow} className="slider__arrow slider__arrow--right" onClick={sliderRight}/>
+        {/* <button onClick={sliderLeft} style={buttonColor}>&larr;</button> */}
+        {/* <button onClick={sliderRight} style={buttonColor}>&rarr;</button> */}
       </div>
 
     </div>
