@@ -50,7 +50,11 @@ function Footer() {
             <hr className="footer__line"></hr>
 
             <div className="footer__big-block"> 
-                Виджет социальной сети
+                <div>
+                    <p>Социальные сети</p>
+                    <a href="https://vk.com/mariya_plechikova"><img src='VK.png'/></a>
+                </div>
+                {/* Виджет социальной сети */}
             </div>
 
             <hr className="footer__line"></hr>
@@ -63,15 +67,15 @@ function Footer() {
                 </div>
                 <br></br>
                 <br></br>
-                <div>
+                {/* <div>
                     <p>Социальные сети</p>
                     <a href=""><img src='VK.png'/></a>
-                </div>
+                </div> */}
             </div>
 
             <hr className="footer__line"></hr>
 
-            <div className="footer__smoll-block">
+            <div className="footer__smoll-block footer__end">
                 <p id="tel">+7 (760) 354-23-23</p>
                 <p className="grey-text">Работаем с 9:00 до 18:00</p>
 

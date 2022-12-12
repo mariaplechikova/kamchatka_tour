@@ -27,6 +27,15 @@ export default function Burger() {
               aria-label='Toggle navigation'
               onClick={() => setShowAnimated2(!showAnimated2)}
             >
+              <div className='burger__messenger'>
+                <a title="Whatsapp" href="whatsapp://send?phone=79209696101" className="messenger">
+                  <img src="whatsapp-icon.png" alt="Написать в Whatsapp" />
+                </a>
+                <a title="Telegram" href="https://telegram.me/mariya_plechikova" target="_blank" className="messenger">
+                  <img src="telegram-icon.png" />
+                </a>
+              </div>
+              
               <div className={`animated-icon2 ${showAnimated2 && 'open'}`}>
                 <span></span>
                 <span></span>

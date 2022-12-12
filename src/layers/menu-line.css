@@ -26,4 +26,6 @@ nav {
   font-size: 20px;
   color: #275553;
   box-sizing: border-box;
+  border-bottom: none;
+  padding-top: 4px;
 }

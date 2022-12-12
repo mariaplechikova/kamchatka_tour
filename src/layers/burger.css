@@ -4,6 +4,18 @@
   padding: 0px;
 }
 
+.burger__messenger {
+  width: 80px;
+  position:absolute;
+  right: 45px;
+  top: -3px;
+}
+
+.burger__messenger img {
+  width: 35px;
+  height: auto;
+}
+
 /* Ничего не меняет */
 .burger__top__container {
   display: flex;

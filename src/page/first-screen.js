@@ -43,7 +43,7 @@ function FirstScreen() {
           </Link>
 
           <div className="first-screen__social-desktop">
-            <a href=""><img src='VK.png'/></a>
+            <a href="https://vk.com/mariya_plechikova"><img src='VK.png'/></a>
             {/* <a href=""><img src='odnoklassniki.png'/></a> */}
             {/* <a href=""><img src='youtube.png'/></a> */}
             {/* <a href=""><img src='telegram.png'/></a> */}
@@ -59,7 +59,7 @@ function FirstScreen() {
         </div>
         
         <div className="first-screen__social-mobil">
-        <a href=""><img src='VK.png'/></a> 
+        <a href="https://vk.com/mariya_plechikova"><img src='VK.png'/></a> 
             {/* <a href=""><img src='odnoklassniki.png'/></a> */}
             {/* <a href=""><img src='youtube.png'/></a> */}
             {/* <a href=""><img src='telegram.png'/></a> */}

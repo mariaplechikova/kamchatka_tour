@@ -23,7 +23,7 @@ function MenuLine() {
   return (
     <nav>
       <Link 
-      activeClass="Link-active"
+      // activeClass="Link-active"
       to="section1"
       spy={true}
       // smooth={true}
@@ -33,7 +33,7 @@ function MenuLine() {
         Расписание тура
       </Link>
       <Link 
-      activeClass="Link-active"
+      // activeClass="Link-active"
       to="section2"
       spy={true}
       // smooth={true}
@@ -43,7 +43,7 @@ function MenuLine() {
         Как записаться
       </Link>
       <Link 
-      activeClass="Link-active"
+      // activeClass="Link-active"
       to="section4"
       spy={true}
       // smooth={true}

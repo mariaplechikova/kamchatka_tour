@@ -9,6 +9,7 @@ import "./day7.css";
 import "./day8.css";
 import "./prise-block.css";
 import "./application-block.css";
+import "./comand.css";
 import { Link, animateScroll as scroll } from "react-scroll";
 import Slider from '../elements/slider'
 import OnlineApplication from '../elements/online-application'
@@ -138,6 +139,20 @@ function Page() {
     {url: 'slider4.jpg',
     title: "Бурые медведи",
     description: "Есть хорошая возможность понаблюдеть бурых медведей в естественной среде обитания"}
+  ]
+
+  const listImgComand = [
+    {url:'Alina.jpg',
+    title: "Алина Гончарова, ",
+    description: "@alin_och"},
+
+    {url:'Evgenij.jpg',
+    title: "Евгений Барсуков, ",
+    description: "@eugen_eugen"},
+
+    {url: 'Dmitrij.jpg',
+    title: "Дмитрий Осипов,",
+    description: "@dim_os"},
   ]
 
 
@@ -296,7 +311,7 @@ function Page() {
           
           <div className="services-block___conteiner">
 
-            <div className="services-block___conteiner-top">
+            {/* <div className="services-block___conteiner-top"> */}
               <div className="services-block___conteiner__div">
                 <img src="services-img1.jpg" className="services-block___conteiner__img"></img>
                 <p className="services-block__conteiner__paragraf">
@@ -312,9 +327,9 @@ function Page() {
                   Каждый обед мы готовим с большой любовью. Кормим вас традиционными камчатскими блюдами. Еда - залог хорошего отдыха!
                 </p>
               </div>
-            </div>
+            {/* </div> */}
 
-            <div className="services-block___conteiner-bottom">
+            {/* <div className="services-block___conteiner-bottom"> */}
               <div className="services-block___conteiner__div">
                 <img src="services-img3.png" className="services-block___conteiner__img"></img>
                 <p className="services-block__conteiner__paragraf">
@@ -330,7 +345,7 @@ function Page() {
                   Можете не переживать, что не успели сделать фото. Наш фотограф успевает везде и за всеми. У вас будут самые лучшие фото!
                 </p>
               </div>
-            </div>
+            {/* </div> */}
 
           </div>
         </div>
@@ -606,7 +621,42 @@ function Page() {
           </form>
       </div>
 
-      <div className="comand-block" id="section4"></div>
+      <div className="comand Container" id="section4">
+        <h3 className="comand__title Text-color-black">
+          Про нашу супер крутую команду Dreamkam Tour
+        </h3>
+
+        <p className="comand-pharagraf Text-pharagraf Text-color-dark-grey">
+          Наша команда - это люди влюбленные в свою работу. Каждый из них обладает проффесиональными знаниями, хорошей физической подготовкой. Следят за вашей безпасностью в туре, и тем чтобы каждый из вас получил максимальное колличество эмоций.
+        </p>
+
+        <div className="comand-block">
+          <div className="comand-block__image">
+            <img src="Alina.jpg" />
+            <p>Алина Гончарова, <span>@alin_och</span></p>
+          </div>
+          <div className="comand-block__image">
+            <img src="Evgenij.jpg" />
+            <p>Евгений Барсуков, <span>@eugen_eugen</span></p>
+          </div>
+          <div className="comand-block__image">
+            <img src="Dmitrij.jpg" />
+            <p>Дмитрий Осипов, <span>@dim_os</span></p>
+          </div>
+          {/* <Slider 
+            className="comand__slider"
+            size="400px" 
+            color="black" 
+            alignMobil="left" 
+            alignDesktop="right" 
+            arr={listImgComand}
+            arrow='arrow-horizontally-black.png'
+          /> */}
+        </div>
+
+
+
+      </div>
 
     </div>
   );

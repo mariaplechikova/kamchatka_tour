@@ -1,3 +1,13 @@
+.comand__title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 40px;
+    color: #121212;
+    margin-bottom: 24px;
+    text-align: center;
+}
+
 .comand-block {
     width: 100%;
     box-sizing: border-box;
@@ -5,6 +15,8 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    /* overflow: hidden; */
+    /* position: relative; */
 }
 
 .comand-pharagraf {
@@ -38,8 +50,18 @@
     text-decoration-line: underline;
     color: #F47648;
 }
+@media (min-width: 600px) {
+    .comand__title {
+        font-size: 64px;
+        line-height: 72px;
+    }
+}
 
 @media (min-width: 800px) {
+    .comand__title {
+        text-align: left;
+    }
+
     .comand-block {
         justify-content: space-between;
         margin-top: 79px;
