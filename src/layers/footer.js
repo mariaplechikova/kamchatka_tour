@@ -1,5 +1,4 @@
 import "./footer.css";
-import Logo from "../elements/logo";
 import { Link, animateScroll as scroll } from "react-scroll";
 
 function Footer() {
@@ -9,6 +8,7 @@ function Footer() {
         <div className="footer">
 
             <div className="footer__smoll-block">
+                <img src="logo.png" className="footer-logo"/>
                 <Link 
                 to="section1"
                 spy={true}
@@ -47,17 +47,16 @@ function Footer() {
                 </Link>
             </div>
 
-            <hr className="footer__line"></hr>
+            <div className="footer__line"></div>
 
             <div className="footer__big-block"> 
                 <div>
                     <p>Социальные сети</p>
-                    <a href="https://vk.com/mariya_plechikova"><img src='VK.png'/></a>
+                    <a href="https://vk.com/mariya_plechikova"><img src='VK.png' className="social-button"/></a>
                 </div>
-                {/* Виджет социальной сети */}
             </div>
 
-            <hr className="footer__line"></hr>
+            <div className="footer__line middle-line"></div>
 
             <div className="footer__big-block">
                 <div>
@@ -65,15 +64,9 @@ function Footer() {
                     <p>Смотрите видео отзывы наших клиентов</p>
                     <a href="" className="grey-text">Перейти</a>
                 </div>
-                <br></br>
-                <br></br>
-                {/* <div>
-                    <p>Социальные сети</p>
-                    <a href=""><img src='VK.png'/></a>
-                </div> */}
             </div>
 
-            <hr className="footer__line"></hr>
+            <div className="footer__line"></div>
 
             <div className="footer__smoll-block footer__end">
                 <p id="tel">+7 (760) 354-23-23</p>
@@ -82,12 +75,12 @@ function Footer() {
                 <br></br>
                 
                 <p>
-                    <img src='email.png' className="footer__icons"/>
+                    <img src='email.png' className="footer__icons-email"/>
                        info@dreamkamtour.ru
                 </p>
                 
                 <p>
-                    <img src='location.png'className="footer__icons"/>
+                    <img src='location.png'className="footer__icons-location"/>
                        ул. Рубинштейна, 41
                 </p>
                 

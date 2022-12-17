@@ -45,6 +45,10 @@
 .Text-color-black {
     color: #212121;
 }
+
+/* .Text-color-black {
+    color: #121212;
+} */
 .Text-color-grey {
     color: #ACACAC;
 }
@@ -88,7 +92,7 @@
 
 }
 
-@media (min-width: 800px) {
+@media (min-width: 900px) {
     .Container {
         padding: 80px 5%;
     }

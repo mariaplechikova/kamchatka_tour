@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import InputMask from 'react-input-mask';
 
 function PhoneInput(props) {

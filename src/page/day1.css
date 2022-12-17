@@ -11,7 +11,6 @@
 
 .first-day-text {
     width: 100%;
-    /* min-width: 390px; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -24,7 +23,6 @@
 
 .first-day__cloud {
     position: relative;
-    /* z-index: 10; */
     width: calc(100% + 32px);
     height: auto;
     bottom: -47px;
@@ -39,14 +37,7 @@
     }
 }
 
-@media (min-width: 800px) {
-
-    .first-day {
-        /* height: 160vh; */
-        /* min-height: 900px; */
-        /* height: max(900px, 160vh); */
-    }
-
+@media (min-width: 900px) {
     .first-day__content {
         display: flex;
         justify-content: space-between;
@@ -65,11 +56,6 @@
 
     .first-day-text h2 {
         min-width: 500px;
-    }
-
-    .first-day-text p {
-        /* padding: 0px;
-        margin: 0px; */
     }
 
     .first-day-slider {

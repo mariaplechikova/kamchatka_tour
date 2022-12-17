@@ -1,5 +1,4 @@
 import "./header.css";
-import Logo from "../elements/logo";
 import Burger from "./burger";
 import MenuLine from "./menu-line";
 import { Link, animateScroll as scroll } from "react-scroll";
@@ -23,8 +22,8 @@ export default function Header() {
   return (
     <div className={colorChange ? "header colorChange" : "header"}>
 
-      <Link onClick={()=>scroll.scrollToTop()} className="header__logo">
-        <Logo className="header__logo__img"/>
+      <Link onClick={()=>scroll.scrollToTop()}>
+        <img src="logo.png" className="header__logo"/>
       </Link> 
 
       <div className="header-mobil">

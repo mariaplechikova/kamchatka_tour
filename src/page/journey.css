@@ -4,11 +4,9 @@
 }
 .journey-block__text {
     width: 100%;
-    /* height: 1360px; */
     z-index: 1;
     display: flex;
     flex-direction: column;
-    /* justify-content: space-between; */
     box-sizing: border-box;
 }
 
@@ -94,7 +92,6 @@
 }
 
 .journey-block__background__plane {
-    /* z-index: 1000; */
     position: absolute;
     width: 357px;
     height: 231.7px;
@@ -130,7 +127,6 @@
     bottom: 0px;
     background-color: aqua;
     width: 100%;
-    /* z-index: -10; */
     left: 0px;
 }
 
@@ -141,7 +137,6 @@
 }
 
 .journey-block__background__gradient {
-    /* z-index: 6; */
     position: absolute;
     height: 100%;
     width: 100%;
@@ -219,11 +214,10 @@
         top: 0px;
         background: linear-gradient(180deg, #000000 99.99%, rgba(0, 0, 0, 0) 100%);
         border-radius: 16px;
-        /* z-index: 1000; */
     }
 }
 
-@media (min-width: 800px) {
+@media (min-width: 900px) {
     .journey-block {
         padding-top: 120px;
         padding-bottom: 147px;
@@ -259,7 +253,6 @@
         top: 0px;
         background: linear-gradient(180deg, #000000 99.99%, rgba(0, 0, 0, 0) 100%);
         border-radius: 16px;
-        /* z-index: 1000; */
     }
     
     .journey-block__background__mountains {

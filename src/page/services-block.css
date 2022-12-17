@@ -60,7 +60,6 @@
         text-align: center;
     }
     .services-block___conteiner, .services-block___conteiner-top, .services-block___conteiner-bottom {
-        /* width: 600px; */
         flex-direction: row;
         flex-wrap: wrap;
     }
@@ -75,7 +74,7 @@
     }
 }
 
-@media (min-width: 800px) {
+@media (min-width: 900px) {
     .services-block__title {
         text-align: center;
     }

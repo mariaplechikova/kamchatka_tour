@@ -19,15 +19,8 @@
     margin-top: 48px;
 }
 
-/* .third-day-text p {
-    font-style: normal;
-    font-weight: 400;
-    color: #212121;
-} */
-
-@media (min-width: 800px) {
+@media (min-width: 900px) {
     .third-day {
-        /* height: max(700px, 100vh); */
         display: flex;
         justify-content: space-between;
         min-height: 900px;

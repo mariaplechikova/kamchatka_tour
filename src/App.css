@@ -31,13 +31,4 @@
   border-bottom: 3px solid orange;
   transition: all 0.5s;
 }
-/* 
-@font-face { 
-  font-family: "InterExtraBold";
-  src: url("./fonts/InterExtraBold/InterExtraBold.eot");
-  src: url("./fonts/InterExtraBold/InterExtraBold.eot?#iefix")format("embedded-opentype"),
-  url("./fonts/InterExtraBold/InterExtraBold.woff") format("woff"),
-  url("./fonts/InterExtraBold/InterExtraBold.ttf") format("truetype");
-  font-style: normal;
-  font-weight: 800;
-} */
+

@@ -1,108 +1,147 @@
-import React, { useState } from 'react';
-import Button from 'react-bootstrap/Button';
-import Col from 'react-bootstrap/Col';
-import Form from 'react-bootstrap/Form';
-import InputGroup from 'react-bootstrap/InputGroup';
-import Row from 'react-bootstrap/Row';
+import "./form.css";
+import { useState } from 'react'
+import InputMask from 'react-input-mask';
+import PhoneInput from './input-phone';
+import Thanks from './thanks';
+import { api } from '../api'
 
-export default function FormM() {
-  const [validated, setValidated] = useState(false);
+function Form(props) {
+    const [sendQuantity, getSendQuantity] = useState(1)
+    const [sendPhone, getSendPhone] = useState('');
+    // const [sendTariff, getSendTariff] = useState('')
+    // const [sendDate, getSendDate] = useState("2023-05-01")
+    // const [sendComment, getSendComment] = useState("Напишите Ваш комментарий")
+    const [showThanks, setshowThanks] = useState(false)
 
-  const handleSubmit = (event) => {
-    const form = event.currentTarget;
-    if (form.checkValidity() === false) {
-      event.preventDefault();
-      event.stopPropagation();
+    function handleThanks(num) {
+        setshowThanks(num)
+        console.log(showThanks)
+    }
+    
+    const [sendList, setSendList] = useState({
+        name: '',
+        quantity: '',
+        phone: '',
+        tariff: '',
+        date: '',
+        comment: '',     
+    })
+
+    function handlePhone (event) {
+        getSendPhone(event.target.value);
+        handleField(event, 'phone')
+        return sendPhone
     }
 
-    setValidated(true);
-  };
+    function handleField(event, field) {
+        setSendList({
+            ...sendList,
+            [field]: event.target.value
+        })
+    }
 
-  return (
-    <Form noValidate validated={validated} onSubmit={handleSubmit}>
-        <Row className="mb-3">
+    function addSendlist(event) {
+        event.preventDefault()
+        sendRequest(sendList)
+        handleThanks(true)
+        props.closeForm1()
+        console.log(sendList)
+    }
 
-            <Form.Group as={Col} md="4" controlId="validationCustom01">
-            <Form.Label>First name</Form.Label>
-            <Form.Control
-                required
-                type="text"
-                placeholder="First name"
-                defaultValue="Mark"
-            />
-            <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
-            </Form.Group>
+    function sendRequest(tourData) {
+        api.bookTour(tourData)
+      }
+
+    return (
+        <form className="form">
+
+            <div className="form__name-number">
+                <label className="form__name">
+                    <p className="form__name-title">Имя участника</p>
+                    <input 
+                        type='text' 
+                        placeholder="Имя"
+                        className="form__name-input" 
+                        onChange={(event) => handleField(event, 'name')} 
+                    />
+                </label>
+                <label className="form__number">
+                    <p className="form__number-title">Количество человек</p>
+                    <input 
+                        type='number' 
+                        placeholder={sendQuantity} 
+                        min="1" 
+                        max="10"
+                        step="1"
+                        className="form__number-input" 
+                        onChange={(event) => handleField(event, 'quantity')}
+                    ></input>
+                </label>
+            </div>
+
+            <div className="form__tel-date">
+                <label className="form__tel">
+                    <p className="form__tel-title">Контактный телефон</p>
+                    <PhoneInput value={sendPhone} onChange={handlePhone} />
+                </label>
+
+                <label className="form__date">
+                <p className="form__date-title">Даты тура</p>
+                <select name="dateTour" onChange={(event) => handleField(event, 'date')}>
+                    <option value="">Выберете дату тура</option>
+                    <option value="23.06 - 30.06">23.06 - 30.06</option>
+                    <option value="14.07 - 21.07">14.07 - 21.07</option>
+                    <option value="20.08 - 27.08">20.08 - 27.08</option>
+                </select>
+                </label>
+            </div>
 
 
-            <Form.Group as={Col} md="4" controlId="validationCustomUsername">
-            <Form.Label>Username</Form.Label>
-            <InputGroup hasValidation>
-                <InputGroup.Text id="inputGroupPrepend">@</InputGroup.Text>
-                <Form.Control
-                type="text"
-                placeholder="Username"
-                aria-describedby="inputGroupPrepend"
-                required
+            <div className="form__radio" onClick={(event) => handleField(event, 'tariff')}>
+                <p className="form__radio-title">Тариф</p>
+
+                <label >
+                    <input 
+                        type='radio'
+                        name="radio" 
+                        value="Базовый (для камчадал)"
+                    />
+                    <div>
+                    <p>Базовый (для камчадал)</p>
+                    <p>79 000 руб</p>
+                    </div>
+                </label>
+
+                <label >
+                    <input  type='radio' name="radio" value="Базовый + проживание"/>
+                    <div>
+                    <p>Базовый + проживание</p>
+                    <p>99 000 руб</p>
+                    </div>
+                </label>
+
+                <label  >
+                    <input type='radio' name="radio" value="Базовый + проживание + долина гейзеров"/>
+                    <div>
+                    <p>Базовый + проживание + долина гейзеров</p>
+                    <p>179 000 руб</p>
+                    </div>
+                </label>
+            </div>
+
+            <label className="form__comment">
+                <p className="form__coment-title">Комментарий</p>
+                <input 
+                    onChange={(event) => handleField(event, 'comment')} 
+                    type='textarea' 
+                    placeholder="Напишите Ваш комментарий"
+                    className="form__comment-input"
                 />
-                <Form.Control.Feedback type="invalid">
-                Please choose a username.
-                </Form.Control.Feedback>
-            </InputGroup>
-            </Form.Group>
-
-            <Form.Group as={Col} md="4" controlId="validationCustomDate">
-            <Form.Label>Дата тура</Form.Label>
-            <InputGroup hasValidation>
-                {/* <Form.Control */}
-                    // type="option"
-                    // placeholder="Выберите дату тура"
-                    // aria-describedby="inputGroupPrepend"
-                    // required
-                {/* /> */}
-                <Form.Select aria-label="Default select example">
-                    <option></option>
-                    <option value="1">One</option>
-                    <option value="2">Two</option>
-                    <option value="3">Three</option>
-                </Form.Select>
-                <Form.Control.Feedback type="invalid">
-                Выберите даты тура
-                </Form.Control.Feedback>
-            </InputGroup>
-            </Form.Group>
-
-        </Row>
-
-        <Row className="mb-3">
-            <Form.Group as={Col} md="6" controlId="validationCustom03">
-            <Form.Label>City</Form.Label>
-            <Form.Control type="text" placeholder="City" required />
-            <Form.Control.Feedback type="invalid">
-                Please provide a valid city.
-            </Form.Control.Feedback>
-            </Form.Group>
-
-            <Form.Group as={Col} md="3" controlId="validationCustom04">
-            <Form.Label>State</Form.Label>
-            <Form.Control type="text" placeholder="State" required />
-            <Form.Control.Feedback type="invalid">
-                Please provide a valid state.
-            </Form.Control.Feedback>
-            </Form.Group>
-        
-        </Row>
-
-        <Form.Group className="mb-3">
-            <Form.Check
-            required
-            label="Agree to terms and conditions"
-            feedback="You must agree before submitting."
-            feedbackType="invalid"
-            />
-        </Form.Group>
-
-
-        <Button type="submit">Submit form</Button>
-    </Form>
-  );
+            </label>
+            <button className="form__button" onClick={addSendlist}>Отправить заявку</button>
+            {showThanks ? <Thanks closeModal4={props.closeModal3} closeThanks={handleThanks} /> : null}
+        </form>
+    )
 }
+
+export default Form;

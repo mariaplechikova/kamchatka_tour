@@ -5,15 +5,16 @@
 }
 
 .burger__messenger {
-  width: 80px;
+  width: 100px;
   position:absolute;
-  right: 45px;
-  top: -3px;
+  right: 55px;
+  top: -6px;
 }
 
 .burger__messenger img {
-  width: 35px;
+  width: 40px;
   height: auto;
+  margin-left: 10px;
 }
 
 /* Ничего не меняет */

@@ -38,7 +38,6 @@
 
 .block-day__cloud {
     position: relative;
-    /* z-index: 10; */
     width: calc(100%);
     height: auto;
     bottom: -5px;
@@ -54,7 +53,7 @@
     }
 }
 
-@media (min-width: 800px) {
+@media (min-width: 900px) {
  .fourth-day, .fifth-day, .sixth-day{
     width: 100%;
     display: flex;
@@ -78,11 +77,4 @@
     justify-content: end;
  }
 
- .block-day {
-    /* background-repeat: no-repeat; */
-    /* background-size: content; */
-    /* box-sizing: border-box; */
-    /* background: linear-gradient(to top, rgb(255, 0, 0) 10%, transparent, rgb(0, 0, 0) 70%), */
-    /* url(./image/black1.png) 50px; */
-}
 }

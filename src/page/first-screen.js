@@ -3,25 +3,12 @@ import "./page";
 import Slider from '../elements/slider'
 import React, { useState } from 'react';
 import { Link, animateScroll as scroll } from "react-scroll";
+import {
+  listImg0
+} from '../elements/list'
 
 function FirstScreen() {
-  const listImg1 = [
-    {url:'slider1.jpg',
-    title: "Бурые медведи",
-    description: "Медведи Камчатки основные хозяева территории. Чаще всего встречаются на реках, озёрах и в океанских бухтах"},
-
-    {url:'slider2.jpg',
-    title: "Долина гейзеров",
-    description: "На территории находятся грязевые вулканы, гейзеры, озёра, термальные источники, реки, водопады."},
-
-    {url: 'slider3.jpg',
-    title: "Ключевская сопка",
-    description: "Самый высокий действующий вулкан в Евразии. Возраст приблизительно 7000 лет."},
-
-    {url: 'slider4.jpg',
-    title: "Бурые медведи",
-    description: "Есть хорошая возможность понаблюдеть бурых медведей в естественной среде обитания"}
-  ]
+  
   return (
     <div className="first-screen">
 
@@ -44,27 +31,17 @@ function FirstScreen() {
 
           <div className="first-screen__social-desktop">
             <a href="https://vk.com/mariya_plechikova"><img src='VK.png'/></a>
-            {/* <a href=""><img src='odnoklassniki.png'/></a> */}
-            {/* <a href=""><img src='youtube.png'/></a> */}
-            {/* <a href=""><img src='telegram.png'/></a> */}
-            {/* <a href=""><img src='whatsapp.png'/></a> */}
-            {/* <a href=""><img src='dzen.png'/></a> */}
           </div>
 
         </div>
         
 
         <div className="slider-container">
-          <Slider size="390px" color="white" align="left" arr={listImg1} arrow='arrow-horizontally.png'/>
+          <Slider size="390px" color="white" align="left" arr={listImg0} arrow='arrow-horizontally.png'/>
         </div>
         
         <div className="first-screen__social-mobil">
         <a href="https://vk.com/mariya_plechikova"><img src='VK.png'/></a> 
-            {/* <a href=""><img src='odnoklassniki.png'/></a> */}
-            {/* <a href=""><img src='youtube.png'/></a> */}
-            {/* <a href=""><img src='telegram.png'/></a> */}
-            {/* <a href=""><img src='whatsapp.png'/></a> */}
-            {/* <a href=""><img src='dzen.png'/></a> */}
         </div>
 
       </div>

@@ -3,8 +3,6 @@
     background-size: 300%;
     background-position-y: bottom;
     background-position-x: 35%;
-    /* background-image: linear-gradient(to top, rgb(0, 0, 0) 5%, transparent 30%, rgb(253, 253, 253) 50%), 
-    url(./image/application-background.png); */
     background-image: url(./image/application-background1.png);
 }
 
@@ -135,7 +133,7 @@
 
 }
 
-@media (min-width: 800px) {
+@media (min-width: 900px) {
     .application-block {
         display: flex;
         flex-wrap: wrap;
