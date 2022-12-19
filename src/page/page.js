@@ -13,14 +13,16 @@ import "./comand.css";
 import { Link, animateScroll as scroll } from "react-scroll";
 import Slider from '../elements/slider'
 import Form from '../elements/form'
+
 import {
   listImg1, listImg2, listImg3, listImg4, listImg5, listImg6, listImg7, listImgComand
-} from '../elements/list'
+} from '../data/list'
 
 function Page() {
 
   return (
     <div className="page">
+      
             
       <div className="journey-block Container">
 

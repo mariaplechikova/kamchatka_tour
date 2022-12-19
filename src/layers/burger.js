@@ -9,9 +9,10 @@ import {
 } from 'mdb-react-ui-kit';
 import "./burger.css";
 import { Link, animateScroll as scroll } from "react-scroll";
+import ButtonBooking from '../elements/button-booking';
 
 export default function Burger() {
-  const [showAnimated2, setShowAnimated2] = useState(false);
+  const [showAnimated, setShowAnimated] = useState(false);
 
   return (
     <>
@@ -25,7 +26,7 @@ export default function Burger() {
               aria-controls='navbarToggleExternalContent'
               aria-expanded='false'
               aria-label='Toggle navigation'
-              onClick={() => setShowAnimated2(!showAnimated2)}
+              onClick={() => setShowAnimated(!showAnimated)}
             >
               <div className='burger__messenger'>
                 <a title="Whatsapp" href="whatsapp://send?phone=79209696101" className="messenger">
@@ -36,7 +37,7 @@ export default function Burger() {
                 </a>
               </div>
               
-              <div className={`animated-icon2 ${showAnimated2 && 'open'}`}>
+              <div className={`animated-icon ${showAnimated && 'open'}`}>
                 <span></span>
                 <span></span>
                 <span></span>
@@ -46,9 +47,9 @@ export default function Burger() {
           </MDBContainer>
         </MDBNavbar>
 
-        <MDBCollapse show={showAnimated2} className="burger__collapse">
+        <MDBCollapse show={showAnimated} className="burger__collapse" >
           <div className='bg-light shadow-3 p-4 burger__collapse__content'>
-            <MDBBtn block className='burger-links border-bottom m-0' color='link'>
+            <MDBBtn block className='burger-links border-bottom m-0' color='link' onClick={() => setShowAnimated(!showAnimated)}>
             <Link 
               to="section1"
               spy={true}
@@ -58,7 +59,7 @@ export default function Burger() {
                 Расписание тура
               </Link>
             </MDBBtn>
-            <MDBBtn block className='burger-links border-bottom m-0' color='link'>
+            <MDBBtn block className='burger-links border-bottom m-0' color='link' onClick={() => setShowAnimated(!showAnimated)}>
              <Link 
               to="section3"
               spy={true}
@@ -68,7 +69,7 @@ export default function Burger() {
                 Как записаться
               </Link>
             </MDBBtn>
-            <MDBBtn block className='burger-links border-bottom m-0' color='link'>
+            <MDBBtn block className='burger-links border-bottom m-0' color='link' onClick={() => setShowAnimated(!showAnimated)}>
             <Link 
               to="section2"
               spy={true}
@@ -78,7 +79,7 @@ export default function Burger() {
                 Стоимость
               </Link>
             </MDBBtn>
-            <MDBBtn block className='burger-links border-bottom m-0' color='link'>
+            <MDBBtn block className='burger-links border-bottom m-0' color='link' onClick={() => setShowAnimated(!showAnimated)}>
             <Link 
               to="section4"
               spy={true}
@@ -88,8 +89,11 @@ export default function Burger() {
                 Команда
               </Link>
             </MDBBtn>
+            <ButtonBooking className='burger__booking'/>
+            <div className='burger__tel'>+ 7 (760) 354-23-23</div>
+            <div className='burger__address'>ул. Рубиннштерна, 41</div>
           </div>
-        </MDBCollapse>
+          </MDBCollapse>
       </section>
     </>
   );

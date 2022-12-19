@@ -5,7 +5,10 @@ function PhoneInput(props) {
     <InputMask 
       mask='(+7) 999 999 9999' 
       value={props.value} 
-      onChange={props.onChange}>
+      onChange={props.onChange}
+      // maskChar='0'
+      alwaysShowMask
+      >
     </InputMask>
   );
 }

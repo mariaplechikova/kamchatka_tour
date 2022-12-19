@@ -3,9 +3,7 @@ import "./page";
 import Slider from '../elements/slider'
 import React, { useState } from 'react';
 import { Link, animateScroll as scroll } from "react-scroll";
-import {
-  listImg0
-} from '../elements/list'
+import { listImg0 } from '../data/list'
 
 function FirstScreen() {
   
@@ -30,7 +28,7 @@ function FirstScreen() {
           </Link>
 
           <div className="first-screen__social-desktop">
-            <a href="https://vk.com/mariya_plechikova"><img src='VK.png'/></a>
+            <a href="https://vk.com/mariya_plechikova"><img src='VK.png'  className="Social-button"/></a>
           </div>
 
         </div>
@@ -41,7 +39,7 @@ function FirstScreen() {
         </div>
         
         <div className="first-screen__social-mobil">
-        <a href="https://vk.com/mariya_plechikova"><img src='VK.png'/></a> 
+        <a href="https://vk.com/mariya_plechikova"><img src='VK.png' className="Social-button"/></a> 
         </div>
 
       </div>

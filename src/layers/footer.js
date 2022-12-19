@@ -52,7 +52,7 @@ function Footer() {
             <div className="footer__big-block"> 
                 <div>
                     <p>Социальные сети</p>
-                    <a href="https://vk.com/mariya_plechikova"><img src='VK.png' className="social-button"/></a>
+                    <a href="https://vk.com/mariya_plechikova"><img src='VK.png' className="Social-button"/></a>
                 </div>
             </div>
 

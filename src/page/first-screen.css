@@ -109,18 +109,8 @@
     height: 48px;
 }
 
-.first-screen__social-mobil {
-    display: flex;
-    justify-content: right;
-    gap: 10px;
-}
-
 .first-screen__social-desktop {
     display: none;
-}
-
-.first-screen__social-mobil img {
-    height: 20px;
 }
 
  @media (min-width: 600px) {
@@ -203,10 +193,6 @@
         display: flex;
         gap: 10px;
         flex-basis: 30%;
-    }
-
-    .first-screen__social-desktop img {
-        height: 20px;
     }
     
     .first-screen__social-mobil {
