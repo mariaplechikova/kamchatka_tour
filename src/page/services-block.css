@@ -60,8 +60,12 @@
         text-align: center;
     }
     .services-block___conteiner, .services-block___conteiner-top, .services-block___conteiner-bottom {
+        /* flex-direction: row;
+        flex-wrap: wrap; */
+        width: 100%;
         flex-direction: row;
         flex-wrap: wrap;
+        justify-content: center;
     }
 
     .services-block___conteiner__div {
