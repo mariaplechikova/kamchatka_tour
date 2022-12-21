@@ -18,18 +18,6 @@ function Form(props) {
         setshowThanks(num)
         console.log(showThanks)
     }
-
-    // function Inc(event) {
-    //     getSendQuantity(sendQuantity + 1)
-    //     console.log(sendQuantity)
-    //     handleField(event, 'quantity')
-    //   }
-    
-    // function Dec(event) {
-    //     getSendQuantity(sendQuantity - 1)
-    //     console.log(sendQuantity)
-    //     handleField(event, 'quantity')
-    // }
     
     const [sendList, setSendList] = useState({
         name: '',
@@ -67,7 +55,7 @@ function Form(props) {
         } else {
             res = false
         }
-        // const res = sendList.quantity === "" ? true : false;
+    
         setErrorQuantity(res);
 
         return res
@@ -183,19 +171,6 @@ function Form(props) {
                     ></input>
                     <p className={`form__error-text + ${isErrorQuantity ? "show" : "hide"}`}>Укажите колличество участников</p>
                 </label>
-                {/* <label className="form__number">
-                    <p className="form__number-title">Количество человек</p>
-                    <input 
-                        type='text' 
-                        value={sendQuantity}
-                        className="form__number-input" 
-                    ></input>
-                    <div className="form__number__counter" >
-                        <div className="form__counter__button" onClick={(event) => Dec(event)} value={sendQuantity}>-</div>
-                        <div className="form__counter__button" onClick={(event) => Inc(event)} value={sendQuantity}>+</div>
-                    </div>
-                    <p className={`form__error-text + ${isErrorQuantity ? "show" : "hide"}`}>Укажите колличество участников</p>
-                </label> */}
             </div>
 
             <div className="form__tel-date">
