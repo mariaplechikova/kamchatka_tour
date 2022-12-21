@@ -8,11 +8,12 @@ function Footer() {
         <div className="footer">
 
             <div className="footer__smoll-block">
-                <img src="logo.png" className="footer-logo"/>
+                <Link onClick={()=>scroll.scrollToTop()}>
+                    <img src="logo.png" className="footer-logo Cursor-Pointer"/>
+                </Link> 
                 <Link 
                 to="section1"
                 spy={true}
-                // smooth={true}
                 offset={-110}
                 duration={500}
                 className="grey-text Cursor-Pointer">
@@ -21,7 +22,6 @@ function Footer() {
                 <Link 
                 to="section2"
                 spy={true}
-                // smooth={true}
                 offset={-110}
                 duration={500}
                 className="grey-text Cursor-Pointer">
@@ -30,7 +30,6 @@ function Footer() {
                 <Link 
                 to="section3"
                 spy={true}
-                // smooth={true}
                 offset={-110}
                 duration={500}
                 className="grey-text Cursor-Pointer">
@@ -39,7 +38,6 @@ function Footer() {
                 <Link 
                 to="section4"
                 spy={true}
-                // smooth={true}
                 offset={-110}
                 duration={500}
                 className="grey-text Cursor-Pointer">
@@ -62,7 +60,6 @@ function Footer() {
                 <div>
                     <img src='video-review.png' className="video-review"/>
                     <p>Смотрите видео отзывы наших клиентов</p>
-                    <a href="" className="grey-text">Перейти</a>
                 </div>
             </div>
 

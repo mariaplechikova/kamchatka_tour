@@ -1,25 +1,3 @@
-.render-enter {
-    opacity: 0.01;
-    transform: scale(1.1);
-  }
-  
-  .render-enter-active {
-    opacity: 1;
-    transform: scale(1);
-    transition: all 300ms;
-  }
-  
-  .render-exit {
-    opacity: 1;
-    transform: scale(1);
-  }
-  
-  .render-exit-active {
-    opacity: 0.01;
-    transform: scale(1.1);
-    transition: all 300ms;
-  }
-
 .slider {
     position: relative;
     margin-top: 45px;
@@ -27,7 +5,7 @@
 }
 
 .sliderBox {
-    width: 1400px;
+    width: calc(100vw * 4);
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
@@ -38,9 +16,6 @@
     overflow: hidden;
     filter: drop-shadow(0px 6px 14px rgba(0, 0, 0, 0.671));
     position: relative;
-    transition: all  1.5s;
-    width: 320px;
-    height: 320px;
     box-sizing: border-box;
 }
 
@@ -73,11 +48,6 @@
     padding: 0 0 10px 0;
 }
 
-.sliderBox div:first-child {
-    width: 360px;
-    height: 360px;
-}
-
 .sliderButton {
     margin-top: 20px;
     width: 100%;
@@ -103,6 +73,12 @@
     margin-right: 16px;
 }
 
+@media (min-width: 600px) {
+    .sliderBox {
+        width: 1350px;
+    }
+}
+
 @media (min-width: 800px) {
     .sliderBox {
         width: 1700px;
@@ -123,4 +99,5 @@
         width: 60px;
         height: 60px;
     }
+
 }

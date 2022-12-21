@@ -22,32 +22,6 @@
     display: none;
 }
 
-.comand-block__image {
-    width: 100%;
-    max-width: 352px;
-    box-sizing: border-box;
-}
-
-.comand-block__image img{
-    width: 100%;
-    height: auto;
-}
-
-.comand-block__image p {
-    font-style: normal;
-    font-weight: 600;
-    font-size: 18px;
-    line-height: 24px;
-    color: #000000;
-    text-align: center;
-    margin-top: 24px;
-}
-
-.comand-block__image span {
-    font-weight: 400;
-    text-decoration-line: underline;
-    color: #F47648;
-}
 @media (min-width: 600px) {
     .comand__title {
         font-size: 64px;
@@ -69,5 +43,7 @@
 
     .comand-pharagraf {
         display: block;
+        margin-bottom: 79px;
+        margin-top: 59px;
     }
 }

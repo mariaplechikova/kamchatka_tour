@@ -69,11 +69,6 @@ footer div {
     padding: 0px;
 }
 
-.social-button {
-    width: 24px;
-    height: auto;
-}
-
 .footer__icons-email {
     width: 16px;
     height: auto;
@@ -145,7 +140,6 @@ footer div {
     .footer__end p {
         text-align: justify;
         width: 240px;
-        /* margin-right: 0px; */
     }
 
     .middle-line {

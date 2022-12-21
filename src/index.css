@@ -1,15 +1,28 @@
 html, body {
   margin: 0;
-  /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif, "Gotham Pro", Helvetica,verdana,arial,tahoma;  */
-  /* -webkit-font-smoothing: antialiased; */
-  /* -moz-osx-font-smoothing: grayscale; */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
   width: 100%;
   padding: 0px;
 }
 
-code {
-  /* font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace; */
+
+@font-face { 
+  font-family: "LatoRegular";
+  src: url("./fonts/LatoRegular/LatoRegular.eot");
+  src: url("./fonts/LatoRegular/LatoRegular.eot?#iefix")format("embedded-opentype"),
+  url("./fonts/LatoRegular/LatoRegular.woff") format("woff"),
+  url("./fonts/LatoRegular/LatoRegular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face { 
+  font-family: "LatoBold";
+  src: url("./fonts/LatoBold/LatoBold.eot");
+  src: url("./fonts/LatoBold/LatoBold.eot?#iefix")format("embedded-opentype"),
+  url("./fonts/LatoBold/LatoBold.woff") format("woff"),
+  url("./fonts/LatoBold/LatoBold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 5000;
 }

@@ -22,7 +22,6 @@
   display: flex;
   justify-content: flex-end;
   justify-content: center;
-  background-color: rgb(28, 0, 128);
 }
 /* Ничего не меняет */
 /* Кнопка */
@@ -30,19 +29,7 @@
   position: absolute;
   right: 4px;
   color: black;
-  background-color: rgb(28, 0, 128);
 }
-/* .second-button  {
-    position: relative;
-    margin: 0px;
-    background-color: darkgoldenrod;
-}
-
-.menu-mobil {
-    background-color: blueviolet;
-    display: flex;
-    justify-content: flex-end;
-} */
 
 .burger-links {
   height: 60px;
@@ -61,7 +48,6 @@
 }
 
 .burger__collapse {
-  background-color: rgb(177, 241, 0);
   color: #275553;
 }
 

@@ -1,42 +1,28 @@
 import "./slider.css";
 import React, { useState } from 'react';
-import {  CSSTransition } from "react-transition-group";
 
 function Slider(props) {
-  // const listImg = [
-  //     {url:'slider1.jpg',
-  //     title: "Бурые медведи",
-  //     description: "Есть хорошая возможность понаблюдеть бурых медведей в естественной среде обитания"},
-  
-  //     {url:'slider2.jpg',
-  //     title: "Бурые медведи",
-  //     description: "Есть хорошая возможность понаблюдеть бурых медведей в естественной среде обитания"},
-  
-  //     {url: 'slider3.jpg',
-  //     title: "Бурые медведи",
-  //     description: "Есть хорошая возможность понаблюдеть бурых медведей в естественной среде обитания"},
-  
-  //     {url: 'slider4.jpg',
-  //     title: "Бурые медведи",
-  //     description: "Есть хорошая возможность понаблюдеть бурых медведей в естественной среде обитания"}
-  //   ]
-
     const [arr, setImage] = useState(props.arr)
-    const buttonColor = {color: props.color, border: `2px solid ${props.color}`}
     let buttonAlign
     let imgStyle
+    let widthImage
+    let heightImage
+
 
     if (document.documentElement.clientWidth < 800) {
       buttonAlign = {textAlign: props.alignMobil}
-      imgStyle = {width: `calc(${props.size} - 80px)`, height: `calc(${props.size} - 80px)`}
+      widthImage = `calc(${props.size} - 80px)`
     } else {
-      imgStyle = {width: props.size, height: props.size}
+      widthImage = props.size
       buttonAlign = {textAlign: props.alignDesktop}
     }
 
     if (document.documentElement.clientWidth < 600) {
-      imgStyle = {width: `287px`, height: `287px`}
+      widthImage = `calc(100vw - 32px)`
     }
+
+    heightImage = widthImage
+    imgStyle = {width: widthImage, height: heightImage}
        
     function sliderRight() {
       const deleteArr = arr.shift()
@@ -55,29 +41,24 @@ function Slider(props) {
   return (
     <div className="slider">
 
-        <CSSTransition classNames='render' timeout={300}>
-          <div className="sliderBox">
+      <div className="sliderBox">
           
-            {arr.map((index) => {
-              return (
-                <div className='sliderImage' style={imgStyle}>
-                  <img src={index.url} />
-                  <div className="sliderImage__description">
-                    <p>{index.title}</p>
-                    {index.description}
-                  </div>
-                </div>
-              )
-            })}
-        
-          </div>
-        </CSSTransition>
+        {arr.map((index) => {
+          return (
+            <div className='sliderImage' style={imgStyle}>
+              <img src={index.url} />
+              <div className="sliderImage__description">
+                <p>{index.title}</p>
+                {index.description}
+              </div>
+            </div>
+          )
+        })} 
+      </div> 
 
       <div className="sliderButton" style={buttonAlign}>
         <img src={props.arrow} className="slider__arrow" onClick={sliderLeft}/>
         <img src={props.arrow} className="slider__arrow slider__arrow--right" onClick={sliderRight}/>
-        {/* <button onClick={sliderLeft} style={buttonColor}>&larr;</button> */}
-        {/* <button onClick={sliderRight} style={buttonColor}>&rarr;</button> */}
       </div>
 
     </div>

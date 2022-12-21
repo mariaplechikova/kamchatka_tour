@@ -117,6 +117,20 @@
     margin-top: 10px;
 }
 
+.form__number__counter {
+    font-size: 50px;
+    position: absolute;
+    right: 0px;
+    bottom: -20px;
+    color: #275553;
+    font-weight: 100;
+}
+
+.form__number__counter div {
+    display: inline-block;
+    margin-left: 20px;
+}
+
 @media (min-width: 600px) {
     .form__name-number, .form__tel-date {
         flex-direction: row;
@@ -158,8 +172,6 @@
     .hide {
         display: none;
     }
-
-
 
 }
 

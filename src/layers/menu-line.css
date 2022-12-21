@@ -9,18 +9,6 @@ nav {
   flex-wrap: wrap;
 }
 
-  
-.menu-line__button {
-  margin: 0px;
-  background-color: transparent;
-  border: 1px solid #275553;
-  border-radius: 10px;
-  width: 177px;
-  height: 40px;
-  color: #275553;
-  font-size: 20px;
-}
-
 .menu-line__link {
   height: 40px;
   font-size: 20px;

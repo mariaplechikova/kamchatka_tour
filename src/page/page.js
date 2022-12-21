@@ -13,6 +13,7 @@ import "./comand.css";
 import { Link, animateScroll as scroll } from "react-scroll";
 import Slider from '../elements/slider'
 import Form from '../elements/form'
+import SliderComand from '../elements/slider-comand'
 
 import {
   listImg1, listImg2, listImg3, listImg4, listImg5, listImg6, listImg7, listImgComand
@@ -115,7 +116,6 @@ function Page() {
               <div className="first-day-slider">
                 <Slider 
                   size="400px" 
-                  color='white' 
                   alignMobil="left" 
                   alignDesktop="left" 
                   arr={listImg1} 
@@ -159,7 +159,6 @@ function Page() {
               <div className="second-day-slider">
                 <Slider 
                   size="400px" 
-                  color="black" 
                   alignMobil="left" 
                   alignDesktop="right" 
                   arr={listImg2}
@@ -176,7 +175,6 @@ function Page() {
           
           <div className="services-block___conteiner">
 
-            {/* <div className="services-block___conteiner-top"> */}
               <div className="services-block___conteiner__div">
                 <img src="services-img1.jpg" className="services-block___conteiner__img"></img>
                 <p className="services-block__conteiner__paragraf">
@@ -192,9 +190,7 @@ function Page() {
                   Каждый обед мы готовим с большой любовью. Кормим вас традиционными камчатскими блюдами. Еда - залог хорошего отдыха!
                 </p>
               </div>
-            {/* </div> */}
-
-            {/* <div className="services-block___conteiner-bottom"> */}
+          
               <div className="services-block___conteiner__div">
                 <img src="services-img3.png" className="services-block___conteiner__img"></img>
                 <p className="services-block__conteiner__paragraf">
@@ -210,7 +206,6 @@ function Page() {
                   Можете не переживать, что не успели сделать фото. Наш фотограф успевает везде и за всеми. У вас будут самые лучшие фото!
                 </p>
               </div>
-            {/* </div> */}
 
           </div>
         </div>
@@ -232,17 +227,12 @@ function Page() {
           <div className="third-day-slider">
             <Slider 
               size="400px" 
-              color="black" 
               alignMobil="left" 
               alignDesktop="right" 
               arr={listImg3}
               arrow='arrow-horizontally-black.png'
             />
           </div>
-
-          {/* <div className="third-day-background"> */}
-            
-          {/* </div> */}
 
         </div>
 
@@ -270,7 +260,6 @@ function Page() {
             <div className="fourth-day-slider">
               <Slider 
                 size="400px" 
-                color="white" 
                 alignMobil="left" 
                 alignDesktop="left" 
                 arr={listImg4}
@@ -298,7 +287,7 @@ function Page() {
             </div>
             
             <div className="fifth-day-slider">
-              <Slider size="400px" color="white" alignMobil="left" alignDesktop="right" arr={listImg5} arrow='arrow-horizontally.png'/>
+              <Slider size="400px" alignMobil="left" alignDesktop="right" arr={listImg5} arrow='arrow-horizontally.png'/>
             </div>
           </div>
 
@@ -329,7 +318,7 @@ function Page() {
             </div>
 
             <div className="sixth-day-slider">
-              <Slider size="400px" color="white" alignMobil="left" alignDesktop="left" arr={listImg6} arrow='arrow-horizontally.png'/>
+              <Slider size="400px" alignMobil="left" alignDesktop="left" arr={listImg6} arrow='arrow-horizontally.png'/>
             </div>
           </div>
 
@@ -381,7 +370,7 @@ function Page() {
               </div>
 
               <div className="seventh-day-slider">
-                <Slider size="400px" color="black" alignMobil="left" alignDesktop="right" arr={listImg7} arrow='arrow-horizontally-black.png'/>
+                <Slider size="400px" alignMobil="left" alignDesktop="right" arr={listImg7} arrow='arrow-horizontally-black.png'/>
               </div>
              
             </div>
@@ -495,31 +484,7 @@ function Page() {
           Наша команда - это люди влюбленные в свою работу. Каждый из них обладает проффесиональными знаниями, хорошей физической подготовкой. Следят за вашей безпасностью в туре, и тем чтобы каждый из вас получил максимальное колличество эмоций.
         </p>
 
-        <div className="comand-block">
-          <div className="comand-block__image">
-            <img src="Alina.jpg" />
-            <p>Алина Гончарова, <span>@alin_och</span></p>
-          </div>
-          <div className="comand-block__image">
-            <img src="Evgenij.jpg" />
-            <p>Евгений Барсуков, <span>@eugen_eugen</span></p>
-          </div>
-          <div className="comand-block__image">
-            <img src="Dmitrij.jpg" />
-            <p>Дмитрий Осипов, <span>@dim_os</span></p>
-          </div>
-          {/* <Slider 
-            className="comand__slider"
-            size="400px" 
-            color="black" 
-            alignMobil="left" 
-            alignDesktop="right" 
-            arr={listImgComand}
-            arrow='arrow-horizontally-black.png'
-          /> */}
-        </div>
-
-
+        <SliderComand />
 
       </div>
 

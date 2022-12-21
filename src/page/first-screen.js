@@ -1,7 +1,7 @@
 import "./first-screen.css";
 import "./page";
 import Slider from '../elements/slider'
-import React, { useState } from 'react';
+import React from 'react';
 import { Link, animateScroll as scroll } from "react-scroll";
 import { listImg0 } from '../data/list'
 
