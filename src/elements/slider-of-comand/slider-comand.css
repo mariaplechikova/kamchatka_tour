@@ -79,6 +79,10 @@
     .comand-button {
         text-align: right;
     }
+
+    .comand-block__image p {
+        max-height: 30px;
+    }
 }
 
 @media (min-width: 800px)  {
@@ -96,6 +100,7 @@
         width: calc((100% - 192px) / 3);
         box-sizing: border-box;
     }
+
 
     .slider__arrow {
         width: 60px;

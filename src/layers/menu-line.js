@@ -1,6 +1,6 @@
 import "./menu-line.css";
 import { Link, animateScroll as scroll } from "react-scroll";
-import ButtonBooking from '../elements/button-booking';
+import ButtonBooking from '../elements/button-booking/button-booking';
 
 function MenuLine() {
 

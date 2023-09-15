@@ -1,7 +1,7 @@
 import "./header.css";
 import Burger from "./burger";
 import MenuLine from "./menu-line";
-import { Link, animateScroll as scroll } from "react-scroll";
+import { Link } from "react-scroll";
 import React, { useState } from 'react'
 
 export default function Header() {
@@ -22,7 +22,12 @@ export default function Header() {
   return (
     <div className={colorChange ? "header colorChange" : "header"}>
 
-      <Link onClick={()=>scroll.scrollToTop()}>
+      <Link
+        to="section0"
+        spy={true}
+        offset={-110}
+        duration={500}
+      >
         <img src="logo.png" className="header__logo"/>
       </Link> 
 

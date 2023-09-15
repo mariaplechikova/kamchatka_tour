@@ -1,6 +1,6 @@
-import "./first-screen.css";
+import "./css/first-screen.css";
 import "./page";
-import Slider from '../elements/slider'
+import Slider from '../elements/slider/slider'
 import React from 'react';
 import { Link, animateScroll as scroll } from "react-scroll";
 import { listImg0 } from '../data/list'
@@ -8,7 +8,7 @@ import { listImg0 } from '../data/list'
 function FirstScreen() {
   
   return (
-    <div className="first-screen">
+    <div className="first-screen" id="section0">
 
       <div className="first-screen__container">
         <div className="first-screen__text">
@@ -35,7 +35,12 @@ function FirstScreen() {
         
 
         <div className="slider-container">
-          <Slider size="390px" color="white" align="left" arr={listImg0} arrow='arrow-horizontally.png'/>
+          <Slider size="390" 
+                  alignMobil="left" 
+                  alignDesktop="left" 
+                  arr={listImg0} 
+                  arrow='arrow-horizontally.png'
+          />
         </div>
         
         <div className="first-screen__social-mobil">

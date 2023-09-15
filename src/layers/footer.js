@@ -1,5 +1,5 @@
 import "./footer.css";
-import { Link, animateScroll as scroll } from "react-scroll";
+import { Link } from "react-scroll";
 
 function Footer() {
   return (
@@ -8,9 +8,26 @@ function Footer() {
         <div className="footer">
 
             <div className="footer__smoll-block">
-                <Link onClick={()=>scroll.scrollToTop()}>
+                {/* <Link onClick={()=>scroll.scrollToTop()}>
                     <img src="logo.png" className="footer-logo Cursor-Pointer"/>
-                </Link> 
+                </Link>  */}
+                <Link 
+                to="section0"
+                spy={true}
+                offset={-110}
+                duration={500}
+                >
+                    <img src="logo.png" className="footer-logo Cursor-Pointer"/>
+                </Link>
+                
+                <Link 
+                to="section"
+                spy={true}
+                offset={-110}
+                duration={500}
+                className="grey-text Cursor-Pointer">
+                    Расписание тура
+                </Link>
                 <Link 
                 to="section1"
                 spy={true}

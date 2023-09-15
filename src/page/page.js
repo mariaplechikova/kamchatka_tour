@@ -1,19 +1,20 @@
-import "./page.css";
-import "./journey.css";
-import "./day1.css";
-import "./day2.css";
-import "./services-block.css";
-import "./day3.css";
-import "./day4-5-6.css";
-import "./day7.css";
-import "./day8.css";
-import "./prise-block.css";
-import "./application-block.css";
-import "./comand.css";
-import { Link, animateScroll as scroll } from "react-scroll";
-import Slider from '../elements/slider'
-import Form from '../elements/form'
-import SliderComand from '../elements/slider-comand'
+import "./css/page.css";
+import "./css/journey.css";
+import "./css/day1.css";
+import "./css/day2.css";
+import "./css/services-block.css";
+import "./css/day3.css";
+import "./css/day4-5-6.css";
+import "./css/day7.css";
+import "./css/day8.css";
+import "./css/prise-block.css";
+import "./css/application-block.css";
+import "./css/comand.css";
+// import { Link, animateScroll as scroll } from "react-scroll";
+import { Link } from "react-scroll";
+import Slider from '../elements/slider/slider'
+import Form from '../elements/form/form'
+import SliderComand from '../elements/slider-of-comand/slider-comand'
 
 import {
   listImg1, listImg2, listImg3, listImg4, listImg5, listImg6, listImg7, listImgComand
@@ -115,8 +116,7 @@ function Page() {
 
               <div className="first-day-slider">
                 <Slider 
-                  size="400px" 
-                  alignMobil="left" 
+                  size='400'
                   alignDesktop="left" 
                   arr={listImg1} 
                   arrow='arrow-horizontally.png'
@@ -124,7 +124,7 @@ function Page() {
               </div>
             </div>
 
-            <img src="./second-day-cloud.png" className="first-day__cloud" />
+          <img src="./second-day-cloud.png" className="first-day__cloud" />
               
         </div>
 
@@ -135,14 +135,14 @@ function Page() {
               
               <div  className="second-day-p-top">
                 <p className="Text-pharagraf Text-color-black">
-                  Инструктаж перед поездкой (передвижение и поведение группы в лесу, общение с медведями, форма одежды, ), снаряжение, (взять тару для воды при заезде на Зайкин ключ, купальные принадлежности).
+                  Инструктаж перед поездкой (передвижение и поведение группы в лесу, общение с медведями, форма одежды, снаряжение, взять тару для воды при заезде на Зайкин ключ, купальные принадлежности).
                 </p>
                 <p className="Text-pharagraf Text-color-black">
                   Сбор участников на Роуп Джамп для прыжков с высоты над водопадом. Заранее решаем кто прыгает.
                 </p>
               </div>
               
-              <img src="./second-day-mountain.png" className="second-day-mountain"></img>
+              <img src="second-day-mountain.png" className="second-day-mountain"></img>
 
               <div className="second-day-p-bottom">
                 <p className="Text-pharagraf Text-color-black">
@@ -158,8 +158,7 @@ function Page() {
 
               <div className="second-day-slider">
                 <Slider 
-                  size="400px" 
-                  alignMobil="left" 
+                  size="400" 
                   alignDesktop="right" 
                   arr={listImg2}
                   arrow='arrow-horizontally-black.png'
@@ -226,8 +225,7 @@ function Page() {
 
           <div className="third-day-slider">
             <Slider 
-              size="400px" 
-              alignMobil="left" 
+              size="400" 
               alignDesktop="right" 
               arr={listImg3}
               arrow='arrow-horizontally-black.png'
@@ -243,7 +241,7 @@ function Page() {
             <div className="fourth-day-text">
               <h2 className="Text-title Text-color-white"><span>День 4.</span> Экскурсия к подножию Авачинского вулкана</h2>
               <p className="Text-pharagraf Text-color-grey">
-                Инструктаж по поведению группы в горах. Проверка снаряжения.Выезд на автомашине на вулканическое плато (высота 900 м) к подножию Авачинского вулкана (2 часа).
+                Инструктаж по поведению группы в горах. Проверка снаряжения. Выезд на автомашине на вулканическое плато (высота 900 м) к подножию Авачинского вулкана (2 часа).
               </p>
               <p className="Text-pharagraf Text-color-grey">
                 Пешеходная экскурсия к горе Верблюд, представляющую собой вулканическую экструзию. Находится в седловине между Корякским и Авачинским вулканами, относительная высота 100-150 м, ширина - около 100 м и по длине она протягивается на 500 м., состоит из трех сросшихся блоков.
@@ -260,7 +258,6 @@ function Page() {
             <div className="fourth-day-slider">
               <Slider 
                 size="400px" 
-                alignMobil="left" 
                 alignDesktop="left" 
                 arr={listImg4}
                 arrow='arrow-horizontally.png'
@@ -287,7 +284,7 @@ function Page() {
             </div>
             
             <div className="fifth-day-slider">
-              <Slider size="400px" alignMobil="left" alignDesktop="right" arr={listImg5} arrow='arrow-horizontally.png'/>
+              <Slider size="400" alignDesktop="right" arr={listImg5} arrow='arrow-horizontally.png'/>
             </div>
           </div>
 
@@ -296,7 +293,7 @@ function Page() {
             <div className="sixth-day-text">
               <h2 className="Text-title Text-color-white"><span>День 6.</span> Берег Тихого океана, экскурсия по городу </h2>
               <p className="Text-pharagraf Text-color-white">
-                Поездка на берег Тихого океана, в район Халактырского пляжа. Прогулка. Обед в городе. Обзорная экскурсия по г. Петропавловску-Камчатскому с посещением смотровых площадок. Рыбный рынок. 
+                Поездка на берег Тихого океана, в район Халактырского пляжа. Прогулка. Обед в городе. Обзорная экскурсия по г.Петропавловску-Камчатскому с посещением смотровых площадок. Рыбный рынок. 
               </p>
               <p className="Text-pharagraf Text-color-white">
                 Продолжительность -5 часов.  Трансфер в гостиницу.
@@ -318,7 +315,7 @@ function Page() {
             </div>
 
             <div className="sixth-day-slider">
-              <Slider size="400px" alignMobil="left" alignDesktop="left" arr={listImg6} arrow='arrow-horizontally.png'/>
+              <Slider size="400" alignDesktop="left" arr={listImg6} arrow='arrow-horizontally.png'/>
             </div>
           </div>
 
@@ -370,7 +367,7 @@ function Page() {
               </div>
 
               <div className="seventh-day-slider">
-                <Slider size="400px" alignMobil="left" alignDesktop="right" arr={listImg7} arrow='arrow-horizontally-black.png'/>
+                <Slider size="400" alignDesktop="right" arr={listImg7} arrow='arrow-horizontally-black.png'/>
               </div>
              
             </div>
@@ -436,7 +433,7 @@ function Page() {
                 <li>вертолётная экскурсия в Долину Гейзеров и кальдеру Узона, оплачивается в день вылета</li>
                 <li>дополнительные экскурсии и опции</li>
                 <li>размещение в гостинице</li>
-                <li>питание(кроме обедов во время экскурсий)</li>
+                <li>питание (кроме обедов во время экскурсий)</li>
                 <li>личные расходы</li>
               </ul>
             </div>
@@ -468,7 +465,11 @@ function Page() {
             <div>
               <h4  className="application-block__form-email__title">Что нужно знать отправляясь на Камчатку?</h4>
               <p  className="application-block__form-email__paragraf">Получите памятку туриста просто оставив свой e-mail.</p>
-              <input type='email' value="Ваш e-mail" className="application-block__form-email__input"></input>
+              <input 
+                  type='email'
+                  placeholder="Ваш e-mail"  
+                  className="application-block__form-email__input">
+              </input>
               <button className="application-block__form__button">Получить</button>
             </div>
             

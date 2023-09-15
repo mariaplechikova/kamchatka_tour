@@ -8,7 +8,7 @@
     display: flex;
     justify-content: center;
     overflow: hidden;
-    background-image: url(./image/first-screen.jpg);
+    background-image: url(../image/first-screen.jpg);
     background-repeat: no-repeat; 
     background-size: cover;
 }
@@ -150,6 +150,10 @@
 }
 
 @media (min-width: 900px) {
+    .first-screen {
+        min-width: 1200px;
+    }
+
     .first-screen__container {
         flex-direction: row;
         width: 100%;
@@ -158,7 +162,8 @@
         padding-left:  5%;
         padding-right:  5%;
         box-sizing: border-box;
-        
+        max-width: 2500px;
+        margin: 0px auto;
     }
 
     .first-screen {

@@ -9,7 +9,7 @@ import {
 } from 'mdb-react-ui-kit';
 import "./burger.css";
 import { Link, animateScroll as scroll } from "react-scroll";
-import ButtonBooking from '../elements/button-booking';
+import ButtonBooking from '../elements/button-booking/button-booking';
 
 export default function Burger() {
   const [showAnimated, setShowAnimated] = useState(false);

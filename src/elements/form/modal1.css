@@ -7,7 +7,7 @@
     margin: 0;
     position: absolute;
     z-index: 20;
-    overflow: scroll;
+    overflow-y: scroll;
 }
 
 .modal__block {
@@ -91,7 +91,7 @@
 
 @media (min-width: 800px) {
     .modal1 {
-        width: 100vw;
+        /* width: 90vw; */
         position: absolute;
         top: 0px;
         padding: 40px;
@@ -107,8 +107,9 @@
     .modal__block {
         padding: 40px;
         width: 700px;
-        height: 100vh;
-        max-height: 750px;
+        /* height: 100vh; */
+        height: 750px;
+        /* max-height: 750px; */
         background-color: rgb(255, 255, 255);
         display: flex;
         align-items: center;

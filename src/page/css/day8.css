@@ -3,7 +3,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     box-sizing: border-box;
-    background-image: linear-gradient(to top, rgb(0, 0, 0) 30%, transparent 65%, rgb(253, 253, 253) 99%), url(./image/eighth-day-background.png);
+    background-image: linear-gradient(to top, rgb(0, 0, 0) 30%, transparent 65%, rgb(253, 253, 253) 99%), url(../image/eighth-day-background.png);
     display: flex;
     justify-content: center;
     flex-direction: column;

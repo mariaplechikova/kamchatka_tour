@@ -9,7 +9,7 @@ export default function SliderComand() {
         address: "@alin_och"},
 
         {url:'Evgenij.jpg',
-        name: "Евгений Барсуков,  ",
+        name: "Евгений Барcуков,  ",
         address: "@eugen_eugen"},
 
         {url:'Dmitrij.jpg',

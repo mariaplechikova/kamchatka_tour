@@ -3,7 +3,9 @@
     background-repeat: no-repeat;
     background-size: cover;
     box-sizing: border-box;
-    background-image: linear-gradient(to top, rgb(0, 0, 0) 10%, transparent 40%, rgb(0, 0, 0) 70%), url(./image/black1.png);
+    background-image: linear-gradient(to top, rgb(0, 0, 0) 10%, transparent 40%, rgb(0, 0, 0) 70%), url(../image/black1.png);
+    max-width: 2500px;
+    margin: 0 auto;
 }
 
 .sixth-addition h3{
@@ -46,6 +48,8 @@
     height: auto;
     bottom: -5px;
     left: 0px;
+    max-width: 2500px;
+    margin: 0 auto;
 }
 
 @media (min-width: 600px) {
@@ -79,6 +83,11 @@
  .fifth-day-slider {
     display: flex;
     justify-content: end;
+ }
+
+ .fourth-day-slider, .sixth-day-slider{
+    display: flex;
+    justify-content: start;
  }
 
 }

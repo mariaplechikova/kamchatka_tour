@@ -1,4 +1,4 @@
-import Modal1 from "./modal1";
+import Modal1 from "../form/modal1";
 import { useState } from "react";
 import "./button-booking.css";
 
