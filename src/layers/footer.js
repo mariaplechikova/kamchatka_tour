@@ -25,7 +25,7 @@ function Footer() {
                 spy={true}
                 offset={-110}
                 duration={500}
-                className="grey-text Cursor-Pointer">
+                className="grey-text Links">
                     Расписание тура
                 </Link>
                 <Link 
@@ -33,7 +33,7 @@ function Footer() {
                 spy={true}
                 offset={-110}
                 duration={500}
-                className="grey-text Cursor-Pointer">
+                className="grey-text Links">
                     Расписание тура
                 </Link>
                 <Link 
@@ -41,7 +41,7 @@ function Footer() {
                 spy={true}
                 offset={-110}
                 duration={500}
-                className="grey-text Cursor-Pointer">
+                className="grey-text Links">
                     Стоимость
                 </Link>
                 <Link 
@@ -49,7 +49,7 @@ function Footer() {
                 spy={true}
                 offset={-110}
                 duration={500}
-                className="grey-text Cursor-Pointer">
+                className="grey-text Links">
                     Как записаться
                 </Link>
                 <Link 
@@ -57,7 +57,7 @@ function Footer() {
                 spy={true}
                 offset={-110}
                 duration={500}
-                className="grey-text Cursor-Pointer">
+                className="grey-text Links">
                     Команда
                 </Link>
             </div>

@@ -206,7 +206,7 @@ function Form(props) {
                 </label>
 
                 <label className="form__date">
-                <p className="form__date-title">Даты тураffff</p>
+                <p className="form__date-title">Даты тура</p>
                 <select name="dateTour" onChange={(event) => handleField(event, 'date')}>
                     <option value="">Выберите дату тура</option>
                     <option value="23.06 - 30.06">23.06 - 30.06</option>

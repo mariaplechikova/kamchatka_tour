@@ -33,7 +33,6 @@
     position: relative;
     box-sizing: border-box;
     transition: all linear 0.5s;
-    transition: all linear 3s;
     overflow: hidden;
     border-radius: 5px;
 }

@@ -43,6 +43,7 @@
     line-height: 50px;
     font-feature-settings: 'ordn' on;
     color: #FFFFFF;
+    font-family: 'Inter', sans-serif;
 }
 
 .first-screen__date {
@@ -169,7 +170,7 @@
     .first-screen {
         width: 100%;
         height: auto;
-        height: max(100vh, 700px);
+        height: max(100vh, 800px);
         padding-top: 5%;
     }
 
@@ -202,6 +203,11 @@
     
     .first-screen__social-mobil {
         display: none;
+    }
+
+    .first-screen__date {
+        width: 481px;
+        height: 61px;
     }
 
     /* .first-screen .sliderBox div:first-child {
