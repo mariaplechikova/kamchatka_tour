@@ -152,7 +152,7 @@
 
 @media (min-width: 900px) {
     .first-screen {
-        min-width: 1200px;
+        /* min-width: 1200px; */
     }
 
     .first-screen__container {
