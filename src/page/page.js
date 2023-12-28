@@ -83,7 +83,7 @@ function Page() {
           <div className="journey-block__background">
             
             <div>
-              <img src="pngwing 2.png" className="journey-block__background__plane"></img>
+              {/* <img src="pngwing 2.png" className="journey-block__background__plane"></img> */}
               <div className="journey-block__background__gradient"></div>
 
               <img src='image 87.jpg' className="journey-block__background__mountains"/>
